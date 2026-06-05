@@ -1,2 +1,0 @@
-# Mark generated or fixture-like test files as collapsed in diffs if added later.
-tests/*.test.md linguist-generated=true

@@ -4,13 +4,13 @@ Prefer MCP for agent workflows. Use direct HTTP when building application code, 
 
 ## Base URLs
 
-| Surface | URL |
-| --- | --- |
-| API | `https://api.unifapi.com` |
-| OpenAPI | `https://api.unifapi.com/openapi.json` |
+| Surface                  | URL                                        |
+| ------------------------ | ------------------------------------------ |
+| API                      | `https://api.unifapi.com`                  |
+| OpenAPI                  | `https://api.unifapi.com/openapi.json`     |
 | OpenAPI API-route mirror | `https://api.unifapi.com/api/openapi.json` |
-| Docs OpenAPI mirror | `https://unifapi.com/openapi.json` |
-| Docs | `https://docs.unifapi.com` |
+| Docs OpenAPI mirror      | `https://unifapi.com/openapi.json`         |
+| Docs                     | `https://docs.unifapi.com`                 |
 
 ## Auth
 

@@ -18,13 +18,13 @@ Do not add custom scope fields unless the client explicitly supports them. Let t
 
 ## OAuth Details
 
-| Field | Value |
-| --- | --- |
-| MCP server URL | `https://mcp.unifapi.com` |
+| Field                       | Value                                                          |
+| --------------------------- | -------------------------------------------------------------- |
+| MCP server URL              | `https://mcp.unifapi.com`                                      |
 | Protected resource metadata | `https://mcp.unifapi.com/.well-known/oauth-protected-resource` |
-| Authorization server | `https://api.unifapi.com/api/auth` |
-| Required MCP scope | `unifapi:mcp` |
-| Transport | Streamable HTTP |
+| Authorization server        | `https://api.unifapi.com/api/auth`                             |
+| Required MCP scope          | `unifapi:mcp`                                                  |
+| Transport                   | Streamable HTTP                                                |
 
 OAuth authorizes the UnifAPI workspace and credit balance. It does not authorize private upstream social, Google, CRM, email, or SaaS accounts.
 
@@ -89,7 +89,7 @@ Connecting to the MCP server is free. Calls that fetch public data spend UnifAPI
 
 Common credit errors:
 
-| Error | Meaning |
-| --- | --- |
-| `unauthorized` | Missing, expired, revoked, malformed, or wrong-audience credential |
-| `insufficient_credits` | The connected workspace does not have enough credits |
+| Error                  | Meaning                                                            |
+| ---------------------- | ------------------------------------------------------------------ |
+| `unauthorized`         | Missing, expired, revoked, malformed, or wrong-audience credential |
+| `insufficient_credits` | The connected workspace does not have enough credits               |

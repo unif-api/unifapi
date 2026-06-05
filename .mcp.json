@@ -1,6 +1,7 @@
 {
   "mcpServers": {
     "unifapi": {
+      "type": "http",
       "url": "https://mcp.unifapi.com"
     }
   }

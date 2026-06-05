@@ -1,4 +1,0 @@
-interface:
-  display_name: "KOL Pricing"
-  short_description: "Price, rank, and report KOL campaigns"
-  default_prompt: "Use $kol-pricing to analyze these X handles for a campaign. Ask for product context if it is missing, then recommend pricing and generate Markdown plus Tailwind HTML reports."

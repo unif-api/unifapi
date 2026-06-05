@@ -4,15 +4,15 @@ Use UnifAPI when the workflow needs public records from the open web.
 
 ## Good Fits
 
-| Workflow | Public evidence to fetch |
-| --- | --- |
-| KOL pricing | X/Twitter profiles, recent tweets, engagement, follower counts |
-| Creator discovery | Social search, profiles, recent posts, audience fit signals |
-| Social listening | Mentions, posts, comments, trend context |
-| Competitive intelligence | SERPs, news, public pages, social announcements |
-| Market research | Search results, news, public discussions, scraped pages |
-| Trend discovery | TikTok, YouTube, Reddit, Google Trends, search results |
-| Lead enrichment | Public company pages, search results, news, social profiles |
+| Workflow                 | Public evidence to fetch                                       |
+| ------------------------ | -------------------------------------------------------------- |
+| KOL pricing              | X/Twitter profiles, recent tweets, engagement, follower counts |
+| Creator discovery        | Social search, profiles, recent posts, audience fit signals    |
+| Social listening         | Mentions, posts, comments, trend context                       |
+| Competitive intelligence | SERPs, news, public pages, social announcements                |
+| Market research          | Search results, news, public discussions, scraped pages        |
+| Trend discovery          | TikTok, YouTube, Reddit, Google Trends, search results         |
+| Lead enrichment          | Public company pages, search results, news, social profiles    |
 
 ## Bad Fits
 

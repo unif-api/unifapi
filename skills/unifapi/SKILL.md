@@ -6,10 +6,10 @@ metadata:
   author: UnifAPI
   version: "1.0.0"
   homepage: https://unifapi.com/skills
-  source: https://github.com/unifapi-agent/skills
+  source: https://github.com/unifapi-agent/agents
   openclaw:
     links:
-      repository: https://github.com/unifapi-agent/skills
+      repository: https://github.com/unifapi-agent/agents
       documentation: https://docs.unifapi.com/mcp
 ---
 

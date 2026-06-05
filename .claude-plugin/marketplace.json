@@ -1,18 +1,29 @@
 {
-  "name": "unifapi-skills",
-  "metadata": {
-    "description": "UnifAPI public-data skills and OAuth MCP access for Claude Code"
-  },
+  "$schema": "https://anthropic.com/claude-code/marketplace.schema.json",
+  "name": "unifapi",
+  "description": "UnifAPI marketing agents + public-data skills — read-only research over SEO, social, local, and AI-visibility APIs, inside your assistant.",
   "owner": {
     "name": "UnifAPI",
-    "email": "support@unifapi.com"
+    "url": "https://unifapi.com"
   },
   "plugins": [
     {
       "name": "unifapi",
-      "source": "./",
-      "description": "Use UnifAPI skills and hosted OAuth MCP for public-data research workflows.",
-      "category": "developer-tools"
+      "source": ".",
+      "description": "Marketing-agent skills + the UnifAPI public-data MCP server (OAuth, read-only). One install for skills and live data together.",
+      "author": {
+        "name": "UnifAPI"
+      },
+      "homepage": "https://unifapi.com/agents",
+      "category": "marketing",
+      "keywords": [
+        "marketing",
+        "seo",
+        "geo",
+        "public-data",
+        "mcp",
+        "agents"
+      ]
     }
   ]
 }

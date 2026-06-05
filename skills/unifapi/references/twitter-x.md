@@ -39,19 +39,19 @@ Use `pagination.next_cursor` as the next request's `pagination_token` when `has_
 
 ## Core Operations
 
-| Need | Operation |
-| --- | --- |
-| Profile by handle | `GET /x/users/by/username/{username}` |
-| Profiles by handles | `GET /x/users/by?usernames=a,b` |
-| Profile by id | `GET /x/users/{id}` |
-| Profiles by ids | `GET /x/users?ids=123,456` |
-| Recent authored posts | `GET /x/users/{id}/tweets?max_results=10&exclude=replies` |
-| Search recent posts | `GET /x/tweets/search/recent?query=...&max_results=10` |
-| Autocomplete users/topics | `GET /x/autocomplete?query=...` |
-| Post by id | `GET /x/tweets/{id}` |
-| Posts by ids | `GET /x/tweets?ids=123,456` |
-| Followers/following | `GET /x/users/{id}/followers`, `GET /x/users/{id}/following` |
-| Trends | `GET /x/trends/by/woeid/{woeid}` |
+| Need                      | Operation                                                    |
+| ------------------------- | ------------------------------------------------------------ |
+| Profile by handle         | `GET /x/users/by/username/{username}`                        |
+| Profiles by handles       | `GET /x/users/by?usernames=a,b`                              |
+| Profile by id             | `GET /x/users/{id}`                                          |
+| Profiles by ids           | `GET /x/users?ids=123,456`                                   |
+| Recent authored posts     | `GET /x/users/{id}/tweets?max_results=10&exclude=replies`    |
+| Search recent posts       | `GET /x/tweets/search/recent?query=...&max_results=10`       |
+| Autocomplete users/topics | `GET /x/autocomplete?query=...`                              |
+| Post by id                | `GET /x/tweets/{id}`                                         |
+| Posts by ids              | `GET /x/tweets?ids=123,456`                                  |
+| Followers/following       | `GET /x/users/{id}/followers`, `GET /x/users/{id}/following` |
+| Trends                    | `GET /x/trends/by/woeid/{woeid}`                             |
 
 ## KOL Research Recipe
 
@@ -72,8 +72,8 @@ For discovery from a topic, start with `GET /x/tweets/search/recent?query=...` f
 
 ## Old Path Migration
 
-| Old path | Current path |
-| --- | --- |
-| `/twitter/users/{screen_name}` | `/x/users/by/username/{username}` |
-| `/twitter/users/{screen_name}/tweets` | `/x/users/{id}/tweets` after resolving the handle to `data.id` |
-| `/twitter/search` | `/x/tweets/search/recent?query=...`; use `/x/autocomplete?query=...` for user/topic discovery |
+| Old path                              | Current path                                                                                  |
+| ------------------------------------- | --------------------------------------------------------------------------------------------- |
+| `/twitter/users/{screen_name}`        | `/x/users/by/username/{username}`                                                             |
+| `/twitter/users/{screen_name}/tweets` | `/x/users/{id}/tweets` after resolving the handle to `data.id`                                |
+| `/twitter/search`                     | `/x/tweets/search/recent?query=...`; use `/x/autocomplete?query=...` for user/topic discovery |

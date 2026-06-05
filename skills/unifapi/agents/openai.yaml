@@ -1,4 +1,0 @@
-interface:
-  display_name: "UnifAPI"
-  short_description: "Use public-data APIs through OAuth MCP"
-  default_prompt: "Use $unifapi to find the right public-data operations, call only the evidence needed, and return a decision-ready artifact."

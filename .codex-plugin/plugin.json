@@ -1,31 +1,92 @@
 {
   "name": "unifapi",
-  "description": "Plugin with UnifAPI public-data skills and the hosted OAuth MCP server for social, search, scrape, news, and agent-ready analysis.",
   "version": "1.0.0",
-  "skills": "./skills/",
-  "mcpServers": "./.mcp.json",
+  "description": "Marketing agents and public-data skills for Claude, Codex, and any MCP client. Read-only research over UnifAPI's SEO, social, local, and AI-visibility APIs.",
   "author": {
     "name": "UnifAPI",
-    "email": "support@unifapi.com",
     "url": "https://unifapi.com"
   },
-  "homepage": "https://unifapi.com/skills",
-  "repository": "https://github.com/unifapi-agent/skills",
+  "homepage": "https://unifapi.com/agents",
+  "repository": "https://github.com/unifapi-agent/agents",
   "license": "MIT",
-  "keywords": ["unifapi", "mcp", "public-data", "agents", "social-data", "search-api"],
+  "keywords": [
+    "unifapi",
+    "mcp",
+    "marketing-agents",
+    "seo",
+    "public-data",
+    "agents"
+  ],
+  "skills": [
+    "./skills/unifapi",
+    "./skills/seo-agent/seo-audit",
+    "./skills/seo-agent/keyword-research",
+    "./skills/seo-agent/schema",
+    "./skills/ai-visibility-agent/ai-visibility-audit",
+    "./skills/ai-visibility-agent/llm-mention-tracking",
+    "./skills/ai-visibility-agent/ai-answer-gap",
+    "./skills/local-seo-agent/local-pack-audit",
+    "./skills/local-seo-agent/listing-accuracy-audit",
+    "./skills/local-seo-agent/local-competitor-scan",
+    "./skills/influencer-marketing-agent/kol-pricing",
+    "./skills/influencer-marketing-agent/creator-shortlist",
+    "./skills/influencer-marketing-agent/audience-fit-check",
+    "./skills/content-strategy-agent/content-opportunity-brief",
+    "./skills/content-strategy-agent/content-strategy",
+    "./skills/content-strategy-agent/customer-research",
+    "./skills/social-listening-agent/social-listening-brief",
+    "./skills/social-listening-agent/reddit-community-research",
+    "./skills/social-selling-agent/buying-signal-monitor",
+    "./skills/lead-company-research-agent/linkedin-account-research",
+    "./skills/competitive-intelligence-agent/competitor-launch-monitor",
+    "./skills/competitive-intelligence-agent/competitor-profiling",
+    "./skills/lead-company-research-agent/account-news-signals",
+    "./skills/real-estate-marketing/neighborhood-guide-opportunity",
+    "./skills/real-estate-marketing/agent-reputation-benchmark",
+    "./skills/med-spa-marketing/med-spa-reputation-benchmark",
+    "./skills/med-spa-marketing/treatment-demand-radar",
+    "./skills/dental-marketing/dental-reputation-benchmark",
+    "./skills/dental-marketing/patient-question-content",
+    "./skills/law-firm-marketing/practice-area-rank-audit",
+    "./skills/law-firm-marketing/attorney-reputation-benchmark",
+    "./skills/restaurant-marketing/restaurant-local-buzz",
+    "./skills/restaurant-marketing/menu-demand-radar",
+    "./skills/home-services-marketing/service-area-rank-audit",
+    "./skills/home-services-marketing/homeowner-question-content",
+    "./skills/x-twitter-agent/x-twitter",
+    "./skills/linkedin-agent/linkedin",
+    "./skills/reddit-agent/reddit",
+    "./skills/tiktok-agent/tiktok",
+    "./skills/youtube-agent/youtube",
+    "./skills/instagram-agent/instagram",
+    "./skills/hacker-news-agent/hacker-news",
+    "./skills/threads-agent/threads"
+  ],
+  "mcpServers": {
+    "unifapi": {
+      "type": "http",
+      "url": "https://mcp.unifapi.com"
+    }
+  },
   "interface": {
     "displayName": "UnifAPI",
-    "shortDescription": "Public-data skills through OAuth MCP",
-    "longDescription": "UnifAPI gives agents reusable skills and OAuth MCP access for public social, search, scrape, news, and creator analysis workflows. Install the plugin, sign in with UnifAPI when prompted, then ask Codex for ranked tables, creator briefs, market scans, or evidence-backed public-data reports.",
+    "shortDescription": "Read-only marketing research over public data — SEO, GEO, social, local.",
+    "longDescription": "UnifAPI turns public data into agent-callable marketing research: SEO and SERP audits, generative-engine / AI-visibility (GEO) checks, local SEO, KOL pricing and creator vetting, social listening, competitive intelligence, and B2B account research. Install once for the skills plus the OAuth MCP server — no API key to paste; everything is read-only (eyes, not hands).",
     "developerName": "UnifAPI",
-    "category": "Developer Tools",
-    "capabilities": ["Read", "Interactive"],
-    "websiteURL": "https://unifapi.com/skills",
-    "defaultPrompt": [
-      "Use UnifAPI to gather public evidence for this task.",
-      "Analyze these creators with live public social data.",
-      "Find the right UnifAPI operation and return a brief."
+    "category": "marketing",
+    "capabilities": [
+      "Read"
     ],
-    "brandColor": "#111827"
+    "websiteURL": "https://unifapi.com",
+    "privacyPolicyURL": "https://unifapi.com/legal/privacy-policy",
+    "termsOfServiceURL": "https://unifapi.com/legal/terms-of-service",
+    "defaultPrompt": [
+      "Track these keywords for example.com in the US market: \"unified api\", \"public data api\", \"mcp server\". Return our organic and AI-overview positions, the competing domains, and the SERP features each query triggers. Then find 10 keyword gaps where competitor.com ranks and we don't, with evidence.",
+      "For these prompts — \"best unified public data api\", \"mcp server for social data\" — check whether example.com and our brand are cited in AI answers across AI search. Return the cited sources, our mentions vs competitors, AI search volume, and the prompts where we are missing entirely.",
+      "Audit local visibility for \"coffee shop\" near downtown Austin, TX. Return the local-pack and map results, each listing's rating, category, and contact details, and where my business ranks vs the top competitors. Flag any listing details that look inconsistent.",
+      "Find and price 15 creators for an AI developer-tool campaign on X and YouTube. Prioritize recent momentum, audience fit, and posting cadence. Return a ranked table with estimated sponsored-post price ranges, confidence, evidence, and collaboration-risk notes."
+    ],
+    "brandColor": "#1f6feb",
+    "logo": "https://unifapi.com/unif.svg"
   }
 }
