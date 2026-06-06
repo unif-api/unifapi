@@ -59,4 +59,4 @@ It surfaces what is publicly visible and flags gaps for human verification. It i
 - MCP server: `https://mcp.unifapi.com`
 - All agents: https://unifapi.com/agents · Docs: https://docs.unifapi.com
 
-<sub>Topics: B2B account research · company research agent · LinkedIn enrichment agent · lead research agent · account research agent · B2B data enrichment · prospect research MCP</sub>
+<sub>Topics: AI lead generation tools · company research tool · AI lead research · B2B account research · AI prospecting tool · LinkedIn company research · B2B data enrichment</sub>

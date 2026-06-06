@@ -36,6 +36,7 @@ Find active Reddit communities for developer productivity tools. Summarize commo
 
 - Part of the **[Social Listening Agent](../)**
 - [`social-listening-brief`](../social-listening-brief/) — Track public mentions and return a concise brief instead of a dashboard.
+- [`reddit-thread-fit-check`](../reddit-thread-fit-check/) — Score Reddit threads by relevance, intent, rules, timing, and account risk before anyone replies.
 - Shared data skill: [`unifapi`](../../unifapi/)
 
 ## Links
@@ -45,4 +46,4 @@ Find active Reddit communities for developer productivity tools. Summarize commo
 - Install — one plugin, skills + live data: https://unifapi.com/mcp
 - Docs: https://docs.unifapi.com
 
-<sub>Topics: Reddit research · subreddit research · Reddit social listening · Reddit audience research · find subreddits for my niche</sub>
+<sub>Topics: Reddit research tool · subreddit research · Reddit social listening · Reddit audience research · find subreddits for my niche · Reddit marketing research</sub>

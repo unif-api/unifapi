@@ -45,4 +45,4 @@ Pull recent public news for this target account — funding, leadership changes,
 - Install — one plugin, skills + live data: https://unifapi.com/mcp
 - Docs: https://docs.unifapi.com
 
-<sub>Topics: account trigger events · company news for outreach · funding signal · sales trigger events · news-based outreach · timely outreach hook</sub>
+<sub>Topics: company news monitoring · sales trigger events · account research · funding announcements for sales · news-based outreach · timely outreach hook</sub>

@@ -45,4 +45,4 @@ Audit my business's public Google listing field by field — name, address, cate
 - Install — one plugin, skills + live data: https://unifapi.com/mcp
 - Docs: https://docs.unifapi.com
 
-<sub>Topics: Google Business Profile audit · NAP consistency · listing accuracy audit · business listing check · local listing accuracy · GBP audit</sub>
+<sub>Topics: Google Business Profile audit · business listing accuracy · NAP consistency check · local listing audit · business listing check · GBP audit</sub>

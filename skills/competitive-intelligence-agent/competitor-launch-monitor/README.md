@@ -45,4 +45,4 @@ Analyze the public launch of this competitor. Pull posts, reactions, videos, and
 - Install — one plugin, skills + live data: https://unifapi.com/mcp
 - Docs: https://docs.unifapi.com
 
-<sub>Topics: competitor launch monitoring · track competitor launch · competitor monitoring · competitor reaction analysis · competitive intelligence agent</sub>
+<sub>Topics: competitor launch tracking · track competitor product launches · competitor monitoring tool · competitor launch analysis · competitive intelligence tool · monitor competitor announcements</sub>

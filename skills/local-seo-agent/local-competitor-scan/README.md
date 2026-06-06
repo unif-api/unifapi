@@ -45,4 +45,4 @@ Map the businesses beating me in the local pack for "dentist near me" in my city
 - Install — one plugin, skills + live data: https://unifapi.com/mcp
 - Docs: https://docs.unifapi.com
 
-<sub>Topics: local competitor analysis · local SEO competitors · who's beating me in the map pack · local competitive gap · competitor review counts · map pack competitors</sub>
+<sub>Topics: local SEO competitor analysis · local competitor research · map pack competitors · who's beating me in the map pack · local competitive gap · competitor review counts</sub>

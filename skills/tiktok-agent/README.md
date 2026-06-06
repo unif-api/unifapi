@@ -64,4 +64,4 @@ Influencer Marketing organizes by job (shortlist, vet, price); the TikTok Agent 
 - MCP server: `https://mcp.unifapi.com`
 - All agents: https://unifapi.com/agents · Docs: https://docs.unifapi.com
 
-<sub>Topics: TikTok research agent · TikTok MCP · TikTok MCP server · TikTok creator research · TikTok trend research · TikTok data for agents · TikTok analytics agent</sub>
+<sub>Topics: TikTok research tool · TikTok creator research · TikTok trend research · TikTok research agent · TikTok hashtag research · TikTok MCP server</sub>

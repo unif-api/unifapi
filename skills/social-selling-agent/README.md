@@ -59,4 +59,4 @@ Anything public you define: a tweet asking for a solution, a complaint about a c
 - MCP server: `https://mcp.unifapi.com`
 - All agents: https://unifapi.com/agents · Docs: https://docs.unifapi.com
 
-<sub>Topics: buying signals LinkedIn · buyer intent signals · social selling agent · signal-based selling · LinkedIn prospecting agent · intent monitoring agent · warm lead finder</sub>
+<sub>Topics: social selling tools · LinkedIn AI tools · buying signals on LinkedIn · LinkedIn prospecting tool · buyer intent signals · warm lead finder · signal-based selling</sub>

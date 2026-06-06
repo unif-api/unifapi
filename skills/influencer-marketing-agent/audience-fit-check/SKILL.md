@@ -115,6 +115,7 @@ Fit (0–40) + authenticity (0–30) graded from content and the audience sample
 
 ## Related Skills
 
+- **creator-campaign-ops** (Influencer Marketing): use this verdict inside a broader campaign plan only when the user asks for full-funnel ops, launch tracking, or reporting.
 - **creator-shortlist** (Influencer Marketing): build the ranked candidate list this check vets one entry from.
 - **kol-pricing** (Influencer Marketing): price an X/Twitter creator once they pass this fit check.
 - **unifapi**: the shared data skill — connect MCP and discover the profile/content/audience operations this skill reads.

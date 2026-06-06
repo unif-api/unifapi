@@ -60,4 +60,4 @@ Social Listening organizes by job (a brief across surfaces); the Threads Agent i
 - MCP server: `https://mcp.unifapi.com`
 - All agents: https://unifapi.com/agents · Docs: https://docs.unifapi.com
 
-<sub>Topics: Threads research agent · Threads MCP · Threads MCP server · Threads social listening · Meta Threads research · Threads brand monitoring · Threads data for agents</sub>
+<sub>Topics: Threads research tool · Threads social listening · Meta Threads research · Threads brand monitoring · Threads research agent · Threads MCP server</sub>

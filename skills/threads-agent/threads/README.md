@@ -45,4 +45,4 @@ Using the Threads Data Skill, research our brand term: pull the recent and top p
 - Install — one plugin, skills + live data: https://unifapi.com/mcp
 - Docs: https://docs.unifapi.com
 
-<sub>Topics: Threads data API · Threads MCP server · Meta Threads data · Threads search API · Threads posts profiles · read Threads posts profiles replies</sub>
+<sub>Topics: Threads research tool · Threads social listening · Threads data · Threads brand monitoring · Meta Threads search · track mentions on Threads · Threads MCP server</sub>

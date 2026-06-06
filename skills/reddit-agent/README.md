@@ -20,6 +20,7 @@ The Reddit Agent turns public Reddit into community research: subreddit profiles
 
 - [`reddit`](reddit/) — The deterministic guide to reading public Reddit data through UnifAPI — subreddits, threads, comments, users, and trending searches. _(data)_
 - [`reddit-community-research`](../social-listening-agent/reddit-community-research/) — Map subreddits, recurring questions, objections, and language for a niche. _(enhanced · shared)_
+- [`reddit-thread-fit-check`](../social-listening-agent/reddit-thread-fit-check/) — Score Reddit threads by relevance, intent, rules, timing, and account risk before anyone replies. _(enhanced · shared)_
 - [`social-listening-brief`](../social-listening-agent/social-listening-brief/) — Track public mentions and return a concise brief instead of a dashboard. _(enhanced · shared)_
 - [`customer-research`](../content-strategy-agent/customer-research/) — Mine authentic customer language, pains, and objections from public communities to inform messaging and content. _(enhanced · shared)_
 
@@ -61,4 +62,4 @@ No. It is read-only research. Any participation is done by you from your own acc
 - MCP server: `https://mcp.unifapi.com`
 - All agents: https://unifapi.com/agents · Docs: https://docs.unifapi.com
 
-<sub>Topics: Reddit research agent · Reddit MCP · Reddit MCP server · subreddit research · Reddit brand monitoring · Reddit social listening · Reddit data for agents</sub>
+<sub>Topics: Reddit research tool · Reddit social listening · Reddit research agent · subreddit research tool · Reddit brand monitoring · Reddit MCP server</sub>

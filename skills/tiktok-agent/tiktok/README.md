@@ -45,4 +45,4 @@ Using the TikTok Data Skill, research creators for a skincare niche: search user
 - Install — one plugin, skills + live data: https://unifapi.com/mcp
 - Docs: https://docs.unifapi.com
 
-<sub>Topics: TikTok data API · TikTok MCP server · TikTok creator data · TikTok video data · TikTok hashtag trends API · read TikTok creators videos hashtags</sub>
+<sub>Topics: TikTok research tool · TikTok creator research · TikTok data · find TikTok creators · TikTok hashtag trends · TikTok video analytics · TikTok MCP server</sub>

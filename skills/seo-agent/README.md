@@ -17,6 +17,7 @@ The SEO Agent runs live organic and AI SERP checks, keyword and competitor resea
 ## Skills in this agent
 
 - [`seo-audit`](seo-audit/) — Audit crawlability, on-page, and content against live SERP and ranking evidence — not a static checklist. _(enhanced)_
+- [`seo-fix-plan`](seo-fix-plan/) — Convert live SEO audit evidence into prioritized fixes, owners, and acceptance checks. _(enhanced)_
 - [`keyword-research`](keyword-research/) — Turn a seed list into ranked keyword opportunities and competitor gaps from live SERP and volume data. _(enhanced)_
 - [`schema`](schema/) — Choose and implement the right schema.org types for a page, with valid JSON-LD the assistant can write. _(advice)_
 
@@ -60,4 +61,4 @@ Public-data reads are $0.001 per record with per-operation minimums generated fr
 - MCP server: `https://mcp.unifapi.com`
 - All agents: https://unifapi.com/agents · Docs: https://docs.unifapi.com
 
-<sub>Topics: SEO agent · AI SEO agent · SEO MCP server · SEO agent for Claude · rank tracker MCP · keyword research MCP · backlink research agent · Claude Code SEO · Claude Code for SEO · AI SEO audit</sub>
+<sub>Topics: AI SEO tools · AI SEO audit · SEO tool for ChatGPT · AI keyword research tool · rank tracking tool · backlink checker · SEO for Claude · AI tools for SEO audit</sub>

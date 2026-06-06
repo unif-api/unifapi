@@ -36,6 +36,7 @@ For "best unified public data api" and "mcp server for social data", check wheth
 ## Related
 
 - Part of the **[AI Visibility Agent](../)**
+- [`ai-visibility-fix-plan`](../ai-visibility-fix-plan/) — Prioritize Structure, Authority, and Presence fixes for prompts where AI answers do not cite you.
 - [`llm-mention-tracking`](../llm-mention-tracking/) — Track how often you're mentioned across ChatGPT and AI search over a fixed prompt set, and how share of voice moves vs competitors.
 - [`ai-answer-gap`](../ai-answer-gap/) — Find the prompts you should own in AI answers but don't, name who owns each, and rank the gaps by AI search volume.
 - Shared data skill: [`unifapi`](../../unifapi/)
@@ -51,4 +52,4 @@ For "best unified public data api" and "mcp server for social data", check wheth
 
 Adapted from [coreyhaines31/marketingskills](https://github.com/coreyhaines31/marketingskills) (MIT, Corey Haines), enhanced with live public-data evidence via UnifAPI.
 
-<sub>Topics: AI visibility audit · GEO audit · answer engine optimization · am I cited in AI answers · AI Overviews audit · ChatGPT citation check · share of citations</sub>
+<sub>Topics: AI visibility checker · AI visibility audit · does ChatGPT cite my brand · generative engine optimization audit · AI Overviews audit · ChatGPT citation check · GEO audit</sub>

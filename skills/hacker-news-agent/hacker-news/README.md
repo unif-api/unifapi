@@ -45,4 +45,4 @@ Using the Hacker News Data Skill, check how our launch is landing: scan the top,
 - Install — one plugin, skills + live data: https://unifapi.com/mcp
 - Docs: https://docs.unifapi.com
 
-<sub>Topics: Hacker News data API · Hacker News MCP server · Show HN data · Hacker News comments API · Hacker News feeds · read Hacker News stories comments</sub>
+<sub>Topics: Hacker News research tool · Hacker News monitoring · Hacker News data · Show HN tracking · Hacker News comment analysis · track launch reception on HN · Hacker News MCP server</sub>

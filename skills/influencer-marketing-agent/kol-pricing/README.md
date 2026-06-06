@@ -67,4 +67,4 @@ UnifAPI standard public-data records are one $0.001 credit, with operation minim
 
 Adapted from [Antoniaiaiaiaia/kol-pricing](https://github.com/Antoniaiaiaiaia/kol-pricing) (MIT, Antonia (@antoniayly)), enhanced with live public-data evidence via UnifAPI. See [references/original-license.md](./references/original-license.md) for the original license.
 
-<sub>Topics: KOL pricing · influencer rate calculator · influencer pricing calculator · creator pricing · Twitter KOL pricing · influencer cost estimation · sponsored post rate · KOL pricing MCP</sub>
+<sub>Topics: influencer rate calculator · how much to pay an influencer · influencer pricing calculator · sponsored post rate · creator pricing · influencer cost estimation · Twitter influencer rates · KOL pricing</sub>

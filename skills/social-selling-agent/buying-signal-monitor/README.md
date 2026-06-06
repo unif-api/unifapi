@@ -45,4 +45,4 @@ Watch X and LinkedIn this week for people asking for a YouTube data API or compl
 - Install — one plugin, skills + live data: https://unifapi.com/mcp
 - Docs: https://docs.unifapi.com
 
-<sub>Topics: buying signals · buyer intent signals · LinkedIn buying signals · social selling signals · warm leads · trigger event monitoring</sub>
+<sub>Topics: buying signals · buyer intent · social selling tool · warm lead finder · LinkedIn buying signals · trigger event monitoring</sub>

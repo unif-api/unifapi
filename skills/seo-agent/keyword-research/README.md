@@ -45,4 +45,4 @@ For competitor.com vs example.com, find 20 keyword gaps where they rank and we d
 - Install — one plugin, skills + live data: https://unifapi.com/mcp
 - Docs: https://docs.unifapi.com
 
-<sub>Topics: keyword research · keyword gap analysis · competitor keyword research · keyword research MCP · keyword difficulty · search intent analysis · SEO keyword opportunities</sub>
+<sub>Topics: AI keyword research tool · keyword research · keyword gap analysis · find keywords · competitor keyword research · keyword difficulty · search intent analysis</sub>

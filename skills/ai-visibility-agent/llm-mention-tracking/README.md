@@ -37,6 +37,7 @@ Track our AI share of voice for our fixed prompt set this week across ChatGPT an
 
 - Part of the **[AI Visibility Agent](../)**
 - [`ai-visibility-audit`](../ai-visibility-audit/) — The GEO equivalent of an SEO audit — check whether you're cited in AI answers and who owns the answer instead.
+- [`ai-visibility-fix-plan`](../ai-visibility-fix-plan/) — Prioritize Structure, Authority, and Presence fixes for prompts where AI answers do not cite you.
 - Shared data skill: [`unifapi`](../../unifapi/)
 
 ## Links
@@ -46,4 +47,4 @@ Track our AI share of voice for our fixed prompt set this week across ChatGPT an
 - Install — one plugin, skills + live data: https://unifapi.com/mcp
 - Docs: https://docs.unifapi.com
 
-<sub>Topics: LLM mention tracking · AI share of voice · track brand mentions in ChatGPT · monitor AI citations · AI visibility tracking · ChatGPT brand monitoring · ChatGPT visibility tracker</sub>
+<sub>Topics: track brand mentions in ChatGPT · AI mention monitoring · LLM mention tracking · ChatGPT brand monitoring · AI share of voice · AI visibility tracking · monitor AI citations</sub>

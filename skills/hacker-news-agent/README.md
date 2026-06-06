@@ -60,4 +60,4 @@ No. It is read-only research; you post anything from your own account.
 - MCP server: `https://mcp.unifapi.com`
 - All agents: https://unifapi.com/agents · Docs: https://docs.unifapi.com
 
-<sub>Topics: Hacker News agent · Hacker News research · Show HN research · Hacker News MCP · Hacker News MCP server · Hacker News sentiment · Hacker News API for agents</sub>
+<sub>Topics: Hacker News research tool · Hacker News research · Show HN research · Hacker News sentiment · Hacker News agent · Hacker News MCP server</sub>

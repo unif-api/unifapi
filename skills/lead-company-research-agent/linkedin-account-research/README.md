@@ -44,4 +44,4 @@ Research this target account using public LinkedIn signals. Summarize company pr
 - Install — one plugin, skills + live data: https://unifapi.com/mcp
 - Docs: https://docs.unifapi.com
 
-<sub>Topics: B2B account research · LinkedIn company research · account research · company research agent · buying committee research</sub>
+<sub>Topics: LinkedIn company research · B2B account research · company research tool · account research · sales account planning · buying committee research</sub>

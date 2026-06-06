@@ -45,4 +45,4 @@ Using the LinkedIn Data Skill, research stripe on public LinkedIn: pull the comp
 - Install — one plugin, skills + live data: https://unifapi.com/mcp
 - Docs: https://docs.unifapi.com
 
-<sub>Topics: LinkedIn data API · LinkedIn MCP server · LinkedIn company data · LinkedIn people search API · LinkedIn jobs data · read LinkedIn companies people posts</sub>
+<sub>Topics: LinkedIn research tool · LinkedIn company research · LinkedIn data · LinkedIn company lookup · LinkedIn hiring signals · B2B company research · LinkedIn MCP server</sub>

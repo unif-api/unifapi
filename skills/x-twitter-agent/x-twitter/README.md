@@ -45,4 +45,4 @@ Using the X (Twitter) Data Skill, pull the public profile and recent engagement 
 - Install — one plugin, skills + live data: https://unifapi.com/mcp
 - Docs: https://docs.unifapi.com
 
-<sub>Topics: X data API · Twitter data API · X MCP server · Twitter MCP · X API for agents · Twitter data for Claude · read X profiles posts engagement</sub>
+<sub>Topics: Twitter research tool · X research tool · Twitter data · Twitter profile analytics · Twitter engagement tracking · Twitter follower analysis · X MCP server</sub>

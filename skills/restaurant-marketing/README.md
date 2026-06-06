@@ -63,4 +63,4 @@ Local SEO, Social Listening, Content Strategy, and AI Visibility Role Agents tun
 - MCP server: `https://mcp.unifapi.com`
 - All agents: https://unifapi.com/agents · Docs: https://docs.unifapi.com
 
-<sub>Topics: restaurant marketing agent · restaurant marketing AI · restaurant reputation management · restaurant local SEO · restaurant SEO · restaurant marketing software · AI visibility for restaurants · restaurant social media marketing · hospitality marketing</sub>
+<sub>Topics: restaurant marketing · restaurant marketing ideas · restaurant local SEO · restaurant SEO · restaurant social media marketing · restaurant reputation management · AI visibility for restaurants · hospitality marketing</sub>

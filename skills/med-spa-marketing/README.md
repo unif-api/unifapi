@@ -63,4 +63,4 @@ Four Role Agents — Local SEO, Content Strategy, Social Listening, and AI Visib
 - MCP server: `https://mcp.unifapi.com`
 - All agents: https://unifapi.com/agents · Docs: https://docs.unifapi.com
 
-<sub>Topics: med spa marketing agent · med spa marketing AI · AI SEO for med spas · medical spa SEO · med spa local SEO · aesthetics marketing · med spa AI visibility · medspa marketing software</sub>
+<sub>Topics: med spa marketing · med spa marketing ideas · med spa SEO · med spa local SEO · marketing for medical spas · aesthetics marketing · AI SEO for med spas · med spa AI visibility</sub>

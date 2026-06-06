@@ -45,4 +45,4 @@ Using the Reddit Data Skill, research the r/SaaS community: pull the subreddit p
 - Install — one plugin, skills + live data: https://unifapi.com/mcp
 - Docs: https://docs.unifapi.com
 
-<sub>Topics: Reddit data API · Reddit MCP server · subreddit data · Reddit comments API · Reddit user activity · read subreddits threads comments</sub>
+<sub>Topics: Reddit research tool · subreddit research · Reddit data · Reddit social listening · Reddit comment analysis · mine subreddit conversations · Reddit MCP server</sub>

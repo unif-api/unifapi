@@ -9,6 +9,7 @@ Every agent is a folder of atomic skills you compose inside your own assistant. 
 Track rankings, audit SERPs, and research keywords, competitors, and backlinks as live records — inside your assistant.
 
 - `seo-audit` (enhanced) — APIs: seo, browser
+- `seo-fix-plan` (enhanced) — APIs: seo, browser
 - `keyword-research` (enhanced) — APIs: seo
 - `schema` (advice) — APIs: —
 
@@ -17,6 +18,7 @@ Track rankings, audit SERPs, and research keywords, competitors, and backlinks a
 Measure whether your brand and domain get cited in AI answers across ChatGPT and AI search — and where competitors win the answer.
 
 - `ai-visibility-audit` (enhanced) — APIs: geo, seo, browser
+- `ai-visibility-fix-plan` (enhanced) — APIs: geo, seo, browser
 - `llm-mention-tracking` (enhanced) — APIs: geo
 - `ai-answer-gap` (enhanced) — APIs: geo, seo
 
@@ -30,11 +32,12 @@ Audit local-pack rankings, map listings, and review presence for one location or
 
 ### [Influencer Marketing Agent](skills/influencer-marketing-agent/)
 
-Find, vet, and price creators across X, YouTube, TikTok, and Instagram from public engagement evidence.
+Plan, match, price, confirm, track, and report creator campaigns from public engagement evidence.
 
-- `kol-pricing` (enhanced) — APIs: twitter, youtube, instagram, tiktok, reddit
+- `creator-campaign-ops` (enhanced) — APIs: twitter, youtube, instagram, tiktok
 - `creator-shortlist` (enhanced) — APIs: tiktok, youtube, instagram, twitter
 - `audience-fit-check` (enhanced) — APIs: twitter, youtube, tiktok, instagram
+- `kol-pricing` (enhanced) — APIs: twitter, youtube, instagram, tiktok, reddit
 
 ### [Content Strategy Agent](skills/content-strategy-agent/)
 
@@ -50,6 +53,7 @@ Monitor public mentions across X, Reddit, TikTok, and news, and get a brief when
 
 - `social-listening-brief` (enhanced) — APIs: twitter, reddit, youtube, tiktok, threads, hacker-news
 - `reddit-community-research` (enhanced) — APIs: reddit
+- `reddit-thread-fit-check` (enhanced) — APIs: reddit
 
 ### [Social Selling Agent](skills/social-selling-agent/)
 
@@ -146,6 +150,7 @@ Research public subreddits, threads, and community language — read-only, insid
 
 - `reddit` (data) — APIs: reddit
 - `reddit-community-research` (enhanced) — APIs: reddit
+- `reddit-thread-fit-check` (enhanced) — APIs: reddit
 - `social-listening-brief` (enhanced) — APIs: twitter, reddit, youtube, tiktok, threads, hacker-news
 - `customer-research` (enhanced) — APIs: reddit, youtube, news, tiktok, seo
 

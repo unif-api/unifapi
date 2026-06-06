@@ -5,6 +5,7 @@ Open-source **marketing agents** for Claude, ChatGPT, Codex, OpenClaw, Hermes, a
 [![Website](https://img.shields.io/badge/web-unifapi.com%2Fagents-1f6feb)](https://unifapi.com/agents)
 [![Docs](https://img.shields.io/badge/docs-docs.unifapi.com-1f6feb)](https://docs.unifapi.com)
 [![Plugin](https://img.shields.io/badge/plugin-Claude%20%C2%B7%20OpenClaw%20%C2%B7%20Hermes-8957e5)](#install--one-plugin-skills--live-data)
+[![skills.sh](https://skills.sh/b/unifapi-agent/agents)](https://skills.sh/unifapi-agent/agents)
 [![License: MIT](https://img.shields.io/badge/license-MIT-green)](./LICENSE)
 
 **[Agents](https://unifapi.com/agents)** · **[Skills](https://unifapi.com/skills)** · **[Install](https://unifapi.com/mcp)** · **[API catalog](https://unifapi.com/apis)** · **[Docs](https://docs.unifapi.com)**
@@ -37,7 +38,13 @@ url = "https://mcp.unifapi.com"
 
 **ChatGPT** (Developer Mode — Plus/Pro/Team/Enterprise): Settings → Connectors → Advanced → enable Developer Mode → **Create**, set the MCP server URL to `https://mcp.unifapi.com` with OAuth.
 
-Any other agent-skills client: `npx skills add unifapi-agent/agents` for the skills, and add `https://mcp.unifapi.com` for live data.
+**Any other agent-skills client (`npx skills`)** — the universal fallback when you're not on a plugin host above. The [skills.sh](https://skills.sh/unifapi-agent/agents) CLI installs the skills into any supported agent:
+
+```bash
+npx skills add unifapi-agent/agents
+```
+
+This installs the skills only; add `https://mcp.unifapi.com` as an MCP server in your client (OAuth) for live data.
 
 After installing, sign in when prompted and ask your assistant:
 
@@ -54,7 +61,7 @@ Role Agents own the skills; Vertical and Platform Agents recombine them by indus
 - **[SEO Agent](skills/seo-agent/)** — Track rankings, audit SERPs, and research keywords, competitors, and backlinks as live records — inside your assistant.
 - **[AI Visibility Agent](skills/ai-visibility-agent/)** — Measure whether your brand and domain get cited in AI answers across ChatGPT and AI search — and where competitors win the answer.
 - **[Local SEO Agent](skills/local-seo-agent/)** — Audit local-pack rankings, map listings, and review presence for one location or hundreds.
-- **[Influencer Marketing Agent](skills/influencer-marketing-agent/)** — Find, vet, and price creators across X, YouTube, TikTok, and Instagram from public engagement evidence.
+- **[Influencer Marketing Agent](skills/influencer-marketing-agent/)** — Plan, match, price, confirm, track, and report creator campaigns from public engagement evidence.
 - **[Content Strategy Agent](skills/content-strategy-agent/)** — Turn public demand — keywords, Reddit threads, YouTube, and news — into a content plan with evidence.
 - **[Social Listening Agent](skills/social-listening-agent/)** — Monitor public mentions across X, Reddit, TikTok, and news, and get a brief when something meaningfully changes.
 - **[Social Selling Agent](skills/social-selling-agent/)** — Spot buying signals and warm openings across X and LinkedIn, then prep evidence-backed outreach.
@@ -85,22 +92,26 @@ Role Agents own the skills; Vertical and Platform Agents recombine them by indus
 | Skill | Agent | Type | What it does |
 |-------|-------|------|--------------|
 | [seo-audit](skills/seo-agent/seo-audit/) | SEO Agent | enhanced | Audit crawlability, on-page, and content against live SERP and ranking evidence — not a static checklist. |
+| [seo-fix-plan](skills/seo-agent/seo-fix-plan/) | SEO Agent | enhanced | Convert live SEO audit evidence into prioritized fixes, owners, and acceptance checks. |
 | [keyword-research](skills/seo-agent/keyword-research/) | SEO Agent | enhanced | Turn a seed list into ranked keyword opportunities and competitor gaps from live SERP and volume data. |
 | [schema](skills/seo-agent/schema/) | SEO Agent | advice | Choose and implement the right schema.org types for a page, with valid JSON-LD the assistant can write. |
 | [ai-visibility-audit](skills/ai-visibility-agent/ai-visibility-audit/) | AI Visibility Agent | enhanced | The GEO equivalent of an SEO audit — check whether you're cited in AI answers and who owns the answer instead. |
+| [ai-visibility-fix-plan](skills/ai-visibility-agent/ai-visibility-fix-plan/) | AI Visibility Agent | enhanced | Prioritize Structure, Authority, and Presence fixes for prompts where AI answers do not cite you. |
 | [llm-mention-tracking](skills/ai-visibility-agent/llm-mention-tracking/) | AI Visibility Agent | enhanced | Track how often you're mentioned across ChatGPT and AI search over a fixed prompt set, and how share of voice moves vs competitors. |
 | [ai-answer-gap](skills/ai-visibility-agent/ai-answer-gap/) | AI Visibility Agent | enhanced | Find the prompts you should own in AI answers but don't, name who owns each, and rank the gaps by AI search volume. |
 | [local-pack-audit](skills/local-seo-agent/local-pack-audit/) | Local SEO Agent | enhanced | Pull the live local pack / map results for a business's queries and report exactly where it ranks vs competitors. |
 | [listing-accuracy-audit](skills/local-seo-agent/listing-accuracy-audit/) | Local SEO Agent | enhanced | Read a business's public map/local listing and flag where the details are inconsistent, incomplete, or wrong. |
 | [local-competitor-scan](skills/local-seo-agent/local-competitor-scan/) | Local SEO Agent | enhanced | Map the competitors ranking ahead in the local pack and surface what they have that you lack, in concrete numbers. |
-| [kol-pricing](skills/influencer-marketing-agent/kol-pricing/) | Influencer Marketing Agent | enhanced | Estimate Twitter/X KOL rates from public engagement, audience fit, and risk. |
+| [creator-campaign-ops](skills/influencer-marketing-agent/creator-campaign-ops/) | Influencer Marketing Agent | enhanced | Plan, match, price, confirm, track, and report an influencer campaign from public creator evidence. |
 | [creator-shortlist](skills/influencer-marketing-agent/creator-shortlist/) | Influencer Marketing Agent | enhanced | Find creators by niche, audience language, recent momentum, and platform fit. |
 | [audience-fit-check](skills/influencer-marketing-agent/audience-fit-check/) | Influencer Marketing Agent | enhanced | Vet a single creator's audience fit and brand-safety from public posts and engagement before outreach. |
+| [kol-pricing](skills/influencer-marketing-agent/kol-pricing/) | Influencer Marketing Agent | enhanced | Estimate Twitter/X KOL rates from public engagement, audience fit, and risk. |
 | [content-opportunity-brief](skills/content-strategy-agent/content-opportunity-brief/) | Content Strategy Agent | enhanced | Find repeated questions and formats across YouTube, TikTok, Reddit, and X. |
 | [content-strategy](skills/content-strategy-agent/content-strategy/) | Content Strategy Agent | enhanced | Turn real public demand into content pillars, a topic-cluster map, and a sequenced calendar — each topic backed by evidence. |
 | [customer-research](skills/content-strategy-agent/customer-research/) | Content Strategy Agent | enhanced | Mine authentic customer language, pains, and objections from public communities to inform messaging and content. |
 | [social-listening-brief](skills/social-listening-agent/social-listening-brief/) | Social Listening Agent | enhanced | Track public mentions and return a concise brief instead of a dashboard. |
 | [reddit-community-research](skills/social-listening-agent/reddit-community-research/) | Social Listening Agent | enhanced | Map subreddits, recurring questions, objections, and language for a niche. |
+| [reddit-thread-fit-check](skills/social-listening-agent/reddit-thread-fit-check/) | Social Listening Agent | enhanced | Score Reddit threads by relevance, intent, rules, timing, and account risk before anyone replies. |
 | [buying-signal-monitor](skills/social-selling-agent/buying-signal-monitor/) | Social Selling Agent | enhanced | Watch public X and LinkedIn for buying intent and return warm leads, each anchored to the post that proves it. |
 | [linkedin-account-research](skills/lead-company-research-agent/linkedin-account-research/) | Lead & Company Research Agent | enhanced | Use public company, post, job, and profile signals for B2B research. |
 | [competitor-launch-monitor](skills/competitive-intelligence-agent/competitor-launch-monitor/) | Competitive Intelligence Agent | enhanced | Collect public launch signals and turn them into a competitive brief. |

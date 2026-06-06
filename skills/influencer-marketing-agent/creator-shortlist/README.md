@@ -44,4 +44,4 @@ Find 30 creators for a cross-border ecommerce campaign. Prioritize recent moment
 - Install — one plugin, skills + live data: https://unifapi.com/mcp
 - Docs: https://docs.unifapi.com
 
-<sub>Topics: creator discovery · influencer shortlist · find influencers by niche · creator research agent · influencer discovery AI</sub>
+<sub>Topics: find influencers · creator discovery · find influencers by niche · influencer shortlist · influencer search tool · build an influencer list</sub>

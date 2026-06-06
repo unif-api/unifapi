@@ -45,6 +45,7 @@ Every finding is tied to live ranking evidence — what's actually ranking for y
 ## Related
 
 - Part of the **[SEO Agent](../)**
+- [`seo-fix-plan`](../seo-fix-plan/) — Convert live SEO audit evidence into prioritized fixes, owners, and acceptance checks.
 - [`keyword-research`](../keyword-research/) — Turn a seed list into ranked keyword opportunities and competitor gaps from live SERP and volume data.
 - [`schema`](../schema/) — Choose and implement the right schema.org types for a page, with valid JSON-LD the assistant can write.
 - Shared data skill: [`unifapi`](../../unifapi/)
@@ -60,4 +61,4 @@ Every finding is tied to live ranking evidence — what's actually ranking for y
 
 Adapted from [coreyhaines31/marketingskills](https://github.com/coreyhaines31/marketingskills) (MIT, Corey Haines), enhanced with live public-data evidence via UnifAPI.
 
-<sub>Topics: SEO audit · technical SEO audit · on-page SEO audit · SEO audit with live SERP · backlink audit · SEO audit MCP · site audit for Claude · AI SEO audit</sub>
+<sub>Topics: AI SEO audit · SEO audit tool · technical SEO audit · on-page SEO audit · website SEO checker · SEO tool for ChatGPT · site audit for Claude · backlink audit</sub>

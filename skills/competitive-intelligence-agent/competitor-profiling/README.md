@@ -50,4 +50,4 @@ Profile competitor.com from its public footprint: positioning, product and prici
 
 Adapted from [coreyhaines31/marketingskills](https://github.com/coreyhaines31/marketingskills) (MIT, Corey Haines), enhanced with live public-data evidence via UnifAPI.
 
-<sub>Topics: competitor profiling · competitor research · competitor dossier · competitive analysis · competitor analysis AI · competitor deep dive</sub>
+<sub>Topics: AI competitor analysis · competitor research · competitor profile · competitive analysis · competitor dossier · competitor deep dive</sub>

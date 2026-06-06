@@ -63,4 +63,4 @@ Local SEO, Content Strategy, Social Listening, and AI Visibility Role Agents tun
 - MCP server: `https://mcp.unifapi.com`
 - All agents: https://unifapi.com/agents · Docs: https://docs.unifapi.com
 
-<sub>Topics: law firm marketing agent · law firm marketing AI · AI SEO for lawyers · law firm SEO · attorney marketing software · legal GEO · law firm AI visibility · legal content marketing</sub>
+<sub>Topics: law firm marketing · attorney marketing · legal marketing · law firm SEO · marketing ideas for lawyers · AI SEO for lawyers · law firm AI visibility · legal content marketing</sub>

@@ -61,4 +61,4 @@ It's the Instagram data layer under the Influencer Marketing Agent's Skills — 
 - MCP server: `https://mcp.unifapi.com`
 - All agents: https://unifapi.com/agents · Docs: https://docs.unifapi.com
 
-<sub>Topics: Instagram research agent · Instagram MCP · Instagram MCP server · Instagram creator research · Instagram data for agents · Instagram influencer research · Instagram analytics agent</sub>
+<sub>Topics: Instagram research tool · Instagram creator research · Instagram influencer research · Instagram research agent · Instagram audience research · Instagram MCP server</sub>

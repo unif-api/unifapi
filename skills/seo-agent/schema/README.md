@@ -48,4 +48,4 @@ Recommend and generate the JSON-LD schema for this product page, then explain wh
 
 Adapted from [coreyhaines31/marketingskills](https://github.com/coreyhaines31/marketingskills) (MIT, Corey Haines).
 
-<sub>Topics: schema markup · JSON-LD generator · structured data SEO · rich results schema · schema.org markup · FAQ schema</sub>
+<sub>Topics: schema markup generator · JSON-LD generator · structured data for SEO · schema markup tool · rich results schema · FAQ schema</sub>

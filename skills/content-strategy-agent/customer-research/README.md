@@ -50,4 +50,4 @@ Research what customers say about developer-productivity tools across Reddit and
 
 Adapted from [coreyhaines31/marketingskills](https://github.com/coreyhaines31/marketingskills) (MIT, Corey Haines), enhanced with live public-data evidence via UnifAPI.
 
-<sub>Topics: customer research · voice of customer · review mining · jobs to be done · ICP research · audience research</sub>
+<sub>Topics: customer research tool · voice of customer · audience research · review mining · ICP research · jobs to be done</sub>

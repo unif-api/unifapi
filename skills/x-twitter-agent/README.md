@@ -64,4 +64,4 @@ Those Role Agents organize by job (pricing creators, finding warm leads). The X 
 - MCP server: `https://mcp.unifapi.com`
 - All agents: https://unifapi.com/agents · Docs: https://docs.unifapi.com
 
-<sub>Topics: X research agent · Twitter research agent · X agent MCP · X MCP server · Twitter API for agents · Twitter data for Claude</sub>
+<sub>Topics: X research tool · Twitter research tool · X research agent · Twitter audience research · X MCP server · Twitter data for Claude</sub>

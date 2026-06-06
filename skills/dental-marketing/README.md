@@ -63,4 +63,4 @@ Local SEO, Content Strategy, Social Listening, and AI Visibility Role Agents tun
 - MCP server: `https://mcp.unifapi.com`
 - All agents: https://unifapi.com/agents · Docs: https://docs.unifapi.com
 
-<sub>Topics: dental marketing agent · dental marketing AI · AI SEO for dentists · SEO for dentists · dental SEO · dental practice local SEO · dentist marketing software · dental AI visibility · dental content marketing</sub>
+<sub>Topics: dental marketing · dental marketing ideas · marketing for dentists · dental SEO · SEO for dentists · dental practice marketing · dental local SEO · dental AI visibility</sub>

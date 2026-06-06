@@ -50,4 +50,4 @@ Build a content strategy for our AI coding tool: define 3–5 pillars from real 
 
 Adapted from [coreyhaines31/marketingskills](https://github.com/coreyhaines31/marketingskills) (MIT, Corey Haines), enhanced with live public-data evidence via UnifAPI.
 
-<sub>Topics: content strategy · content pillars · topic clusters · editorial calendar · content gap analysis · content roadmap</sub>
+<sub>Topics: AI content strategy · content idea generator · content gap analysis · blog topic ideas · content pillars · editorial calendar · content roadmap</sub>

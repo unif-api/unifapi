@@ -59,4 +59,4 @@ Social Listening watches a topic or your own brand broadly; Competitive Intellig
 - MCP server: `https://mcp.unifapi.com`
 - All agents: https://unifapi.com/agents · Docs: https://docs.unifapi.com
 
-<sub>Topics: competitive intelligence agent · competitor analysis AI · competitor monitoring agent · AI competitive intelligence · competitor research agent · competitive intelligence MCP · competitor dossier</sub>
+<sub>Topics: AI competitor analysis tools · AI competitor research · competitor monitoring tool · competitive intelligence tool · how to use AI for competitor research · market research AI · competitor analysis tool</sub>

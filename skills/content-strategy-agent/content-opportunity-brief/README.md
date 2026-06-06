@@ -46,4 +46,4 @@ Find content opportunities around AI coding workflows. Compare YouTube, TikTok, 
 - Install — one plugin, skills + live data: https://unifapi.com/mcp
 - Docs: https://docs.unifapi.com
 
-<sub>Topics: content opportunity research · content gap analysis · topic research · content ideas from search · audience demand</sub>
+<sub>Topics: content opportunity · content brief generator · topic research tool · content gap analysis · content ideas from search · blog topic research</sub>

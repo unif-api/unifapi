@@ -39,6 +39,7 @@ UnifAPI reads public data only — it never follows, DMs, or posts. Keep any `bi
 4. **Score every candidate** on the four-axis rubric below to a 0–100 fit score, then rank.
 5. **Apply gates** (safety, budget, evidence) — they override raw score.
 6. **Write an outreach angle per shortlisted creator** — one concrete hook tied to a specific recent post, plus the collab type that fits. The operator sends it.
+7. **Stop at the shortlist unless the user asks for full campaign ops.** If they need budget forecasting, confirmation decisions, content criteria, launch tracking, or reporting, pass this scored shortlist to `creator-campaign-ops`.
 
 ### Fit-scoring rubric (0–100, 4 axes)
 
@@ -103,6 +104,7 @@ Four weighted axes (niche 30, audience 30, momentum 25, platform 15) summed to 0
 
 ## Related Skills
 
+- **creator-campaign-ops** (Influencer Marketing): use after shortlist when the user asks for budget forecasting, confirmation decisions, content criteria, launch tracking, or reporting.
 - **audience-fit-check** (Influencer Marketing): deep-dive a single shortlisted creator's audience fit and brand-safety before committing budget.
 - **kol-pricing** (Influencer Marketing): price the shortlisted X/Twitter creators with the deterministic pricing framework.
 - **unifapi**: the shared data skill — connect MCP and discover the discovery/profile operations this skill reads.

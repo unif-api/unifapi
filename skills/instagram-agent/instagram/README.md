@@ -45,4 +45,4 @@ Using the Instagram Data Skill, research these IG creators: pull profiles and fo
 - Install — one plugin, skills + live data: https://unifapi.com/mcp
 - Docs: https://docs.unifapi.com
 
-<sub>Topics: Instagram data API · Instagram MCP server · Instagram profile data · Instagram posts reels API · Instagram engagement data · read Instagram profiles posts comments</sub>
+<sub>Topics: Instagram research tool · Instagram creator research · Instagram data · find Instagram influencers · Instagram engagement data · Instagram profile analytics · Instagram MCP server</sub>

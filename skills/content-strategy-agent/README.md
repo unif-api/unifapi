@@ -60,4 +60,4 @@ From live records: search keyword data, Reddit threads, YouTube videos, and news
 - MCP server: `https://mcp.unifapi.com`
 - All agents: https://unifapi.com/agents · Docs: https://docs.unifapi.com
 
-<sub>Topics: content strategy agent · content gap analysis · topical authority · topic research agent · content brief generator · SEO content agent · content planning AI</sub>
+<sub>Topics: AI content strategy · content idea generator · content gap analysis · AI topic research tool · blog topic ideas · content brief generator · topical authority</sub>

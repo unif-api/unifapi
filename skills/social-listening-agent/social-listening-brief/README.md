@@ -45,4 +45,4 @@ Monitor public social chatter about AI coding tools this week. Group repeated us
 - Install — one plugin, skills + live data: https://unifapi.com/mcp
 - Docs: https://docs.unifapi.com
 
-<sub>Topics: social listening · brand monitoring · social media monitoring · mention tracking · social listening brief</sub>
+<sub>Topics: social listening tool · brand monitoring · social media monitoring · track brand mentions · online mention tracking · social listening report</sub>

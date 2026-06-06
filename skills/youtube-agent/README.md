@@ -63,4 +63,4 @@ No. The YouTube Agent is read-only research; you publish anything from your own 
 - MCP server: `https://mcp.unifapi.com`
 - All agents: https://unifapi.com/agents · Docs: https://docs.unifapi.com
 
-<sub>Topics: YouTube research agent · YouTube MCP · YouTube MCP server · YouTube channel research · YouTube data for agents · YouTube creator research · YouTube analytics agent</sub>
+<sub>Topics: YouTube research tool · YouTube channel research · YouTube creator research · YouTube research agent · YouTube competitor research · YouTube MCP server</sub>

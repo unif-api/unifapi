@@ -45,4 +45,4 @@ Audit local-pack rank for "coffee shop" near downtown Austin, TX: show where my 
 - Install — one plugin, skills + live data: https://unifapi.com/mcp
 - Docs: https://docs.unifapi.com
 
-<sub>Topics: local pack ranking · map pack tracking · Google Maps rank tracker · local SERP audit · rank tracking by location · local rank grid</sub>
+<sub>Topics: Google Maps rank tracker · local pack audit · map pack tracking · local SEO audit · local pack ranking · rank tracking by location</sub>

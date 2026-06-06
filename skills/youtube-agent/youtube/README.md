@@ -45,4 +45,4 @@ Using the YouTube Data Skill, research who owns the topic "AI coding tools": sea
 - Install — one plugin, skills + live data: https://unifapi.com/mcp
 - Docs: https://docs.unifapi.com
 
-<sub>Topics: YouTube data API · YouTube MCP server · YouTube channel data · YouTube video data · YouTube trending API · read YouTube channels videos</sub>
+<sub>Topics: YouTube research tool · YouTube channel research · YouTube data · find YouTube creators · YouTube competitor analysis · YouTube trending videos · YouTube MCP server</sub>

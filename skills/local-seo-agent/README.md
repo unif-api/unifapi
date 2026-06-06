@@ -60,4 +60,4 @@ The SEO Agent covers organic and AI SERPs broadly; the Local SEO Agent focuses o
 - MCP server: `https://mcp.unifapi.com`
 - All agents: https://unifapi.com/agents · Docs: https://docs.unifapi.com
 
-<sub>Topics: local SEO agent · map pack tracking · Google Maps rank tracker · Google Business Profile audit · Google Business Profile rank tracker · local rank tracker MCP · geo-grid rank tracking · multi-location local SEO · local SEO for Claude</sub>
+<sub>Topics: AI local SEO tool · local SEO tools for small business · Google Business Profile optimization · Google Maps rank tracker · local SEO audit · map pack tracking · multi-location local SEO · local SEO for Claude</sub>

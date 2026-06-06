@@ -111,6 +111,7 @@ The deterministic tier classifier, base pricing matrix, price multipliers (tool-
 
 ## Related Skills
 
+- **creator-campaign-ops** (Influencer Marketing): use price ranges inside a full campaign plan only when the user asks for confirmation decisions, content criteria, launch tracking, or reporting.
 - **creator-shortlist** (Influencer Marketing): discover and rank candidate creators across platforms before pricing them here.
 - **audience-fit-check** (Influencer Marketing): vet a single creator's audience fit and brand-safety before committing budget.
 - **unifapi**: the shared data skill — connect MCP and discover the X/cross-platform operations this skill reads.

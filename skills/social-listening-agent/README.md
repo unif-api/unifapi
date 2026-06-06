@@ -18,6 +18,7 @@ The Social Listening Agent watches public posts, comments, threads, and news for
 
 - [`social-listening-brief`](social-listening-brief/) — Track public mentions and return a concise brief instead of a dashboard. _(enhanced)_
 - [`reddit-community-research`](reddit-community-research/) — Map subreddits, recurring questions, objections, and language for a niche. _(enhanced)_
+- [`reddit-thread-fit-check`](reddit-thread-fit-check/) — Score Reddit threads by relevance, intent, rules, timing, and account risk before anyone replies. _(enhanced)_
 
 ## What you get
 
@@ -59,4 +60,4 @@ No. It reads public posts only. For your own authenticated account analytics, us
 - MCP server: `https://mcp.unifapi.com`
 - All agents: https://unifapi.com/agents · Docs: https://docs.unifapi.com
 
-<sub>Topics: social listening agent · AI social listening agent · Reddit brand monitoring · subreddit research · brand monitoring agent · audience intelligence · social listening MCP · Reddit research agent</sub>
+<sub>Topics: social listening tools · AI social listening tool · brand monitoring tool · Reddit social listening · social media monitoring · subreddit research tool · audience intelligence</sub>

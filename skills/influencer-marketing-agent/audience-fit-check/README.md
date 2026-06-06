@@ -45,4 +45,4 @@ Vet @creatorhandle for our developer-tool brand: does their audience match our t
 - Install — one plugin, skills + live data: https://unifapi.com/mcp
 - Docs: https://docs.unifapi.com
 
-<sub>Topics: creator audience fit · influencer brand safety check · vet a creator · creator due diligence · KOL vetting · influencer audience analysis</sub>
+<sub>Topics: creator vetting · influencer brand safety check · vet a creator · creator audience fit · influencer audience analysis · creator due diligence</sub>

@@ -63,4 +63,4 @@ Local SEO, Content Strategy, Social Listening, and AI Visibility Role Agents tun
 - MCP server: `https://mcp.unifapi.com`
 - All agents: https://unifapi.com/agents · Docs: https://docs.unifapi.com
 
-<sub>Topics: home services marketing agent · home services marketing AI · HVAC marketing AI · AI SEO for HVAC · contractor local SEO · HVAC marketing software · plumber marketing · home services local SEO · contractor AI visibility</sub>
+<sub>Topics: home services marketing · contractor marketing · HVAC marketing · plumber marketing · contractor local SEO · home services local SEO · AI SEO for contractors · home services AI visibility</sub>

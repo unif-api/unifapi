@@ -37,6 +37,7 @@ Find the AI-answer prompts we should own but don't for our category, name who ow
 
 - Part of the **[AI Visibility Agent](../)**
 - [`ai-visibility-audit`](../ai-visibility-audit/) — The GEO equivalent of an SEO audit — check whether you're cited in AI answers and who owns the answer instead.
+- [`ai-visibility-fix-plan`](../ai-visibility-fix-plan/) — Prioritize Structure, Authority, and Presence fixes for prompts where AI answers do not cite you.
 - [`llm-mention-tracking`](../llm-mention-tracking/) — Track how often you're mentioned across ChatGPT and AI search over a fixed prompt set, and how share of voice moves vs competitors.
 - Shared data skill: [`unifapi`](../../unifapi/)
 
@@ -47,4 +48,4 @@ Find the AI-answer prompts we should own but don't for our category, name who ow
 - Install — one plugin, skills + live data: https://unifapi.com/mcp
 - Docs: https://docs.unifapi.com
 
-<sub>Topics: AI answer gap · GEO content gaps · AI content gap analysis · prompts I should own but don't · find AI visibility gaps · AEO content opportunities</sub>
+<sub>Topics: AI answer gap · how to show up in ChatGPT answers · AI content gap · answer engine optimization · find AI visibility gaps · GEO content opportunities</sub>

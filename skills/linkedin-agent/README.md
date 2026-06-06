@@ -62,4 +62,4 @@ No. The LinkedIn Agent is read-only research. You send any outreach from your ow
 - MCP server: `https://mcp.unifapi.com`
 - All agents: https://unifapi.com/agents · Docs: https://docs.unifapi.com
 
-<sub>Topics: LinkedIn research agent · LinkedIn MCP · LinkedIn MCP server · LinkedIn data API · LinkedIn data agent · LinkedIn company research · LinkedIn API for agents · LinkedIn enrichment agent</sub>
+<sub>Topics: LinkedIn research tool · LinkedIn company research · LinkedIn research agent · LinkedIn data enrichment · LinkedIn MCP server · LinkedIn data for Claude</sub>

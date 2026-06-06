@@ -17,6 +17,7 @@ The AI Visibility Agent (GEO) tracks generative-engine optimization signal: AI M
 ## Skills in this agent
 
 - [`ai-visibility-audit`](ai-visibility-audit/) — The GEO equivalent of an SEO audit — check whether you're cited in AI answers and who owns the answer instead. _(enhanced)_
+- [`ai-visibility-fix-plan`](ai-visibility-fix-plan/) — Prioritize Structure, Authority, and Presence fixes for prompts where AI answers do not cite you. _(enhanced)_
 - [`llm-mention-tracking`](llm-mention-tracking/) — Track how often you're mentioned across ChatGPT and AI search over a fixed prompt set, and how share of voice moves vs competitors. _(enhanced)_
 - [`ai-answer-gap`](ai-answer-gap/) — Find the prompts you should own in AI answers but don't, name who owns each, and rank the gaps by AI search volume. _(enhanced)_
 
@@ -60,4 +61,4 @@ No — it reads and measures. It will tell you which prompts you lose and why, b
 - MCP server: `https://mcp.unifapi.com`
 - All agents: https://unifapi.com/agents · Docs: https://docs.unifapi.com
 
-<sub>Topics: generative engine optimization · answer engine optimization · GEO agent · AI visibility agent · track brand mentions in ChatGPT · AI search visibility · LLM mention tracking · AEO tool · ChatGPT visibility tracker · AI visibility checker</sub>
+<sub>Topics: AI visibility checker · AI visibility tracker · generative engine optimization · answer engine optimization · how to show up in ChatGPT answers · track brand mentions in ChatGPT · AI search visibility · LLM mention tracking · GEO</sub>

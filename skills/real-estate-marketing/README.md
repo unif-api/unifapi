@@ -63,4 +63,4 @@ It recombines four Role Agents — Local SEO, Social Listening, Content Strategy
 - MCP server: `https://mcp.unifapi.com`
 - All agents: https://unifapi.com/agents · Docs: https://docs.unifapi.com
 
-<sub>Topics: real estate marketing agent · real estate marketing AI · AI tools for real estate agents · real estate SEO · realtor local SEO · AI marketing for realtors · real estate content marketing · AI visibility for real estate · realtor marketing software</sub>
+<sub>Topics: real estate marketing · real estate marketing ideas · AI marketing for realtors · real estate SEO · realtor local SEO · marketing for real estate agents · AI tools for real estate agents · real estate AI visibility</sub>

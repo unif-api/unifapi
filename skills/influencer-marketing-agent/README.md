@@ -6,33 +6,34 @@
 
 > Role Agent · run inside Claude, Claude Code, ChatGPT (custom MCP), Codex, Cursor, OpenClaw, Hermes, or any MCP client. Read-only public-data research — **eyes, not hands**.
 
-The Influencer Marketing Agent turns a campaign brief into a ranked creator shortlist and evidence-backed pricing. It bundles the KOL Pricing and Creator Shortlist Skills so the same agent can discover candidates, check audience fit, and estimate sponsored-post ranges from public data.
+The Influencer Marketing Agent turns a campaign brief into a full-funnel operating pack: creator discovery, audience-fit checks, pricing forecasts, confirm / negotiate / pass decisions, content-review criteria, launch watchlists, and public-results reporting. It stays read-only: the operator sends outreach, signs contracts, schedules posts, and connects any private conversion data.
 
 ## Who it's for
 
-- Marketing teams planning creator sponsorship budgets
+- Marketing teams planning and operating creator sponsorship campaigns
 - Founders comparing influencer targets before a launch
-- Agencies that want repeatable pricing evidence, not spreadsheet guesswork
+- Agencies that want repeatable matching, pricing, confirmation, and reporting evidence
 
 ## Skills in this agent
 
-- [`kol-pricing`](kol-pricing/) — Estimate Twitter/X KOL rates from public engagement, audience fit, and risk. _(enhanced)_
+- [`creator-campaign-ops`](creator-campaign-ops/) — Plan, match, price, confirm, track, and report an influencer campaign from public creator evidence. _(enhanced)_
 - [`creator-shortlist`](creator-shortlist/) — Find creators by niche, audience language, recent momentum, and platform fit. _(enhanced)_
 - [`audience-fit-check`](audience-fit-check/) — Vet a single creator's audience fit and brand-safety from public posts and engagement before outreach. _(enhanced)_
+- [`kol-pricing`](kol-pricing/) — Estimate Twitter/X KOL rates from public engagement, audience fit, and risk. _(enhanced)_
 
 ## What you get
 
-- Ranked creator shortlist with audience-fit notes
-- Estimated low/base/high sponsored-post price ranges
-- Evidence from recent public posts and engagement
-- Brand-safety flags and follow-up searches before outreach
+- Campaign spec with platform mix, budget assumptions, and matching plan
+- Ranked creator shortlist with audience-fit, safety, and confidence notes
+- Estimated price ranges, predicted CPM/CPC, and confirm / negotiate / pass calls
+- Content-review checklist, launch watchlist, public-results report, and operator handoffs
 
 ## Run it
 
 Install once — one plugin gives your assistant the skills **and** the UnifAPI public-data MCP server (OAuth, read-only). Then ask:
 
 ```text
-Find and price 15 creators for an AI developer-tool campaign on X and YouTube. Prioritize recent momentum, audience fit, and posting cadence. Return a ranked table with estimated sponsored-post price ranges, confidence, evidence, and collaboration-risk notes.
+Plan a full-funnel creator campaign for an AI developer-tool launch across X and YouTube. Build the campaign spec, discover and rank 15 creators, estimate pricing and predicted CPM/CPC, make confirm / negotiate / pass calls, draft the content-review checklist, define the launch watchlist, and list the operator handoffs.
 ```
 
 ## Reads from
@@ -47,7 +48,11 @@ No — it gives evidence-backed ranges from public engagement so you can negotia
 
 ### Can it send outreach for me?
 
-No. It drafts outreach angles and prepares the shortlist; you or your own assistant send the messages from your own accounts. UnifAPI reads public data — it does not message creators on your behalf.
+No. It drafts outreach angles, follow-up questions, and confirmation checklists; you or your own assistant send the messages from your own accounts. UnifAPI reads public data and does not message creators on your behalf.
+
+### Can it track campaign results?
+
+It can track public post metrics once you provide live post URLs or IDs. Private clicks, promo-code revenue, checkout events, and UTM conversions need user-provided exports or a separate analytics API.
 
 ### Which platforms does it cover?
 
@@ -60,4 +65,4 @@ X / Twitter is the primary surface for pricing; YouTube, TikTok, and Instagram a
 - MCP server: `https://mcp.unifapi.com`
 - All agents: https://unifapi.com/agents · Docs: https://docs.unifapi.com
 
-<sub>Topics: influencer marketing agent · KOL pricing · KOL pricing tool · creator discovery · influencer rate calculator · influencer pricing calculator · creator vetting · influencer marketing MCP · creator research agent</sub>
+<sub>Topics: influencer search tool · find influencers for your brand · influencer discovery tool · influencer marketing tool · creator research tool · influencer rate calculator · creator vetting · influencer campaign tracking · KOL pricing</sub>
