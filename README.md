@@ -10,7 +10,7 @@ Open-source **marketing agents** for Claude, ChatGPT, Codex, OpenClaw, Hermes, a
 
 **[Agents](https://unifapi.com/agents)** · **[Skills](https://unifapi.com/skills)** · **[Install](https://unifapi.com/mcp)** · **[API catalog](https://unifapi.com/apis)** · **[Docs](https://docs.unifapi.com)**
 
-Generated from `packages/agents` in the UnifAPI monorepo (ADR 0013/0014) — to suggest a change, open an issue or PR (see [CONTRIBUTING.md](./CONTRIBUTING.md)).
+These skills are generated and versioned — to suggest a change, open an issue or PR (see [CONTRIBUTING.md](./CONTRIBUTING.md)).
 
 ## Install — one plugin: skills + live data
 
