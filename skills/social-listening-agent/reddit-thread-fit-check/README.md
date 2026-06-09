@@ -6,7 +6,7 @@
 
 Evaluate candidate Reddit threads for whether a brand, founder, or operator should reply, cite, monitor, ask a human, or avoid. It reads subreddit rules and comment context first, then returns an outreach-safety decision and answer-first reply angle only when participation is appropriate.
 
-An atomic marketing skill you run inside Claude, Claude Code, ChatGPT (custom MCP), Codex, Cursor, OpenClaw, Hermes, or any MCP client — read-only public-data research, **eyes not hands**. It diagnoses, prices, and drafts evidence; your own assistant and accounts take any action.
+An atomic marketing skill you run inside Claude, ChatGPT, Claude Code, Cursor, Codex, OpenClaw, Hermes, or any MCP client — read-only public-data research, **eyes not hands**. It diagnoses, prices, and drafts evidence; your own assistant and accounts take any action.
 
 ## What it's good for
 
@@ -31,6 +31,17 @@ Live public data through the shared [`unifapi`](../../unifapi/) data skill — U
 Check these Reddit thread URLs for whether we should reply, monitor, cite, or avoid. Read each subreddit's rules and comments, score fit and account risk, and only draft a reply angle for safe threads.
 ```
 
+## Install
+
+Ships in the **UnifAPI Agents** plugin — one install adds the skills and the public-data MCP server (OAuth, read-only). In Claude Code or OpenClaw:
+
+```text
+/plugin marketplace add unifapi-agent/agents
+/plugin install unifapi@unifapi
+```
+
+Web connector (Claude · ChatGPT · Perplexity), Codex, Cursor, and the `npx skills` path: https://unifapi.com/mcp
+
 ## FAQ
 
 ### Does it post replies?
@@ -53,7 +64,7 @@ No. The current Reddit surface is seed-bounded and has no keyword search, so the
 
 - Skill page: https://unifapi.com/skills/reddit-thread-fit-check
 - The skill itself: [SKILL.md](./SKILL.md)
-- Install — one plugin, skills + live data: https://unifapi.com/mcp
+- Install & all clients: https://unifapi.com/mcp
 - Docs: https://docs.unifapi.com
 
 <sub>Topics: Reddit marketing · Reddit self-promotion rules · is my brand a fit for this subreddit · Reddit reply safety · safe Reddit engagement · Reddit promotion without getting banned · prioritize Reddit replies</sub>

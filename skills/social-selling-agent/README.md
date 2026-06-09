@@ -2,7 +2,7 @@
 
 # Social Selling Agent
 
-> Role Agent · run inside Claude, Claude Code, ChatGPT (custom MCP), Codex, Cursor, OpenClaw, Hermes, or any MCP client. Read-only public-data research — **eyes, not hands**.
+> Role Agent · run inside Claude, ChatGPT, Claude Code, Cursor, Codex, OpenClaw, Hermes, or any MCP client. Read-only public-data research — **eyes, not hands**.
 
 The Social Selling Agent watches public X and LinkedIn activity for buying intent — people asking for a tool you provide, switching vendors, or hiring for a relevant role — and prepares context-rich outreach so reps reach out at the right moment.
 
@@ -24,9 +24,26 @@ The Social Selling Agent watches public X and LinkedIn activity for buying inten
 - Public profile and company context for each lead
 - A suggested outreach angle and follow-up checks
 
-## Run it
+## Install & run
 
-Install once — one plugin gives your assistant the skills **and** the UnifAPI public-data MCP server (OAuth, read-only). Then ask:
+One install, three paths — all read-only with OAuth sign-in (new workspaces get free trial credits):
+
+**Plugin — skills + live data in one install** (Claude Code, OpenClaw):
+
+```text
+/plugin marketplace add unifapi-agent/agents
+/plugin install unifapi@unifapi
+```
+
+Hermes: `hermes plugins install unifapi-agent/agents`. Codex ships a plugin manifest too.
+
+**Web connector — no terminal** (Claude, ChatGPT, Perplexity): add a custom connector pointed at `https://mcp.unifapi.com`, then authorize over OAuth.
+
+**Any other MCP client**: point it at `https://mcp.unifapi.com` (OAuth) and add the skills with `npx skills add unifapi-agent/agents`.
+
+Step-by-step for every client → https://unifapi.com/mcp
+
+Then ask your assistant:
 
 ```text
 Monitor X and LinkedIn for people publicly asking for a YouTube data API or complaining about scraping rate limits this week. For each, return the post, their public profile and company context, why they're a fit for us, and a tailored outreach angle.
@@ -53,7 +70,7 @@ Anything public you define: a tweet asking for a solution, a complaint about a c
 ## Links
 
 - Agent page: https://unifapi.com/agents/social-selling
-- Install — one plugin, skills + live data: https://unifapi.com/mcp
+- Install & all clients: https://unifapi.com/mcp
 - MCP server: `https://mcp.unifapi.com`
 - All agents: https://unifapi.com/agents · Docs: https://docs.unifapi.com
 

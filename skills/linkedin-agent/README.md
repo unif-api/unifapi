@@ -2,7 +2,7 @@
 
 # LinkedIn Agent
 
-> Platform Agent · run inside Claude, Claude Code, ChatGPT (custom MCP), Codex, Cursor, OpenClaw, Hermes, or any MCP client. Read-only public-data research — **eyes, not hands**.
+> Platform Agent · run inside Claude, ChatGPT, Claude Code, Cursor, Codex, OpenClaw, Hermes, or any MCP client. Read-only public-data research — **eyes, not hands**.
 
 The LinkedIn Agent turns LinkedIn's public surface into B2B research: company pages, employees and member insights, open jobs, posts and engagement, and people search. It owns the LinkedIn Data Skill — the deterministic read path — and composes the Role-Agent Skills behind account research, news-signal, buying-signal, and competitor work, all from one URL slug — and never connects or messages on your behalf.
 
@@ -29,9 +29,26 @@ The LinkedIn Agent turns LinkedIn's public surface into B2B research: company pa
 - Company posts and the likely buying committee
 - Each claim sourced to the public LinkedIn record
 
-## Run it
+## Install & run
 
-Install once — one plugin gives your assistant the skills **and** the UnifAPI public-data MCP server (OAuth, read-only). Then ask:
+One install, three paths — all read-only with OAuth sign-in (new workspaces get free trial credits):
+
+**Plugin — skills + live data in one install** (Claude Code, OpenClaw):
+
+```text
+/plugin marketplace add unifapi-agent/agents
+/plugin install unifapi@unifapi
+```
+
+Hermes: `hermes plugins install unifapi-agent/agents`. Codex ships a plugin manifest too.
+
+**Web connector — no terminal** (Claude, ChatGPT, Perplexity): add a custom connector pointed at `https://mcp.unifapi.com`, then authorize over OAuth.
+
+**Any other MCP client**: point it at `https://mcp.unifapi.com` (OAuth) and add the skills with `npx skills add unifapi-agent/agents`.
+
+Step-by-step for every client → https://unifapi.com/mcp
+
+Then ask your assistant:
 
 ```text
 Research this company on public LinkedIn: pull the company page, headcount and member insights, open jobs, and recent posts, and infer the likely buying committee. Return a sourced brief — read-only, no connections or messages.
@@ -56,7 +73,7 @@ No. The LinkedIn Agent is read-only research. You send any outreach from your ow
 ## Links
 
 - Agent page: https://unifapi.com/agents/linkedin
-- Install — one plugin, skills + live data: https://unifapi.com/mcp
+- Install & all clients: https://unifapi.com/mcp
 - MCP server: `https://mcp.unifapi.com`
 - All agents: https://unifapi.com/agents · Docs: https://docs.unifapi.com
 

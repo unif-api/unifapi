@@ -6,7 +6,7 @@
 
 The local pack is where most 'near me' clicks go. This skill pulls live local-pack and map results for a business's target queries and reports its position against the businesses ranking above it — for one location, or the same queries across many — every position cited to the live result.
 
-An atomic marketing skill you run inside Claude, Claude Code, ChatGPT (custom MCP), Codex, Cursor, OpenClaw, Hermes, or any MCP client — read-only public-data research, **eyes not hands**. It diagnoses, prices, and drafts evidence; your own assistant and accounts take any action.
+An atomic marketing skill you run inside Claude, ChatGPT, Claude Code, Cursor, Codex, OpenClaw, Hermes, or any MCP client — read-only public-data research, **eyes not hands**. It diagnoses, prices, and drafts evidence; your own assistant and accounts take any action.
 
 ## What it's good for
 
@@ -31,6 +31,17 @@ Live public data through the shared [`unifapi`](../../unifapi/) data skill — U
 Audit local-pack rank for "coffee shop" near downtown Austin, TX: show where my business sits in the map results, who ranks above it, and their rating, review count, and category.
 ```
 
+## Install
+
+Ships in the **UnifAPI Agents** plugin — one install adds the skills and the public-data MCP server (OAuth, read-only). In Claude Code or OpenClaw:
+
+```text
+/plugin marketplace add unifapi-agent/agents
+/plugin install unifapi@unifapi
+```
+
+Web connector (Claude · ChatGPT · Perplexity), Codex, Cursor, and the `npx skills` path: https://unifapi.com/mcp
+
 ## Related
 
 - Part of the **[Local SEO Agent](../)**
@@ -40,7 +51,7 @@ Audit local-pack rank for "coffee shop" near downtown Austin, TX: show where my 
 
 - Skill page: https://unifapi.com/skills/local-pack-audit
 - The skill itself: [SKILL.md](./SKILL.md)
-- Install — one plugin, skills + live data: https://unifapi.com/mcp
+- Install & all clients: https://unifapi.com/mcp
 - Docs: https://docs.unifapi.com
 
 <sub>Topics: Google Maps rank tracker · local pack audit · map pack tracking · local SEO audit · local pack ranking · rank tracking by location</sub>

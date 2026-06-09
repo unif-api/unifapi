@@ -2,7 +2,7 @@
 
 # Hacker News Agent
 
-> Platform Agent · run inside Claude, Claude Code, ChatGPT (custom MCP), Codex, Cursor, OpenClaw, Hermes, or any MCP client. Read-only public-data research — **eyes, not hands**.
+> Platform Agent · run inside Claude, ChatGPT, Claude Code, Cursor, Codex, OpenClaw, Hermes, or any MCP client. Read-only public-data research — **eyes, not hands**.
 
 The Hacker News Agent turns HN's public feeds into developer-audience research: front-page, new, Show HN, and Ask HN stories, plus the comment trees that carry candid technical sentiment. It owns the Hacker News Data Skill — the deterministic read path — and composes the Role-Agent Skills behind launch-reception and social-listening work for dev, infra, and startup categories — and never posts.
 
@@ -27,9 +27,26 @@ The Hacker News Agent turns HN's public feeds into developer-audience research: 
 - Launch-reception read for dev/infra/startup categories
 - Each figure cited to the public HN item
 
-## Run it
+## Install & run
 
-Install once — one plugin gives your assistant the skills **and** the UnifAPI public-data MCP server (OAuth, read-only). Then ask:
+One install, three paths — all read-only with OAuth sign-in (new workspaces get free trial credits):
+
+**Plugin — skills + live data in one install** (Claude Code, OpenClaw):
+
+```text
+/plugin marketplace add unifapi-agent/agents
+/plugin install unifapi@unifapi
+```
+
+Hermes: `hermes plugins install unifapi-agent/agents`. Codex ships a plugin manifest too.
+
+**Web connector — no terminal** (Claude, ChatGPT, Perplexity): add a custom connector pointed at `https://mcp.unifapi.com`, then authorize over OAuth.
+
+**Any other MCP client**: point it at `https://mcp.unifapi.com` (OAuth) and add the skills with `npx skills add unifapi-agent/agents`.
+
+Step-by-step for every client → https://unifapi.com/mcp
+
+Then ask your assistant:
 
 ```text
 Research how our launch (or category) is landing on Hacker News: scan the front-page, Show HN, and Ask HN feeds, then read the comment tree on any matching thread for points, volume, and candid technical critique. Return a cited brief — read-only, do not post.
@@ -54,7 +71,7 @@ No. It is read-only research; you post anything from your own account.
 ## Links
 
 - Agent page: https://unifapi.com/agents/hacker-news
-- Install — one plugin, skills + live data: https://unifapi.com/mcp
+- Install & all clients: https://unifapi.com/mcp
 - MCP server: `https://mcp.unifapi.com`
 - All agents: https://unifapi.com/agents · Docs: https://docs.unifapi.com
 

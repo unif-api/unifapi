@@ -2,7 +2,7 @@
 
 # SEO Agent
 
-> Role Agent · run inside Claude, Claude Code, ChatGPT (custom MCP), Codex, Cursor, OpenClaw, Hermes, or any MCP client. Read-only public-data research — **eyes, not hands**.
+> Role Agent · run inside Claude, ChatGPT, Claude Code, Cursor, Codex, OpenClaw, Hermes, or any MCP client. Read-only public-data research — **eyes, not hands**.
 
 The SEO Agent runs live organic and AI SERP checks, keyword and competitor research, and backlink analysis as records you can rank, diff, and cite. Run it in Claude or Codex with UnifAPI MCP instead of opening a seat-based SEO suite.
 
@@ -26,9 +26,26 @@ The SEO Agent runs live organic and AI SERP checks, keyword and competitor resea
 - Keyword and backlink gap analysis vs named competitors
 - Cited source records for every position and link claim
 
-## Run it
+## Install & run
 
-Install once — one plugin gives your assistant the skills **and** the UnifAPI public-data MCP server (OAuth, read-only). Then ask:
+One install, three paths — all read-only with OAuth sign-in (new workspaces get free trial credits):
+
+**Plugin — skills + live data in one install** (Claude Code, OpenClaw):
+
+```text
+/plugin marketplace add unifapi-agent/agents
+/plugin install unifapi@unifapi
+```
+
+Hermes: `hermes plugins install unifapi-agent/agents`. Codex ships a plugin manifest too.
+
+**Web connector — no terminal** (Claude, ChatGPT, Perplexity): add a custom connector pointed at `https://mcp.unifapi.com`, then authorize over OAuth.
+
+**Any other MCP client**: point it at `https://mcp.unifapi.com` (OAuth) and add the skills with `npx skills add unifapi-agent/agents`.
+
+Step-by-step for every client → https://unifapi.com/mcp
+
+Then ask your assistant:
 
 ```text
 Track these keywords for example.com in the US market: "unified api", "public data api", "mcp server". Return our organic and AI-overview positions, the competing domains, and the SERP features each query triggers. Then find 10 keyword gaps where competitor.com ranks and we don't, with evidence.
@@ -55,7 +72,7 @@ Public-data reads are $0.001 per record with per-operation minimums generated fr
 ## Links
 
 - Agent page: https://unifapi.com/agents/seo
-- Install — one plugin, skills + live data: https://unifapi.com/mcp
+- Install & all clients: https://unifapi.com/mcp
 - MCP server: `https://mcp.unifapi.com`
 - All agents: https://unifapi.com/agents · Docs: https://docs.unifapi.com
 

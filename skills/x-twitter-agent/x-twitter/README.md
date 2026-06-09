@@ -6,7 +6,7 @@
 
 The X (Twitter) Data Skill is the source-sliced data guide a Platform Agent owns: it names the concrete `x/...` operations, response shapes, and gotchas for reading public X/Twitter data through UnifAPI MCP, so any X-first research (KOL pricing, creator vetting, buying signals, competitor and listening work) runs from one deterministic workflow. Read-only — it never posts.
 
-A source-sliced **data skill** you run inside Claude, Claude Code, ChatGPT (custom MCP), Codex, Cursor, OpenClaw, Hermes, or any MCP client — the deterministic, read-only path to one platform's public data. It names the operations and response shapes; the marketing skills in the same agent turn those records into briefs, prices, and signals. **Eyes not hands** — it never posts.
+A source-sliced **data skill** you run inside Claude, ChatGPT, Claude Code, Cursor, Codex, OpenClaw, Hermes, or any MCP client — the deterministic, read-only path to one platform's public data. It names the operations and response shapes; the marketing skills in the same agent turn those records into briefs, prices, and signals. **Eyes not hands** — it never posts.
 
 ## What it's good for
 
@@ -31,6 +31,17 @@ Live public data through the shared [`unifapi`](../../unifapi/) data skill — U
 Using the X (Twitter) Data Skill, pull the public profile and recent engagement for @vercel and @shadcn: resolve each handle, read follower count and recent-tweet public_metrics, and return a cited summary. Read-only.
 ```
 
+## Install
+
+Ships in the **UnifAPI Agents** plugin — one install adds the skills and the public-data MCP server (OAuth, read-only). In Claude Code or OpenClaw:
+
+```text
+/plugin marketplace add unifapi-agent/agents
+/plugin install unifapi@unifapi
+```
+
+Web connector (Claude · ChatGPT · Perplexity), Codex, Cursor, and the `npx skills` path: https://unifapi.com/mcp
+
 ## Related
 
 - Part of the **[X (Twitter) Agent](../)**
@@ -40,7 +51,7 @@ Using the X (Twitter) Data Skill, pull the public profile and recent engagement 
 
 - Skill page: https://unifapi.com/skills/x-twitter
 - The skill itself: [SKILL.md](./SKILL.md)
-- Install — one plugin, skills + live data: https://unifapi.com/mcp
+- Install & all clients: https://unifapi.com/mcp
 - Docs: https://docs.unifapi.com
 
 <sub>Topics: Twitter research tool · X research tool · Twitter data · Twitter profile analytics · Twitter engagement tracking · Twitter follower analysis · X MCP server</sub>

@@ -6,7 +6,7 @@
 
 Restaurants win discovery on three signals: local-pack rank for 'best [cuisine] near me', reviews, and social buzz from TikTok and Instagram food trends. This skill audits all three for one venue — read-only — so the operator knows exactly where they stand before changing anything.
 
-An atomic marketing skill you run inside Claude, Claude Code, ChatGPT (custom MCP), Codex, Cursor, OpenClaw, Hermes, or any MCP client — read-only public-data research, **eyes not hands**. It diagnoses, prices, and drafts evidence; your own assistant and accounts take any action.
+An atomic marketing skill you run inside Claude, ChatGPT, Claude Code, Cursor, Codex, OpenClaw, Hermes, or any MCP client — read-only public-data research, **eyes not hands**. It diagnoses, prices, and drafts evidence; your own assistant and accounts take any action.
 
 ## What it's good for
 
@@ -31,6 +31,17 @@ Live public data through the shared [`unifapi`](../../unifapi/) data skill — U
 Audit my restaurant in Portland, OR: local-pack rank for "best ramen" and "dinner near me", review count/rating/velocity and top themes vs the leader, and recent TikTok buzz for the venue and its cuisine.
 ```
 
+## Install
+
+Ships in the **UnifAPI Agents** plugin — one install adds the skills and the public-data MCP server (OAuth, read-only). In Claude Code or OpenClaw:
+
+```text
+/plugin marketplace add unifapi-agent/agents
+/plugin install unifapi@unifapi
+```
+
+Web connector (Claude · ChatGPT · Perplexity), Codex, Cursor, and the `npx skills` path: https://unifapi.com/mcp
+
 ## Related
 
 - Part of the **[Restaurant Marketing Agent](../)**
@@ -40,7 +51,7 @@ Audit my restaurant in Portland, OR: local-pack rank for "best ramen" and "dinne
 
 - Skill page: https://unifapi.com/skills/restaurant-local-buzz
 - The skill itself: [SKILL.md](./SKILL.md)
-- Install — one plugin, skills + live data: https://unifapi.com/mcp
+- Install & all clients: https://unifapi.com/mcp
 - Docs: https://docs.unifapi.com
 
 <sub>Topics: restaurant local SEO · restaurant map pack · restaurant reviews · restaurant TikTok buzz · dinner near me ranking · restaurant social buzz</sub>

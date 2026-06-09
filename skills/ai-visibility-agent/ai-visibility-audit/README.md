@@ -6,7 +6,7 @@
 
 Assess whether a brand or domain is actually cited when AI answers the prompts that matter, grounded in real AI Mode answers, LLM mentions, and AI search volume from UnifAPI. Every miss is tied to the winning source and labeled by likely cause — extractability, authority, or third-party presence.
 
-An atomic marketing skill you run inside Claude, Claude Code, ChatGPT (custom MCP), Codex, Cursor, OpenClaw, Hermes, or any MCP client — read-only public-data research, **eyes not hands**. It diagnoses, prices, and drafts evidence; your own assistant and accounts take any action.
+An atomic marketing skill you run inside Claude, ChatGPT, Claude Code, Cursor, Codex, OpenClaw, Hermes, or any MCP client — read-only public-data research, **eyes not hands**. It diagnoses, prices, and drafts evidence; your own assistant and accounts take any action.
 
 ## What it's good for
 
@@ -31,6 +31,17 @@ Live public data through the shared [`unifapi`](../../unifapi/) data skill — U
 For "best unified public data api" and "mcp server for social data", check whether example.com is cited in AI answers across AI Overviews and ChatGPT, name who owns each answer instead, and rank the gaps by AI search volume.
 ```
 
+## Install
+
+Ships in the **UnifAPI Agents** plugin — one install adds the skills and the public-data MCP server (OAuth, read-only). In Claude Code or OpenClaw:
+
+```text
+/plugin marketplace add unifapi-agent/agents
+/plugin install unifapi@unifapi
+```
+
+Web connector (Claude · ChatGPT · Perplexity), Codex, Cursor, and the `npx skills` path: https://unifapi.com/mcp
+
 ## Related
 
 - Part of the **[AI Visibility Agent](../)**
@@ -43,7 +54,7 @@ For "best unified public data api" and "mcp server for social data", check wheth
 
 - Skill page: https://unifapi.com/skills/ai-visibility-audit
 - The skill itself: [SKILL.md](./SKILL.md)
-- Install — one plugin, skills + live data: https://unifapi.com/mcp
+- Install & all clients: https://unifapi.com/mcp
 - Docs: https://docs.unifapi.com
 
 ## Credits

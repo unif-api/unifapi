@@ -6,7 +6,7 @@
 
 Turn SEO audit findings into a concrete remediation plan: deduplicate issues into fix units, rank them by impact, confidence, effort, and dependency, and attach acceptance checks so the operator knows exactly what to change and how to verify it.
 
-An atomic marketing skill you run inside Claude, Claude Code, ChatGPT (custom MCP), Codex, Cursor, OpenClaw, Hermes, or any MCP client — read-only public-data research, **eyes not hands**. It diagnoses, prices, and drafts evidence; your own assistant and accounts take any action.
+An atomic marketing skill you run inside Claude, ChatGPT, Claude Code, Cursor, Codex, OpenClaw, Hermes, or any MCP client — read-only public-data research, **eyes not hands**. It diagnoses, prices, and drafts evidence; your own assistant and accounts take any action.
 
 ## What it's good for
 
@@ -31,6 +31,17 @@ Live public data through the shared [`unifapi`](../../unifapi/) data skill — U
 Turn this SEO audit for example.com into a prioritized fix plan. Group repeated issues into template-level tasks, rank quick wins vs blockers, and include acceptance checks for each fix.
 ```
 
+## Install
+
+Ships in the **UnifAPI Agents** plugin — one install adds the skills and the public-data MCP server (OAuth, read-only). In Claude Code or OpenClaw:
+
+```text
+/plugin marketplace add unifapi-agent/agents
+/plugin install unifapi@unifapi
+```
+
+Web connector (Claude · ChatGPT · Perplexity), Codex, Cursor, and the `npx skills` path: https://unifapi.com/mcp
+
 ## FAQ
 
 ### Does it edit my site?
@@ -53,7 +64,7 @@ SEO Audit diagnoses what is wrong. SEO Fix Plan decides what to do first, groups
 
 - Skill page: https://unifapi.com/skills/seo-fix-plan
 - The skill itself: [SKILL.md](./SKILL.md)
-- Install — one plugin, skills + live data: https://unifapi.com/mcp
+- Install & all clients: https://unifapi.com/mcp
 - Docs: https://docs.unifapi.com
 
 <sub>Topics: SEO fix plan · how to fix SEO issues · on-page SEO checklist · AI SEO recommendations · SEO action plan · technical SEO fixes · prioritize SEO issues · SEO to-do list</sub>

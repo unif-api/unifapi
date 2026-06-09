@@ -2,7 +2,7 @@
 
 # Med Spa Marketing Agent
 
-> Vertical Agent · run inside Claude, Claude Code, ChatGPT (custom MCP), Codex, Cursor, OpenClaw, Hermes, or any MCP client. Read-only public-data research — **eyes, not hands**.
+> Vertical Agent · run inside Claude, ChatGPT, Claude Code, Cursor, Codex, OpenClaw, Hermes, or any MCP client. Read-only public-data research — **eyes, not hands**.
 
 The Med Spa Marketing Agent recombines local SEO, social listening, content strategy, and AI visibility for medical spas and aesthetics clinics. It audits local search presence, mines demand around treatments, and checks AI-answer visibility for the procedures a clinic offers.
 
@@ -26,9 +26,26 @@ The Med Spa Marketing Agent recombines local SEO, social listening, content stra
 - AI-answer visibility for 'med spa near me'-style prompts
 - Review-presence and listing gaps vs local competitors
 
-## Run it
+## Install & run
 
-Install once — one plugin gives your assistant the skills **and** the UnifAPI public-data MCP server (OAuth, read-only). Then ask:
+One install, three paths — all read-only with OAuth sign-in (new workspaces get free trial credits):
+
+**Plugin — skills + live data in one install** (Claude Code, OpenClaw):
+
+```text
+/plugin marketplace add unifapi-agent/agents
+/plugin install unifapi@unifapi
+```
+
+Hermes: `hermes plugins install unifapi-agent/agents`. Codex ships a plugin manifest too.
+
+**Web connector — no terminal** (Claude, ChatGPT, Perplexity): add a custom connector pointed at `https://mcp.unifapi.com`, then authorize over OAuth.
+
+**Any other MCP client**: point it at `https://mcp.unifapi.com` (OAuth) and add the skills with `npx skills add unifapi-agent/agents`.
+
+Step-by-step for every client → https://unifapi.com/mcp
+
+Then ask your assistant:
 
 ```text
 Audit med spa marketing visibility for my clinic in Miami, FL. Check local-pack rankings for treatments like "botox" and "laser hair removal", find content demand around those treatments, and check whether we're cited in AI answers for med-spa search prompts.
@@ -57,7 +74,7 @@ Four Role Agents — Local SEO, Content Strategy, Social Listening, and AI Visib
 ## Links
 
 - Agent page: https://unifapi.com/agents/med-spa-marketing
-- Install — one plugin, skills + live data: https://unifapi.com/mcp
+- Install & all clients: https://unifapi.com/mcp
 - MCP server: `https://mcp.unifapi.com`
 - All agents: https://unifapi.com/agents · Docs: https://docs.unifapi.com
 

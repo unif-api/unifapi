@@ -6,7 +6,7 @@
 
 The Hacker News Data Skill is the source-sliced data guide a Platform Agent owns: it names the concrete `hacker-news/...` operations, response shapes, and gotchas for reading HN's public feeds through UnifAPI MCP, so any launch-reception or social-listening research for dev/infra/startup categories runs from one deterministic workflow. Read-only — it never posts.
 
-A source-sliced **data skill** you run inside Claude, Claude Code, ChatGPT (custom MCP), Codex, Cursor, OpenClaw, Hermes, or any MCP client — the deterministic, read-only path to one platform's public data. It names the operations and response shapes; the marketing skills in the same agent turn those records into briefs, prices, and signals. **Eyes not hands** — it never posts.
+A source-sliced **data skill** you run inside Claude, ChatGPT, Claude Code, Cursor, Codex, OpenClaw, Hermes, or any MCP client — the deterministic, read-only path to one platform's public data. It names the operations and response shapes; the marketing skills in the same agent turn those records into briefs, prices, and signals. **Eyes not hands** — it never posts.
 
 ## What it's good for
 
@@ -31,6 +31,17 @@ Live public data through the shared [`unifapi`](../../unifapi/) data skill — U
 Using the Hacker News Data Skill, check how our launch is landing: scan the top, show, and ask feeds for matching stories, then read the comment tree (kids) on any matching item for points, volume, and candid critique. Return a cited brief. Read-only.
 ```
 
+## Install
+
+Ships in the **UnifAPI Agents** plugin — one install adds the skills and the public-data MCP server (OAuth, read-only). In Claude Code or OpenClaw:
+
+```text
+/plugin marketplace add unifapi-agent/agents
+/plugin install unifapi@unifapi
+```
+
+Web connector (Claude · ChatGPT · Perplexity), Codex, Cursor, and the `npx skills` path: https://unifapi.com/mcp
+
 ## Related
 
 - Part of the **[Hacker News Agent](../)**
@@ -40,7 +51,7 @@ Using the Hacker News Data Skill, check how our launch is landing: scan the top,
 
 - Skill page: https://unifapi.com/skills/hacker-news
 - The skill itself: [SKILL.md](./SKILL.md)
-- Install — one plugin, skills + live data: https://unifapi.com/mcp
+- Install & all clients: https://unifapi.com/mcp
 - Docs: https://docs.unifapi.com
 
 <sub>Topics: Hacker News research tool · Hacker News monitoring · Hacker News data · Show HN tracking · Hacker News comment analysis · track launch reception on HN · Hacker News MCP server</sub>

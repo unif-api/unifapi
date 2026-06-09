@@ -6,7 +6,7 @@
 
 Ask an agent to monitor public posts, comments, and threads for a brand, category, or launch.
 
-An atomic marketing skill you run inside Claude, Claude Code, ChatGPT (custom MCP), Codex, Cursor, OpenClaw, Hermes, or any MCP client — read-only public-data research, **eyes not hands**. It diagnoses, prices, and drafts evidence; your own assistant and accounts take any action.
+An atomic marketing skill you run inside Claude, ChatGPT, Claude Code, Cursor, Codex, OpenClaw, Hermes, or any MCP client — read-only public-data research, **eyes not hands**. It diagnoses, prices, and drafts evidence; your own assistant and accounts take any action.
 
 ## What it's good for
 
@@ -30,6 +30,17 @@ Live public data through the shared [`unifapi`](../../unifapi/) data skill — U
 Monitor public social chatter about AI coding tools this week. Group repeated user language, complaints, feature requests, and surprising posts.
 ```
 
+## Install
+
+Ships in the **UnifAPI Agents** plugin — one install adds the skills and the public-data MCP server (OAuth, read-only). In Claude Code or OpenClaw:
+
+```text
+/plugin marketplace add unifapi-agent/agents
+/plugin install unifapi@unifapi
+```
+
+Web connector (Claude · ChatGPT · Perplexity), Codex, Cursor, and the `npx skills` path: https://unifapi.com/mcp
+
 ## Related
 
 - Part of the **[Social Listening Agent](../)**
@@ -40,7 +51,7 @@ Monitor public social chatter about AI coding tools this week. Group repeated us
 
 - Skill page: https://unifapi.com/skills/social-listening-brief
 - The skill itself: [SKILL.md](./SKILL.md)
-- Install — one plugin, skills + live data: https://unifapi.com/mcp
+- Install & all clients: https://unifapi.com/mcp
 - Docs: https://docs.unifapi.com
 
 <sub>Topics: social listening tool · brand monitoring · social media monitoring · track brand mentions · online mention tracking · social listening report</sub>

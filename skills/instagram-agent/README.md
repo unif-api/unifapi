@@ -2,7 +2,7 @@
 
 # Instagram Agent
 
-> Platform Agent · run inside Claude, Claude Code, ChatGPT (custom MCP), Codex, Cursor, OpenClaw, Hermes, or any MCP client. Read-only public-data research — **eyes, not hands**.
+> Platform Agent · run inside Claude, ChatGPT, Claude Code, Cursor, Codex, OpenClaw, Hermes, or any MCP client. Read-only public-data research — **eyes, not hands**.
 
 The Instagram Agent turns the public Instagram surface into creator research: profiles and follower size, posts and reels, post comments, location pages, and search. It owns the Instagram Data Skill — the deterministic read path — and composes the Role-Agent Skills behind creator shortlisting, audience-fit, and pricing context — and never posts or DMs.
 
@@ -28,9 +28,26 @@ The Instagram Agent turns the public Instagram surface into creator research: pr
 - Location-page and search context for discovery
 - Each figure cited to the public post
 
-## Run it
+## Install & run
 
-Install once — one plugin gives your assistant the skills **and** the UnifAPI public-data MCP server (OAuth, read-only). Then ask:
+One install, three paths — all read-only with OAuth sign-in (new workspaces get free trial credits):
+
+**Plugin — skills + live data in one install** (Claude Code, OpenClaw):
+
+```text
+/plugin marketplace add unifapi-agent/agents
+/plugin install unifapi@unifapi
+```
+
+Hermes: `hermes plugins install unifapi-agent/agents`. Codex ships a plugin manifest too.
+
+**Web connector — no terminal** (Claude, ChatGPT, Perplexity): add a custom connector pointed at `https://mcp.unifapi.com`, then authorize over OAuth.
+
+**Any other MCP client**: point it at `https://mcp.unifapi.com` (OAuth) and add the skills with `npx skills add unifapi-agent/agents`.
+
+Step-by-step for every client → https://unifapi.com/mcp
+
+Then ask your assistant:
 
 ```text
 Research these Instagram creators: pull profiles and follower size, recent posts and reels with engagement, and the comments on their top posts. Return a cited audience-fit brief — read-only, do not post or DM.
@@ -55,7 +72,7 @@ It's the Instagram data layer under the Influencer Marketing Agent's Skills — 
 ## Links
 
 - Agent page: https://unifapi.com/agents/instagram
-- Install — one plugin, skills + live data: https://unifapi.com/mcp
+- Install & all clients: https://unifapi.com/mcp
 - MCP server: `https://mcp.unifapi.com`
 - All agents: https://unifapi.com/agents · Docs: https://docs.unifapi.com
 

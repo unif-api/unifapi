@@ -2,7 +2,7 @@
 
 # X (Twitter) Agent
 
-> Platform Agent · run inside Claude, Claude Code, ChatGPT (custom MCP), Codex, Cursor, OpenClaw, Hermes, or any MCP client. Read-only public-data research — **eyes, not hands**.
+> Platform Agent · run inside Claude, ChatGPT, Claude Code, Cursor, Codex, OpenClaw, Hermes, or any MCP client. Read-only public-data research — **eyes, not hands**.
 
 The X Agent turns the public X / Twitter surface into agent-callable research: profiles and engagement, recent posts, quote-tweet and like sentiment, communities, lists, and regional trends. It owns the X (Twitter) Data Skill — the deterministic read path — and composes the Role-Agent Skills that back KOL pricing, creator vetting, buying-signal, and competitor work, all without browser automation, and never posts.
 
@@ -31,9 +31,26 @@ The X Agent turns the public X / Twitter surface into agent-callable research: p
 - Community, list, and regional-trend signal
 - Every figure cited to the public post
 
-## Run it
+## Install & run
 
-Install once — one plugin gives your assistant the skills **and** the UnifAPI public-data MCP server (OAuth, read-only). Then ask:
+One install, three paths — all read-only with OAuth sign-in (new workspaces get free trial credits):
+
+**Plugin — skills + live data in one install** (Claude Code, OpenClaw):
+
+```text
+/plugin marketplace add unifapi-agent/agents
+/plugin install unifapi@unifapi
+```
+
+Hermes: `hermes plugins install unifapi-agent/agents`. Codex ships a plugin manifest too.
+
+**Web connector — no terminal** (Claude, ChatGPT, Perplexity): add a custom connector pointed at `https://mcp.unifapi.com`, then authorize over OAuth.
+
+**Any other MCP client**: point it at `https://mcp.unifapi.com` (OAuth) and add the skills with `npx skills add unifapi-agent/agents`.
+
+Step-by-step for every client → https://unifapi.com/mcp
+
+Then ask your assistant:
 
 ```text
 Research these X accounts and the conversation around our category: pull profiles and recent engagement, the quote-tweet and like sentiment on their top posts, and any related trend. Return a cited brief — read-only, do not draft or post anything.
@@ -58,7 +75,7 @@ Those Role Agents organize by job (pricing creators, finding warm leads). The X 
 ## Links
 
 - Agent page: https://unifapi.com/agents/x-twitter
-- Install — one plugin, skills + live data: https://unifapi.com/mcp
+- Install & all clients: https://unifapi.com/mcp
 - MCP server: `https://mcp.unifapi.com`
 - All agents: https://unifapi.com/agents · Docs: https://docs.unifapi.com
 

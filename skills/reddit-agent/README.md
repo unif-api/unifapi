@@ -2,7 +2,7 @@
 
 # Reddit Agent
 
-> Platform Agent · run inside Claude, Claude Code, ChatGPT (custom MCP), Codex, Cursor, OpenClaw, Hermes, or any MCP client. Read-only public-data research — **eyes, not hands**.
+> Platform Agent · run inside Claude, ChatGPT, Claude Code, Cursor, Codex, OpenClaw, Hermes, or any MCP client. Read-only public-data research — **eyes, not hands**.
 
 The Reddit Agent turns public Reddit into community research: subreddit profiles and rules, thread comments, user activity, and trending searches. It owns the Reddit Data Skill — the deterministic read path, honest about Reddit's no-keyword-search limits — and composes the Role-Agent Skills behind community research, social-listening, and voice-of-customer work — and never posts or comments.
 
@@ -29,9 +29,26 @@ The Reddit Agent turns public Reddit into community research: subreddit profiles
 - Example threads and power-user signal, each linked
 - A note on coverage (Reddit has no keyword search — seeds are named)
 
-## Run it
+## Install & run
 
-Install once — one plugin gives your assistant the skills **and** the UnifAPI public-data MCP server (OAuth, read-only). Then ask:
+One install, three paths — all read-only with OAuth sign-in (new workspaces get free trial credits):
+
+**Plugin — skills + live data in one install** (Claude Code, OpenClaw):
+
+```text
+/plugin marketplace add unifapi-agent/agents
+/plugin install unifapi@unifapi
+```
+
+Hermes: `hermes plugins install unifapi-agent/agents`. Codex ships a plugin manifest too.
+
+**Web connector — no terminal** (Claude, ChatGPT, Perplexity): add a custom connector pointed at `https://mcp.unifapi.com`, then authorize over OAuth.
+
+**Any other MCP client**: point it at `https://mcp.unifapi.com` (OAuth) and add the skills with `npx skills add unifapi-agent/agents`.
+
+Step-by-step for every client → https://unifapi.com/mcp
+
+Then ask your assistant:
 
 ```text
 Research the Reddit communities for my niche: map the relevant subreddits and their rules, mine recent threads for recurring questions and complaints, and pull verbatim language. Return a sourced brief — read-only, do not post or comment.
@@ -56,7 +73,7 @@ No. It is read-only research. Any participation is done by you from your own acc
 ## Links
 
 - Agent page: https://unifapi.com/agents/reddit
-- Install — one plugin, skills + live data: https://unifapi.com/mcp
+- Install & all clients: https://unifapi.com/mcp
 - MCP server: `https://mcp.unifapi.com`
 - All agents: https://unifapi.com/agents · Docs: https://docs.unifapi.com
 

@@ -2,7 +2,7 @@
 
 # Content Strategy Agent
 
-> Role Agent · run inside Claude, Claude Code, ChatGPT (custom MCP), Codex, Cursor, OpenClaw, Hermes, or any MCP client. Read-only public-data research — **eyes, not hands**.
+> Role Agent · run inside Claude, ChatGPT, Claude Code, Cursor, Codex, OpenClaw, Hermes, or any MCP client. Read-only public-data research — **eyes, not hands**.
 
 The Content Strategy Agent mines real audience demand across search keywords, Reddit, YouTube, and news to propose topics, formats, and titles you can defend. It bundles the Content Opportunity Brief Skill so every recommendation comes with the post or thread that proves it.
 
@@ -25,9 +25,26 @@ The Content Strategy Agent mines real audience demand across search keywords, Re
 - Suggested formats, angles, and titles per topic
 - Source links and follow-up searches for each idea
 
-## Run it
+## Install & run
 
-Install once — one plugin gives your assistant the skills **and** the UnifAPI public-data MCP server (OAuth, read-only). Then ask:
+One install, three paths — all read-only with OAuth sign-in (new workspaces get free trial credits):
+
+**Plugin — skills + live data in one install** (Claude Code, OpenClaw):
+
+```text
+/plugin marketplace add unifapi-agent/agents
+/plugin install unifapi@unifapi
+```
+
+Hermes: `hermes plugins install unifapi-agent/agents`. Codex ships a plugin manifest too.
+
+**Web connector — no terminal** (Claude, ChatGPT, Perplexity): add a custom connector pointed at `https://mcp.unifapi.com`, then authorize over OAuth.
+
+**Any other MCP client**: point it at `https://mcp.unifapi.com` (OAuth) and add the skills with `npx skills add unifapi-agent/agents`.
+
+Step-by-step for every client → https://unifapi.com/mcp
+
+Then ask your assistant:
 
 ```text
 Find content opportunities around AI coding workflows. Compare search keywords, Reddit, YouTube, and news. Return ranked topics with the repeated questions behind them, suggested formats and titles, and a source link for each idea.
@@ -54,7 +71,7 @@ From live records: search keyword data, Reddit threads, YouTube videos, and news
 ## Links
 
 - Agent page: https://unifapi.com/agents/content-strategy
-- Install — one plugin, skills + live data: https://unifapi.com/mcp
+- Install & all clients: https://unifapi.com/mcp
 - MCP server: `https://mcp.unifapi.com`
 - All agents: https://unifapi.com/agents · Docs: https://docs.unifapi.com
 

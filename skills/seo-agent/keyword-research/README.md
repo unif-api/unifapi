@@ -6,7 +6,7 @@
 
 Expand a seed keyword set, pull live volume and SERP data through UnifAPI, and surface the gaps where competitors rank and you don't — each with the evidence and intent behind it.
 
-An atomic marketing skill you run inside Claude, Claude Code, ChatGPT (custom MCP), Codex, Cursor, OpenClaw, Hermes, or any MCP client — read-only public-data research, **eyes not hands**. It diagnoses, prices, and drafts evidence; your own assistant and accounts take any action.
+An atomic marketing skill you run inside Claude, ChatGPT, Claude Code, Cursor, Codex, OpenClaw, Hermes, or any MCP client — read-only public-data research, **eyes not hands**. It diagnoses, prices, and drafts evidence; your own assistant and accounts take any action.
 
 ## What it's good for
 
@@ -30,6 +30,17 @@ Live public data through the shared [`unifapi`](../../unifapi/) data skill — U
 For competitor.com vs example.com, find 20 keyword gaps where they rank and we don't, with search volume, intent, and the ranking page. Group by topic and rank by opportunity.
 ```
 
+## Install
+
+Ships in the **UnifAPI Agents** plugin — one install adds the skills and the public-data MCP server (OAuth, read-only). In Claude Code or OpenClaw:
+
+```text
+/plugin marketplace add unifapi-agent/agents
+/plugin install unifapi@unifapi
+```
+
+Web connector (Claude · ChatGPT · Perplexity), Codex, Cursor, and the `npx skills` path: https://unifapi.com/mcp
+
 ## Related
 
 - Part of the **[SEO Agent](../)**
@@ -40,7 +51,7 @@ For competitor.com vs example.com, find 20 keyword gaps where they rank and we d
 
 - Skill page: https://unifapi.com/skills/keyword-research
 - The skill itself: [SKILL.md](./SKILL.md)
-- Install — one plugin, skills + live data: https://unifapi.com/mcp
+- Install & all clients: https://unifapi.com/mcp
 - Docs: https://docs.unifapi.com
 
 <sub>Topics: AI keyword research tool · keyword research · keyword gap analysis · find keywords · competitor keyword research · keyword difficulty · search intent analysis</sub>

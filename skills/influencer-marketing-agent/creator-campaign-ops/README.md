@@ -6,7 +6,7 @@
 
 Turn an influencer campaign brief into a full-funnel operating pack: matching plan, ranked shortlist, pricing forecast, confirm / negotiate / pass calls, content-review criteria, launch watchlist, and public-results readout. The Skill stays read-only: it drafts the handoff and tracks public posts, while the operator handles outreach, contracts, scheduling, payments, and private conversion data.
 
-An atomic marketing skill you run inside Claude, Claude Code, ChatGPT (custom MCP), Codex, Cursor, OpenClaw, Hermes, or any MCP client — read-only public-data research, **eyes not hands**. It diagnoses, prices, and drafts evidence; your own assistant and accounts take any action.
+An atomic marketing skill you run inside Claude, ChatGPT, Claude Code, Cursor, Codex, OpenClaw, Hermes, or any MCP client — read-only public-data research, **eyes not hands**. It diagnoses, prices, and drafts evidence; your own assistant and accounts take any action.
 
 ## What it's good for
 
@@ -30,6 +30,17 @@ Live public data through the shared [`unifapi`](../../unifapi/) data skill — U
 ```text
 Plan a full-funnel influencer campaign for our product launch. Build the campaign spec, discover and rank creators, estimate pricing and predicted CPM/CPC, make confirm / negotiate / pass calls, draft content-review criteria, define the launch watchlist, and list operator handoffs for external systems.
 ```
+
+## Install
+
+Ships in the **UnifAPI Agents** plugin — one install adds the skills and the public-data MCP server (OAuth, read-only). In Claude Code or OpenClaw:
+
+```text
+/plugin marketplace add unifapi-agent/agents
+/plugin install unifapi@unifapi
+```
+
+Web connector (Claude · ChatGPT · Perplexity), Codex, Cursor, and the `npx skills` path: https://unifapi.com/mcp
 
 ## FAQ
 
@@ -57,7 +68,7 @@ Marketplace-style execution still needs external systems for indexed creator sea
 
 - Skill page: https://unifapi.com/skills/creator-campaign-ops
 - The skill itself: [SKILL.md](./SKILL.md)
-- Install — one plugin, skills + live data: https://unifapi.com/mcp
+- Install & all clients: https://unifapi.com/mcp
 - Docs: https://docs.unifapi.com
 
 <sub>Topics: influencer campaign management · creator campaign planning · influencer campaign tracking · influencer marketing workflow · creator campaign report · influencer matching · creator content review · how to run an influencer campaign</sub>

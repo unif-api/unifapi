@@ -2,7 +2,7 @@
 
 # Lead & Company Research Agent
 
-> Role Agent · run inside Claude, Claude Code, ChatGPT (custom MCP), Codex, Cursor, OpenClaw, Hermes, or any MCP client. Read-only public-data research — **eyes, not hands**.
+> Role Agent · run inside Claude, ChatGPT, Claude Code, Cursor, Codex, OpenClaw, Hermes, or any MCP client. Read-only public-data research — **eyes, not hands**.
 
 The Lead & Company Research Agent prepares account briefs from public LinkedIn company pages, posts, jobs, and visible profiles, plus news context. It bundles the LinkedIn Account Research Skill for B2B enrichment before outreach or a sales call.
 
@@ -24,9 +24,26 @@ The Lead & Company Research Agent prepares account briefs from public LinkedIn c
 - Profile and company context from one LinkedIn slug
 - Suggested discovery questions and source gaps
 
-## Run it
+## Install & run
 
-Install once — one plugin gives your assistant the skills **and** the UnifAPI public-data MCP server (OAuth, read-only). Then ask:
+One install, three paths — all read-only with OAuth sign-in (new workspaces get free trial credits):
+
+**Plugin — skills + live data in one install** (Claude Code, OpenClaw):
+
+```text
+/plugin marketplace add unifapi-agent/agents
+/plugin install unifapi@unifapi
+```
+
+Hermes: `hermes plugins install unifapi-agent/agents`. Codex ships a plugin manifest too.
+
+**Web connector — no terminal** (Claude, ChatGPT, Perplexity): add a custom connector pointed at `https://mcp.unifapi.com`, then authorize over OAuth.
+
+**Any other MCP client**: point it at `https://mcp.unifapi.com` (OAuth) and add the skills with `npx skills add unifapi-agent/agents`.
+
+Step-by-step for every client → https://unifapi.com/mcp
+
+Then ask your assistant:
 
 ```text
 Research this target account from public LinkedIn and news signals. Summarize company priorities, hiring signals, recent posts, the likely buying committee, and outreach angles. Mark anything that needs human verification.
@@ -53,7 +70,7 @@ It surfaces what is publicly visible and flags gaps for human verification. It i
 ## Links
 
 - Agent page: https://unifapi.com/agents/lead-company-research
-- Install — one plugin, skills + live data: https://unifapi.com/mcp
+- Install & all clients: https://unifapi.com/mcp
 - MCP server: `https://mcp.unifapi.com`
 - All agents: https://unifapi.com/agents · Docs: https://docs.unifapi.com
 

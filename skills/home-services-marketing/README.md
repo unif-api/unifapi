@@ -2,7 +2,7 @@
 
 # Home Services Marketing Agent
 
-> Vertical Agent · run inside Claude, Claude Code, ChatGPT (custom MCP), Codex, Cursor, OpenClaw, Hermes, or any MCP client. Read-only public-data research — **eyes, not hands**.
+> Vertical Agent · run inside Claude, ChatGPT, Claude Code, Cursor, Codex, OpenClaw, Hermes, or any MCP client. Read-only public-data research — **eyes, not hands**.
 
 The Home Services Marketing Agent recombines local SEO, social listening, content strategy, and AI visibility for contractors and home-service businesses — HVAC, plumbing, roofing, and more. It audits local search across service areas, mines homeowner questions for content, and checks AI-answer visibility.
 
@@ -26,9 +26,26 @@ The Home Services Marketing Agent recombines local SEO, social listening, conten
 - AI-answer visibility for 'plumber near me'-style prompts
 - Review-presence and listing gaps vs local competitors
 
-## Run it
+## Install & run
 
-Install once — one plugin gives your assistant the skills **and** the UnifAPI public-data MCP server (OAuth, read-only). Then ask:
+One install, three paths — all read-only with OAuth sign-in (new workspaces get free trial credits):
+
+**Plugin — skills + live data in one install** (Claude Code, OpenClaw):
+
+```text
+/plugin marketplace add unifapi-agent/agents
+/plugin install unifapi@unifapi
+```
+
+Hermes: `hermes plugins install unifapi-agent/agents`. Codex ships a plugin manifest too.
+
+**Web connector — no terminal** (Claude, ChatGPT, Perplexity): add a custom connector pointed at `https://mcp.unifapi.com`, then authorize over OAuth.
+
+**Any other MCP client**: point it at `https://mcp.unifapi.com` (OAuth) and add the skills with `npx skills add unifapi-agent/agents`.
+
+Step-by-step for every client → https://unifapi.com/mcp
+
+Then ask your assistant:
 
 ```text
 Audit home services marketing visibility for my HVAC company across the Phoenix, AZ metro. Check local-pack rankings for "ac repair" and "hvac near me" by service area, find content topics from common homeowner questions, and check whether we're cited in AI answers for service-search prompts.
@@ -57,7 +74,7 @@ Local SEO, Content Strategy, Social Listening, and AI Visibility Role Agents tun
 ## Links
 
 - Agent page: https://unifapi.com/agents/home-services-marketing
-- Install — one plugin, skills + live data: https://unifapi.com/mcp
+- Install & all clients: https://unifapi.com/mcp
 - MCP server: `https://mcp.unifapi.com`
 - All agents: https://unifapi.com/agents · Docs: https://docs.unifapi.com
 

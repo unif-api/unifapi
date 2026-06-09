@@ -19,15 +19,26 @@ UnifAPI is for **public** data — social profiles and posts, search results and
 
 ## Run it
 
-Add the MCP server and let your client complete browser OAuth:
+Connect once and every skill reads through it. Pick the path your client supports — all OAuth, read-only:
+
+**Plugin — skills + live data in one install** (Claude Code, OpenClaw):
 
 ```text
-https://mcp.unifapi.com
+/plugin marketplace add unifapi-agent/agents
+/plugin install unifapi@unifapi
 ```
+
+Hermes: `hermes plugins install unifapi-agent/agents`. Codex ships a plugin manifest too.
+
+**Web connector — no terminal** (Claude, ChatGPT, Perplexity): add a custom connector pointed at `https://mcp.unifapi.com`, then authorize over OAuth.
+
+**Any other MCP client**: point it at `https://mcp.unifapi.com` (OAuth) and add the skills with `npx skills add unifapi-agent/agents`.
+
+Step-by-step for every client → https://unifapi.com/mcp
 
 ## Links
 
-- Install — one plugin, skills + live data: https://unifapi.com/mcp
+- Install & all clients: https://unifapi.com/mcp
 - The skill itself: [SKILL.md](./SKILL.md)
 - Docs: https://docs.unifapi.com/mcp
 - API catalog: https://unifapi.com/apis

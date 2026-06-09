@@ -6,7 +6,7 @@
 
 For law firms, reviews and a complete Google Business Profile are the biggest levers on local prominence and on conversion — prospects read reviews before they call. This skill benchmarks a firm's review standing and local-pack presence against the firms ranking for its attorney-search queries and quantifies the gap. Read-only marketing research, not legal advice.
 
-An atomic marketing skill you run inside Claude, Claude Code, ChatGPT (custom MCP), Codex, Cursor, OpenClaw, Hermes, or any MCP client — read-only public-data research, **eyes not hands**. It diagnoses, prices, and drafts evidence; your own assistant and accounts take any action.
+An atomic marketing skill you run inside Claude, ChatGPT, Claude Code, Cursor, Codex, OpenClaw, Hermes, or any MCP client — read-only public-data research, **eyes not hands**. It diagnoses, prices, and drafts evidence; your own assistant and accounts take any action.
 
 ## What it's good for
 
@@ -31,6 +31,17 @@ Live public data through the shared [`unifapi`](../../unifapi/) data skill — U
 Benchmark my law firm in Chicago against competing firms for "personal injury lawyer near me": review count, rating, 90-day velocity, and profile completeness, plus the net-new-reviews target to catch the leader.
 ```
 
+## Install
+
+Ships in the **UnifAPI Agents** plugin — one install adds the skills and the public-data MCP server (OAuth, read-only). In Claude Code or OpenClaw:
+
+```text
+/plugin marketplace add unifapi-agent/agents
+/plugin install unifapi@unifapi
+```
+
+Web connector (Claude · ChatGPT · Perplexity), Codex, Cursor, and the `npx skills` path: https://unifapi.com/mcp
+
 ## Related
 
 - Part of the **[Law Firm Marketing Agent](../)**
@@ -40,7 +51,7 @@ Benchmark my law firm in Chicago against competing firms for "personal injury la
 
 - Skill page: https://unifapi.com/skills/attorney-reputation-benchmark
 - The skill itself: [SKILL.md](./SKILL.md)
-- Install — one plugin, skills + live data: https://unifapi.com/mcp
+- Install & all clients: https://unifapi.com/mcp
 - Docs: https://docs.unifapi.com
 
 <sub>Topics: law firm reviews benchmark · attorney review benchmark · law firm local SEO · attorney map pack · law firm reputation management · Google reviews for lawyers</sub>

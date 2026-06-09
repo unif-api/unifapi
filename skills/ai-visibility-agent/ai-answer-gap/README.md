@@ -6,7 +6,7 @@
 
 The bridge from 'we're not visible in AI' to a concrete backlist: find the prompts where the brand should be cited but isn't, name the competitor or domain that owns each answer, and rank the gaps by AI search demand so the content team attacks the biggest, most winnable misses first.
 
-An atomic marketing skill you run inside Claude, Claude Code, ChatGPT (custom MCP), Codex, Cursor, OpenClaw, Hermes, or any MCP client — read-only public-data research, **eyes not hands**. It diagnoses, prices, and drafts evidence; your own assistant and accounts take any action.
+An atomic marketing skill you run inside Claude, ChatGPT, Claude Code, Cursor, Codex, OpenClaw, Hermes, or any MCP client — read-only public-data research, **eyes not hands**. It diagnoses, prices, and drafts evidence; your own assistant and accounts take any action.
 
 ## What it's good for
 
@@ -31,6 +31,17 @@ Live public data through the shared [`unifapi`](../../unifapi/) data skill — U
 Find the AI-answer prompts we should own but don't for our category, name who owns each answer instead, and rank them by AI search volume into a content backlist with quick wins flagged.
 ```
 
+## Install
+
+Ships in the **UnifAPI Agents** plugin — one install adds the skills and the public-data MCP server (OAuth, read-only). In Claude Code or OpenClaw:
+
+```text
+/plugin marketplace add unifapi-agent/agents
+/plugin install unifapi@unifapi
+```
+
+Web connector (Claude · ChatGPT · Perplexity), Codex, Cursor, and the `npx skills` path: https://unifapi.com/mcp
+
 ## Related
 
 - Part of the **[AI Visibility Agent](../)**
@@ -43,7 +54,7 @@ Find the AI-answer prompts we should own but don't for our category, name who ow
 
 - Skill page: https://unifapi.com/skills/ai-answer-gap
 - The skill itself: [SKILL.md](./SKILL.md)
-- Install — one plugin, skills + live data: https://unifapi.com/mcp
+- Install & all clients: https://unifapi.com/mcp
 - Docs: https://docs.unifapi.com
 
 <sub>Topics: AI answer gap · how to show up in ChatGPT answers · AI content gap · answer engine optimization · find AI visibility gaps · GEO content opportunities</sub>

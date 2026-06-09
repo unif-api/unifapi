@@ -6,7 +6,7 @@
 
 Home-services businesses live or die by the local pack, and local rank is computed per location — a contractor can dominate its home city and be invisible two towns over. This skill audits local-pack rank for the trade's service + location queries across every service area, benchmarks against the competitors there, and surfaces which areas are weak. Read-only.
 
-An atomic marketing skill you run inside Claude, Claude Code, ChatGPT (custom MCP), Codex, Cursor, OpenClaw, Hermes, or any MCP client — read-only public-data research, **eyes not hands**. It diagnoses, prices, and drafts evidence; your own assistant and accounts take any action.
+An atomic marketing skill you run inside Claude, ChatGPT, Claude Code, Cursor, Codex, OpenClaw, Hermes, or any MCP client — read-only public-data research, **eyes not hands**. It diagnoses, prices, and drafts evidence; your own assistant and accounts take any action.
 
 ## What it's good for
 
@@ -31,6 +31,17 @@ Live public data through the shared [`unifapi`](../../unifapi/) data skill — U
 Audit local-pack rank for my HVAC company across the Phoenix metro for "ac repair" and "hvac near me" by city and ZIP, mark each area strong/contested/weak, and show who holds the pack where we're weak.
 ```
 
+## Install
+
+Ships in the **UnifAPI Agents** plugin — one install adds the skills and the public-data MCP server (OAuth, read-only). In Claude Code or OpenClaw:
+
+```text
+/plugin marketplace add unifapi-agent/agents
+/plugin install unifapi@unifapi
+```
+
+Web connector (Claude · ChatGPT · Perplexity), Codex, Cursor, and the `npx skills` path: https://unifapi.com/mcp
+
 ## Related
 
 - Part of the **[Home Services Marketing Agent](../)**
@@ -40,7 +51,7 @@ Audit local-pack rank for my HVAC company across the Phoenix metro for "ac repai
 
 - Skill page: https://unifapi.com/skills/service-area-rank-audit
 - The skill itself: [SKILL.md](./SKILL.md)
-- Install — one plugin, skills + live data: https://unifapi.com/mcp
+- Install & all clients: https://unifapi.com/mcp
 - Docs: https://docs.unifapi.com
 
 <sub>Topics: service area ranking · home services local SEO · multi-area local SEO · contractor map pack · HVAC local SEO · near me ranking by location</sub>

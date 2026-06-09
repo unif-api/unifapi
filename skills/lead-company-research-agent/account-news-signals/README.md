@@ -6,7 +6,7 @@
 
 A relevant reason to reach out beats a clever subject line. Funding rounds, new executives, expansion, launches, and partnerships are public trigger events. This skill pulls recent public news for a target account and converts each item into a dated outreach hook tied to its source. Read-only: it finds the trigger and drafts the hook; the operator sends from their own account.
 
-An atomic marketing skill you run inside Claude, Claude Code, ChatGPT (custom MCP), Codex, Cursor, OpenClaw, Hermes, or any MCP client — read-only public-data research, **eyes not hands**. It diagnoses, prices, and drafts evidence; your own assistant and accounts take any action.
+An atomic marketing skill you run inside Claude, ChatGPT, Claude Code, Cursor, Codex, OpenClaw, Hermes, or any MCP client — read-only public-data research, **eyes not hands**. It diagnoses, prices, and drafts evidence; your own assistant and accounts take any action.
 
 ## What it's good for
 
@@ -31,6 +31,17 @@ Live public data through the shared [`unifapi`](../../unifapi/) data skill — U
 Pull recent public news for this target account — funding, leadership changes, expansion, launches — and turn each into a dated, sourced one-line outreach hook, flagging what's still fresh.
 ```
 
+## Install
+
+Ships in the **UnifAPI Agents** plugin — one install adds the skills and the public-data MCP server (OAuth, read-only). In Claude Code or OpenClaw:
+
+```text
+/plugin marketplace add unifapi-agent/agents
+/plugin install unifapi@unifapi
+```
+
+Web connector (Claude · ChatGPT · Perplexity), Codex, Cursor, and the `npx skills` path: https://unifapi.com/mcp
+
 ## Related
 
 - Part of the **[Lead & Company Research Agent](../)**
@@ -40,7 +51,7 @@ Pull recent public news for this target account — funding, leadership changes,
 
 - Skill page: https://unifapi.com/skills/account-news-signals
 - The skill itself: [SKILL.md](./SKILL.md)
-- Install — one plugin, skills + live data: https://unifapi.com/mcp
+- Install & all clients: https://unifapi.com/mcp
 - Docs: https://docs.unifapi.com
 
 <sub>Topics: company news monitoring · sales trigger events · account research · funding announcements for sales · news-based outreach · timely outreach hook</sub>

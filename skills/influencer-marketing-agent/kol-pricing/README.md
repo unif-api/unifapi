@@ -6,7 +6,7 @@
 
 Ask Claude, ChatGPT custom MCP apps, OpenClaw, Hermes, Codex, Claude Code, Cursor, VS Code, or another MCP-capable agent to price public Twitter/X creators with UnifAPI MCP, recent engagement, audience fit, and confidence notes.
 
-An atomic marketing skill you run inside Claude, Claude Code, ChatGPT (custom MCP), Codex, Cursor, OpenClaw, Hermes, or any MCP client — read-only public-data research, **eyes not hands**. It diagnoses, prices, and drafts evidence; your own assistant and accounts take any action.
+An atomic marketing skill you run inside Claude, ChatGPT, Claude Code, Cursor, Codex, OpenClaw, Hermes, or any MCP client — read-only public-data research, **eyes not hands**. It diagnoses, prices, and drafts evidence; your own assistant and accounts take any action.
 
 ## What it's good for
 
@@ -30,6 +30,17 @@ Live public data through the shared [`unifapi`](../../unifapi/) data skill — U
 ```text
 Analyze these Twitter/X KOLs for an AI developer-tool campaign: @vercel, @shadcn, @rauchg. Use UnifAPI public data, compare recent engagement, audience fit, posting cadence, and collaboration risk. Return a ranked table with estimated sponsored-post price ranges, confidence, evidence, and follow-up questions.
 ```
+
+## Install
+
+Ships in the **UnifAPI Agents** plugin — one install adds the skills and the public-data MCP server (OAuth, read-only). In Claude Code or OpenClaw:
+
+```text
+/plugin marketplace add unifapi-agent/agents
+/plugin install unifapi@unifapi
+```
+
+Web connector (Claude · ChatGPT · Perplexity), Codex, Cursor, and the `npx skills` path: https://unifapi.com/mcp
 
 ## FAQ
 
@@ -58,7 +69,7 @@ UnifAPI standard public-data records are one $0.001 credit, with operation minim
 
 - Skill page: https://unifapi.com/skills/kol-pricing
 - The skill itself: [SKILL.md](./SKILL.md)
-- Install — one plugin, skills + live data: https://unifapi.com/mcp
+- Install & all clients: https://unifapi.com/mcp
 - Docs: https://docs.unifapi.com
 
 ## Credits

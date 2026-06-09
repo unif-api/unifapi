@@ -6,7 +6,7 @@
 
 A technical and on-page SEO audit that pulls live SERP positions, competitor results, and rich-feature data from UnifAPI so every finding is backed by what's actually ranking, then prioritizes fixes by impact.
 
-An atomic marketing skill you run inside Claude, Claude Code, ChatGPT (custom MCP), Codex, Cursor, OpenClaw, Hermes, or any MCP client — read-only public-data research, **eyes not hands**. It diagnoses, prices, and drafts evidence; your own assistant and accounts take any action.
+An atomic marketing skill you run inside Claude, ChatGPT, Claude Code, Cursor, Codex, OpenClaw, Hermes, or any MCP client — read-only public-data research, **eyes not hands**. It diagnoses, prices, and drafts evidence; your own assistant and accounts take any action.
 
 ## What it's good for
 
@@ -30,6 +30,17 @@ Live public data through the shared [`unifapi`](../../unifapi/) data skill — U
 Audit example.com for the keyword set ["unified api", "public data api"]. Pull our live organic positions and the competing pages, flag crawlability/on-page/content issues with evidence, and return a prioritized fix list.
 ```
 
+## Install
+
+Ships in the **UnifAPI Agents** plugin — one install adds the skills and the public-data MCP server (OAuth, read-only). In Claude Code or OpenClaw:
+
+```text
+/plugin marketplace add unifapi-agent/agents
+/plugin install unifapi@unifapi
+```
+
+Web connector (Claude · ChatGPT · Perplexity), Codex, Cursor, and the `npx skills` path: https://unifapi.com/mcp
+
 ## FAQ
 
 ### Does it change my site?
@@ -52,7 +63,7 @@ Every finding is tied to live ranking evidence — what's actually ranking for y
 
 - Skill page: https://unifapi.com/skills/seo-audit
 - The skill itself: [SKILL.md](./SKILL.md)
-- Install — one plugin, skills + live data: https://unifapi.com/mcp
+- Install & all clients: https://unifapi.com/mcp
 - Docs: https://docs.unifapi.com
 
 ## Credits

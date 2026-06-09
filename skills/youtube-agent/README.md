@@ -2,7 +2,7 @@
 
 # YouTube Agent
 
-> Platform Agent · run inside Claude, Claude Code, ChatGPT (custom MCP), Codex, Cursor, OpenClaw, Hermes, or any MCP client. Read-only public-data research — **eyes, not hands**.
+> Platform Agent · run inside Claude, ChatGPT, Claude Code, Cursor, Codex, OpenClaw, Hermes, or any MCP client. Read-only public-data research — **eyes, not hands**.
 
 The YouTube Agent turns public YouTube into channel and content research: channel and video metadata, view-count signal, related videos, search, and trending. It owns the YouTube Data Skill — the deterministic read path — and composes the Role-Agent Skills behind creator vetting, competitor demo reception, and content-demand work — and never uploads or comments.
 
@@ -30,9 +30,26 @@ The YouTube Agent turns public YouTube into channel and content research: channe
 - Search-based demand for a topic or format
 - Each figure cited to the public video or channel
 
-## Run it
+## Install & run
 
-Install once — one plugin gives your assistant the skills **and** the UnifAPI public-data MCP server (OAuth, read-only). Then ask:
+One install, three paths — all read-only with OAuth sign-in (new workspaces get free trial credits):
+
+**Plugin — skills + live data in one install** (Claude Code, OpenClaw):
+
+```text
+/plugin marketplace add unifapi-agent/agents
+/plugin install unifapi@unifapi
+```
+
+Hermes: `hermes plugins install unifapi-agent/agents`. Codex ships a plugin manifest too.
+
+**Web connector — no terminal** (Claude, ChatGPT, Perplexity): add a custom connector pointed at `https://mcp.unifapi.com`, then authorize over OAuth.
+
+**Any other MCP client**: point it at `https://mcp.unifapi.com` (OAuth) and add the skills with `npx skills add unifapi-agent/agents`.
+
+Step-by-step for every client → https://unifapi.com/mcp
+
+Then ask your assistant:
 
 ```text
 Research YouTube for my topic: pull the channels and videos that own it, their view and like counts, and related content. Return a cited brief on demand and the strongest channels — read-only, do not upload or comment.
@@ -57,7 +74,7 @@ No. The YouTube Agent is read-only research; you publish anything from your own 
 ## Links
 
 - Agent page: https://unifapi.com/agents/youtube
-- Install — one plugin, skills + live data: https://unifapi.com/mcp
+- Install & all clients: https://unifapi.com/mcp
 - MCP server: `https://mcp.unifapi.com`
 - All agents: https://unifapi.com/agents · Docs: https://docs.unifapi.com
 

@@ -6,7 +6,7 @@
 
 Turn a market brief into a ranked creator shortlist across social platforms, with evidence and outreach angles.
 
-An atomic marketing skill you run inside Claude, Claude Code, ChatGPT (custom MCP), Codex, Cursor, OpenClaw, Hermes, or any MCP client — read-only public-data research, **eyes not hands**. It diagnoses, prices, and drafts evidence; your own assistant and accounts take any action.
+An atomic marketing skill you run inside Claude, ChatGPT, Claude Code, Cursor, Codex, OpenClaw, Hermes, or any MCP client — read-only public-data research, **eyes not hands**. It diagnoses, prices, and drafts evidence; your own assistant and accounts take any action.
 
 ## What it's good for
 
@@ -30,6 +30,17 @@ Live public data through the shared [`unifapi`](../../unifapi/) data skill — U
 Find 30 creators for a cross-border ecommerce campaign. Prioritize recent momentum, audience fit, and reachable public profiles. Return a shortlist with evidence and outreach angles.
 ```
 
+## Install
+
+Ships in the **UnifAPI Agents** plugin — one install adds the skills and the public-data MCP server (OAuth, read-only). In Claude Code or OpenClaw:
+
+```text
+/plugin marketplace add unifapi-agent/agents
+/plugin install unifapi@unifapi
+```
+
+Web connector (Claude · ChatGPT · Perplexity), Codex, Cursor, and the `npx skills` path: https://unifapi.com/mcp
+
 ## Related
 
 - Part of the **[Influencer Marketing Agent](../)**
@@ -39,7 +50,7 @@ Find 30 creators for a cross-border ecommerce campaign. Prioritize recent moment
 
 - Skill page: https://unifapi.com/skills/creator-shortlist
 - The skill itself: [SKILL.md](./SKILL.md)
-- Install — one plugin, skills + live data: https://unifapi.com/mcp
+- Install & all clients: https://unifapi.com/mcp
 - Docs: https://docs.unifapi.com
 
 <sub>Topics: find influencers · creator discovery · find influencers by niche · influencer shortlist · influencer search tool · build an influencer list</sub>

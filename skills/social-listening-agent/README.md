@@ -2,7 +2,7 @@
 
 # Social Listening Agent
 
-> Role Agent · run inside Claude, Claude Code, ChatGPT (custom MCP), Codex, Cursor, OpenClaw, Hermes, or any MCP client. Read-only public-data research — **eyes, not hands**.
+> Role Agent · run inside Claude, ChatGPT, Claude Code, Cursor, Codex, OpenClaw, Hermes, or any MCP client. Read-only public-data research — **eyes, not hands**.
 
 The Social Listening Agent watches public posts, comments, threads, and news for a brand, category, or launch, then returns a concise brief instead of a dashboard. It bundles the Social Listening Brief and Reddit Community Research Skills.
 
@@ -25,9 +25,26 @@ The Social Listening Agent watches public posts, comments, threads, and news for
 - Complaint and feature-request clusters
 - What changed since the last brief, with follow-up searches
 
-## Run it
+## Install & run
 
-Install once — one plugin gives your assistant the skills **and** the UnifAPI public-data MCP server (OAuth, read-only). Then ask:
+One install, three paths — all read-only with OAuth sign-in (new workspaces get free trial credits):
+
+**Plugin — skills + live data in one install** (Claude Code, OpenClaw):
+
+```text
+/plugin marketplace add unifapi-agent/agents
+/plugin install unifapi@unifapi
+```
+
+Hermes: `hermes plugins install unifapi-agent/agents`. Codex ships a plugin manifest too.
+
+**Web connector — no terminal** (Claude, ChatGPT, Perplexity): add a custom connector pointed at `https://mcp.unifapi.com`, then authorize over OAuth.
+
+**Any other MCP client**: point it at `https://mcp.unifapi.com` (OAuth) and add the skills with `npx skills add unifapi-agent/agents`.
+
+Step-by-step for every client → https://unifapi.com/mcp
+
+Then ask your assistant:
 
 ```text
 Monitor public chatter about AI coding tools this week across X, Reddit, TikTok, and news. Group repeated phrases, complaints, feature requests, and active communities. Return a brief with example posts and what changed vs last week.
@@ -54,7 +71,7 @@ No. It reads public posts only. For your own authenticated account analytics, us
 ## Links
 
 - Agent page: https://unifapi.com/agents/social-listening
-- Install — one plugin, skills + live data: https://unifapi.com/mcp
+- Install & all clients: https://unifapi.com/mcp
 - MCP server: `https://mcp.unifapi.com`
 - All agents: https://unifapi.com/agents · Docs: https://docs.unifapi.com
 

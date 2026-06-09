@@ -6,7 +6,7 @@
 
 Dental practices live or die in the local pack, and the biggest prominence lever they control is reviews — quantity, rating, and especially velocity. This skill benchmarks a practice's review standing and local-pack presence against the nearest competitors and quantifies the net-new reviews needed to catch the leader. Read-only marketing research, not clinical advice.
 
-An atomic marketing skill you run inside Claude, Claude Code, ChatGPT (custom MCP), Codex, Cursor, OpenClaw, Hermes, or any MCP client — read-only public-data research, **eyes not hands**. It diagnoses, prices, and drafts evidence; your own assistant and accounts take any action.
+An atomic marketing skill you run inside Claude, ChatGPT, Claude Code, Cursor, Codex, OpenClaw, Hermes, or any MCP client — read-only public-data research, **eyes not hands**. It diagnoses, prices, and drafts evidence; your own assistant and accounts take any action.
 
 ## What it's good for
 
@@ -31,6 +31,17 @@ Live public data through the shared [`unifapi`](../../unifapi/) data skill — U
 Benchmark my dental practice in Denver against the nearest competitors for "dentist near me": review count, rating, and 90-day velocity, and tell me the gap to the local-pack leader and the reviews/quarter to close it.
 ```
 
+## Install
+
+Ships in the **UnifAPI Agents** plugin — one install adds the skills and the public-data MCP server (OAuth, read-only). In Claude Code or OpenClaw:
+
+```text
+/plugin marketplace add unifapi-agent/agents
+/plugin install unifapi@unifapi
+```
+
+Web connector (Claude · ChatGPT · Perplexity), Codex, Cursor, and the `npx skills` path: https://unifapi.com/mcp
+
 ## Related
 
 - Part of the **[Dental Marketing Agent](../)**
@@ -40,7 +51,7 @@ Benchmark my dental practice in Denver against the nearest competitors for "dent
 
 - Skill page: https://unifapi.com/skills/dental-reputation-benchmark
 - The skill itself: [SKILL.md](./SKILL.md)
-- Install — one plugin, skills + live data: https://unifapi.com/mcp
+- Install & all clients: https://unifapi.com/mcp
 - Docs: https://docs.unifapi.com
 
 <sub>Topics: dental reviews benchmark · dental local SEO · dentist map pack · dental reputation management · Google reviews for dentists · dental review velocity</sub>

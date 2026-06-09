@@ -6,7 +6,7 @@
 
 The recurring read where the audit is a snapshot: track brand and domain mentions across ChatGPT and AI search engines over a fixed prompt set, compute share of voice against named competitors, and report what moved run-over-run — every figure cited to the AI answer and dated.
 
-An atomic marketing skill you run inside Claude, Claude Code, ChatGPT (custom MCP), Codex, Cursor, OpenClaw, Hermes, or any MCP client — read-only public-data research, **eyes not hands**. It diagnoses, prices, and drafts evidence; your own assistant and accounts take any action.
+An atomic marketing skill you run inside Claude, ChatGPT, Claude Code, Cursor, Codex, OpenClaw, Hermes, or any MCP client — read-only public-data research, **eyes not hands**. It diagnoses, prices, and drafts evidence; your own assistant and accounts take any action.
 
 ## What it's good for
 
@@ -31,6 +31,17 @@ Live public data through the shared [`unifapi`](../../unifapi/) data skill — U
 Track our AI share of voice for our fixed prompt set this week across ChatGPT and AI search, compare it to last run, and flag the prompts where we're mentioned but not cited as a source.
 ```
 
+## Install
+
+Ships in the **UnifAPI Agents** plugin — one install adds the skills and the public-data MCP server (OAuth, read-only). In Claude Code or OpenClaw:
+
+```text
+/plugin marketplace add unifapi-agent/agents
+/plugin install unifapi@unifapi
+```
+
+Web connector (Claude · ChatGPT · Perplexity), Codex, Cursor, and the `npx skills` path: https://unifapi.com/mcp
+
 ## Related
 
 - Part of the **[AI Visibility Agent](../)**
@@ -42,7 +53,7 @@ Track our AI share of voice for our fixed prompt set this week across ChatGPT an
 
 - Skill page: https://unifapi.com/skills/llm-mention-tracking
 - The skill itself: [SKILL.md](./SKILL.md)
-- Install — one plugin, skills + live data: https://unifapi.com/mcp
+- Install & all clients: https://unifapi.com/mcp
 - Docs: https://docs.unifapi.com
 
 <sub>Topics: track brand mentions in ChatGPT · AI mention monitoring · LLM mention tracking · ChatGPT brand monitoring · AI share of voice · AI visibility tracking · monitor AI citations</sub>

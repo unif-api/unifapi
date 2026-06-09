@@ -2,7 +2,7 @@
 
 # AI Visibility Agent
 
-> Role Agent · run inside Claude, Claude Code, ChatGPT (custom MCP), Codex, Cursor, OpenClaw, Hermes, or any MCP client. Read-only public-data research — **eyes, not hands**.
+> Role Agent · run inside Claude, ChatGPT, Claude Code, Cursor, Codex, OpenClaw, Hermes, or any MCP client. Read-only public-data research — **eyes, not hands**.
 
 The AI Visibility Agent (GEO) tracks generative-engine optimization signal: AI Mode answers with cited sources, LLM-mention tracking across ChatGPT and AI search engines, and AI keyword search volume. It shows where you are cited, where you are missing, and which prompts to optimize next.
 
@@ -26,9 +26,26 @@ The AI Visibility Agent (GEO) tracks generative-engine optimization signal: AI M
 - AI keyword search volume for target prompts
 - Visibility gaps and the prompts to optimize next
 
-## Run it
+## Install & run
 
-Install once — one plugin gives your assistant the skills **and** the UnifAPI public-data MCP server (OAuth, read-only). Then ask:
+One install, three paths — all read-only with OAuth sign-in (new workspaces get free trial credits):
+
+**Plugin — skills + live data in one install** (Claude Code, OpenClaw):
+
+```text
+/plugin marketplace add unifapi-agent/agents
+/plugin install unifapi@unifapi
+```
+
+Hermes: `hermes plugins install unifapi-agent/agents`. Codex ships a plugin manifest too.
+
+**Web connector — no terminal** (Claude, ChatGPT, Perplexity): add a custom connector pointed at `https://mcp.unifapi.com`, then authorize over OAuth.
+
+**Any other MCP client**: point it at `https://mcp.unifapi.com` (OAuth) and add the skills with `npx skills add unifapi-agent/agents`.
+
+Step-by-step for every client → https://unifapi.com/mcp
+
+Then ask your assistant:
 
 ```text
 For these prompts — "best unified public data api", "mcp server for social data" — check whether example.com and our brand are cited in AI answers across AI search. Return the cited sources, our mentions vs competitors, AI search volume, and the prompts where we are missing entirely.
@@ -55,7 +72,7 @@ No — it reads and measures. It will tell you which prompts you lose and why, b
 ## Links
 
 - Agent page: https://unifapi.com/agents/ai-visibility
-- Install — one plugin, skills + live data: https://unifapi.com/mcp
+- Install & all clients: https://unifapi.com/mcp
 - MCP server: `https://mcp.unifapi.com`
 - All agents: https://unifapi.com/agents · Docs: https://docs.unifapi.com
 

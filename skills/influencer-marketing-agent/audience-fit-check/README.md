@@ -6,7 +6,7 @@
 
 Given one creator and a brand/product, assess whether their audience actually matches the target customer and whether their public content carries brand-safety risk — before the operator spends budget or sends outreach. Evidence comes from public posts and engagement, not assumptions. Read-only research, not outreach.
 
-An atomic marketing skill you run inside Claude, Claude Code, ChatGPT (custom MCP), Codex, Cursor, OpenClaw, Hermes, or any MCP client — read-only public-data research, **eyes not hands**. It diagnoses, prices, and drafts evidence; your own assistant and accounts take any action.
+An atomic marketing skill you run inside Claude, ChatGPT, Claude Code, Cursor, Codex, OpenClaw, Hermes, or any MCP client — read-only public-data research, **eyes not hands**. It diagnoses, prices, and drafts evidence; your own assistant and accounts take any action.
 
 ## What it's good for
 
@@ -31,6 +31,17 @@ Live public data through the shared [`unifapi`](../../unifapi/) data skill — U
 Vet @creatorhandle for our developer-tool brand: does their audience match our target customer, is the engagement healthy, and are there any brand-safety flags? Give me a proceed / conditions / pass call with evidence.
 ```
 
+## Install
+
+Ships in the **UnifAPI Agents** plugin — one install adds the skills and the public-data MCP server (OAuth, read-only). In Claude Code or OpenClaw:
+
+```text
+/plugin marketplace add unifapi-agent/agents
+/plugin install unifapi@unifapi
+```
+
+Web connector (Claude · ChatGPT · Perplexity), Codex, Cursor, and the `npx skills` path: https://unifapi.com/mcp
+
 ## Related
 
 - Part of the **[Influencer Marketing Agent](../)**
@@ -40,7 +51,7 @@ Vet @creatorhandle for our developer-tool brand: does their audience match our t
 
 - Skill page: https://unifapi.com/skills/audience-fit-check
 - The skill itself: [SKILL.md](./SKILL.md)
-- Install — one plugin, skills + live data: https://unifapi.com/mcp
+- Install & all clients: https://unifapi.com/mcp
 - Docs: https://docs.unifapi.com
 
 <sub>Topics: creator vetting · influencer brand safety check · vet a creator · creator audience fit · influencer audience analysis · creator due diligence</sub>

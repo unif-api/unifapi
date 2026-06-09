@@ -6,7 +6,7 @@
 
 Homeowners search the problem ('why is my ac freezing up') and the money question ('cost to replace a furnace') — the highest-intent, lowest-cost content a contractor can own, feeding both Google and AI assistants. This skill mines those questions across search demand, communities, and AI prompts and ranks them into a content plan tied to the services the business offers. Read-only.
 
-An atomic marketing skill you run inside Claude, Claude Code, ChatGPT (custom MCP), Codex, Cursor, OpenClaw, Hermes, or any MCP client — read-only public-data research, **eyes not hands**. It diagnoses, prices, and drafts evidence; your own assistant and accounts take any action.
+An atomic marketing skill you run inside Claude, ChatGPT, Claude Code, Cursor, Codex, OpenClaw, Hermes, or any MCP client — read-only public-data research, **eyes not hands**. It diagnoses, prices, and drafts evidence; your own assistant and accounts take any action.
 
 ## What it's good for
 
@@ -31,6 +31,17 @@ Live public data through the shared [`unifapi`](../../unifapi/) data skill — U
 Find the real problem and cost questions homeowners ask about HVAC services across search, communities, and AI prompts, and rank them into a content plan tied to the services we offer.
 ```
 
+## Install
+
+Ships in the **UnifAPI Agents** plugin — one install adds the skills and the public-data MCP server (OAuth, read-only). In Claude Code or OpenClaw:
+
+```text
+/plugin marketplace add unifapi-agent/agents
+/plugin install unifapi@unifapi
+```
+
+Web connector (Claude · ChatGPT · Perplexity), Codex, Cursor, and the `npx skills` path: https://unifapi.com/mcp
+
 ## Related
 
 - Part of the **[Home Services Marketing Agent](../)**
@@ -40,7 +51,7 @@ Find the real problem and cost questions homeowners ask about HVAC services acro
 
 - Skill page: https://unifapi.com/skills/homeowner-question-content
 - The skill itself: [SKILL.md](./SKILL.md)
-- Install — one plugin, skills + live data: https://unifapi.com/mcp
+- Install & all clients: https://unifapi.com/mcp
 - Docs: https://docs.unifapi.com
 
 <sub>Topics: home services content ideas · homeowner questions · cost to replace content · trade SEO content · AI answers for repair questions · HVAC content marketing</sub>

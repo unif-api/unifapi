@@ -6,7 +6,7 @@
 
 A framework skill: pick the correct structured-data types for a page, generate valid JSON-LD, and avoid the markup mistakes that suppress rich results. Advice-only — your own assistant writes the markup into your site.
 
-An atomic marketing skill you run inside Claude, Claude Code, ChatGPT (custom MCP), Codex, Cursor, OpenClaw, Hermes, or any MCP client — read-only public-data research, **eyes not hands**. It diagnoses, prices, and drafts evidence; your own assistant and accounts take any action.
+An atomic marketing skill you run inside Claude, ChatGPT, Claude Code, Cursor, Codex, OpenClaw, Hermes, or any MCP client — read-only public-data research, **eyes not hands**. It diagnoses, prices, and drafts evidence; your own assistant and accounts take any action.
 
 ## What it's good for
 
@@ -29,6 +29,17 @@ A framework-and-judgment skill — it brings the playbook and the structure; you
 Recommend and generate the JSON-LD schema for this product page, then explain which rich results it can earn and how to validate it.
 ```
 
+## Install
+
+Ships in the **UnifAPI Agents** plugin — one install adds the skills and the public-data MCP server (OAuth, read-only). In Claude Code or OpenClaw:
+
+```text
+/plugin marketplace add unifapi-agent/agents
+/plugin install unifapi@unifapi
+```
+
+Web connector (Claude · ChatGPT · Perplexity), Codex, Cursor, and the `npx skills` path: https://unifapi.com/mcp
+
 ## Related
 
 - Part of the **[SEO Agent](../)**
@@ -39,7 +50,7 @@ Recommend and generate the JSON-LD schema for this product page, then explain wh
 
 - Skill page: https://unifapi.com/skills/schema
 - The skill itself: [SKILL.md](./SKILL.md)
-- Install — one plugin, skills + live data: https://unifapi.com/mcp
+- Install & all clients: https://unifapi.com/mcp
 - Docs: https://docs.unifapi.com
 
 ## Credits

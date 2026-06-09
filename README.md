@@ -8,7 +8,7 @@ Open-source **marketing agents** for Claude, ChatGPT, Codex, OpenClaw, Hermes, a
 [![skills.sh](https://skills.sh/b/unifapi-agent/agents)](https://skills.sh/unifapi-agent/agents)
 [![License: MIT](https://img.shields.io/badge/license-MIT-green)](./LICENSE)
 
-**[Agents](https://unifapi.com/agents)** · **[Skills](https://unifapi.com/skills)** · **[Install](https://unifapi.com/mcp)** · **[API catalog](https://unifapi.com/apis)** · **[Docs](https://docs.unifapi.com)**
+**[Agents](https://unifapi.com/agents)** · **[Skills](https://unifapi.com/skills)** · **[Install](https://unifapi.com/mcp)** · **[Connect a client](./connect/)** · **[API catalog](https://unifapi.com/apis)** · **[Docs](https://docs.unifapi.com)**
 
 These skills are generated and versioned — to suggest a change, open an issue or PR (see [CONTRIBUTING.md](./CONTRIBUTING.md)).
 
@@ -45,6 +45,8 @@ npx skills add unifapi-agent/agents
 ```
 
 This installs the skills only; add `https://mcp.unifapi.com` as an MCP server in your client (OAuth) for live data.
+
+Setting up a specific client? Step-by-step pages for every supported client live in [`connect/`](./connect/).
 
 After installing, sign in when prompted and ask your assistant:
 

@@ -6,7 +6,7 @@
 
 A wrong category, stale phone number, or missing address quietly suppresses local-pack rank and sends ready-to-buy customers to a competitor. This skill reads the public listing field by field, flags every gap or inconsistency, and checks whether the listing even surfaces for the business's own name + city — read-only.
 
-An atomic marketing skill you run inside Claude, Claude Code, ChatGPT (custom MCP), Codex, Cursor, OpenClaw, Hermes, or any MCP client — read-only public-data research, **eyes not hands**. It diagnoses, prices, and drafts evidence; your own assistant and accounts take any action.
+An atomic marketing skill you run inside Claude, ChatGPT, Claude Code, Cursor, Codex, OpenClaw, Hermes, or any MCP client — read-only public-data research, **eyes not hands**. It diagnoses, prices, and drafts evidence; your own assistant and accounts take any action.
 
 ## What it's good for
 
@@ -31,6 +31,17 @@ Live public data through the shared [`unifapi`](../../unifapi/) data skill — U
 Audit my business's public Google listing field by field — name, address, category, phone, rating, reviews — and flag anything inconsistent, missing, or that looks wrong.
 ```
 
+## Install
+
+Ships in the **UnifAPI Agents** plugin — one install adds the skills and the public-data MCP server (OAuth, read-only). In Claude Code or OpenClaw:
+
+```text
+/plugin marketplace add unifapi-agent/agents
+/plugin install unifapi@unifapi
+```
+
+Web connector (Claude · ChatGPT · Perplexity), Codex, Cursor, and the `npx skills` path: https://unifapi.com/mcp
+
 ## Related
 
 - Part of the **[Local SEO Agent](../)**
@@ -40,7 +51,7 @@ Audit my business's public Google listing field by field — name, address, cate
 
 - Skill page: https://unifapi.com/skills/listing-accuracy-audit
 - The skill itself: [SKILL.md](./SKILL.md)
-- Install — one plugin, skills + live data: https://unifapi.com/mcp
+- Install & all clients: https://unifapi.com/mcp
 - Docs: https://docs.unifapi.com
 
 <sub>Topics: Google Business Profile audit · business listing accuracy · NAP consistency check · local listing audit · business listing check · GBP audit</sub>

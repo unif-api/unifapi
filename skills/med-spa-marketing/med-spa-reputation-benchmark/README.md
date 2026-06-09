@@ -6,7 +6,7 @@
 
 Reviews drive both med-spa local-pack rank (prominence) and conversion. This skill reads public listing data through UnifAPI to benchmark a clinic's review volume, rating, and 90-day velocity against the nearest competitors and quantify the gap to close.
 
-An atomic marketing skill you run inside Claude, Claude Code, ChatGPT (custom MCP), Codex, Cursor, OpenClaw, Hermes, or any MCP client — read-only public-data research, **eyes not hands**. It diagnoses, prices, and drafts evidence; your own assistant and accounts take any action.
+An atomic marketing skill you run inside Claude, ChatGPT, Claude Code, Cursor, Codex, OpenClaw, Hermes, or any MCP client — read-only public-data research, **eyes not hands**. It diagnoses, prices, and drafts evidence; your own assistant and accounts take any action.
 
 ## What it's good for
 
@@ -30,6 +30,17 @@ Live public data through the shared [`unifapi`](../../unifapi/) data skill — U
 Benchmark my med spa in Miami against the 4 nearest competitors for "botox" and "laser hair removal": review count, rating, and reviews in the last 90 days. Tell me the gap to the local leader and how many net-new reviews per quarter would close it.
 ```
 
+## Install
+
+Ships in the **UnifAPI Agents** plugin — one install adds the skills and the public-data MCP server (OAuth, read-only). In Claude Code or OpenClaw:
+
+```text
+/plugin marketplace add unifapi-agent/agents
+/plugin install unifapi@unifapi
+```
+
+Web connector (Claude · ChatGPT · Perplexity), Codex, Cursor, and the `npx skills` path: https://unifapi.com/mcp
+
 ## FAQ
 
 ### Does it solicit or post reviews for me?
@@ -49,7 +60,7 @@ No. It is a marketing audit for med spas and does not provide medical or treatme
 
 - Skill page: https://unifapi.com/skills/med-spa-reputation-benchmark
 - The skill itself: [SKILL.md](./SKILL.md)
-- Install — one plugin, skills + live data: https://unifapi.com/mcp
+- Install & all clients: https://unifapi.com/mcp
 - Docs: https://docs.unifapi.com
 
 <sub>Topics: med spa reputation management · med spa Google reviews · med spa review benchmark · med spa local SEO · med spa map pack · review velocity</sub>

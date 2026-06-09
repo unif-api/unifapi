@@ -6,7 +6,7 @@
 
 Turn AI visibility and answer-gap evidence into a concrete remediation plan: identify why the current cited source wins, choose the right build path, and define acceptance checks for improving AI citations, mentions, and third-party presence.
 
-An atomic marketing skill you run inside Claude, Claude Code, ChatGPT (custom MCP), Codex, Cursor, OpenClaw, Hermes, or any MCP client — read-only public-data research, **eyes not hands**. It diagnoses, prices, and drafts evidence; your own assistant and accounts take any action.
+An atomic marketing skill you run inside Claude, ChatGPT, Claude Code, Cursor, Codex, OpenClaw, Hermes, or any MCP client — read-only public-data research, **eyes not hands**. It diagnoses, prices, and drafts evidence; your own assistant and accounts take any action.
 
 ## What it's good for
 
@@ -31,6 +31,17 @@ Live public data through the shared [`unifapi`](../../unifapi/) data skill — U
 Turn these AI visibility gaps into an AI visibility fix plan. For each high-value prompt, classify the miss as Structure, Authority, or Presence, choose the build path, and define the acceptance check.
 ```
 
+## Install
+
+Ships in the **UnifAPI Agents** plugin — one install adds the skills and the public-data MCP server (OAuth, read-only). In Claude Code or OpenClaw:
+
+```text
+/plugin marketplace add unifapi-agent/agents
+/plugin install unifapi@unifapi
+```
+
+Web connector (Claude · ChatGPT · Perplexity), Codex, Cursor, and the `npx skills` path: https://unifapi.com/mcp
+
 ## FAQ
 
 ### Why not call this AI Citation Fix Plan?
@@ -54,7 +65,7 @@ No. It improves human pages so they are clearer, better cited, and easier for AI
 
 - Skill page: https://unifapi.com/skills/ai-visibility-fix-plan
 - The skill itself: [SKILL.md](./SKILL.md)
-- Install — one plugin, skills + live data: https://unifapi.com/mcp
+- Install & all clients: https://unifapi.com/mcp
 - Docs: https://docs.unifapi.com
 
 <sub>Topics: how to get cited by ChatGPT · GEO optimization · AI visibility fixes · generative engine optimization tips · AI visibility fix plan · fix AI answer gaps · ChatGPT citation fixes · AI Overviews citation fixes</sub>

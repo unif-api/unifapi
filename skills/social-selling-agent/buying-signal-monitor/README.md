@@ -6,7 +6,7 @@
 
 The best time to reach a prospect is the moment they say out loud that they have the problem you solve. This skill watches the public X/Twitter and LinkedIn surface for intent — asking for a tool, venting about a vendor, posting a relevant job req — and returns a ranked warm-lead list with the proving post and a tailored outreach angle. Read-only: the operator sends from their own account.
 
-An atomic marketing skill you run inside Claude, Claude Code, ChatGPT (custom MCP), Codex, Cursor, OpenClaw, Hermes, or any MCP client — read-only public-data research, **eyes not hands**. It diagnoses, prices, and drafts evidence; your own assistant and accounts take any action.
+An atomic marketing skill you run inside Claude, ChatGPT, Claude Code, Cursor, Codex, OpenClaw, Hermes, or any MCP client — read-only public-data research, **eyes not hands**. It diagnoses, prices, and drafts evidence; your own assistant and accounts take any action.
 
 ## What it's good for
 
@@ -31,6 +31,17 @@ Live public data through the shared [`unifapi`](../../unifapi/) data skill — U
 Watch X and LinkedIn this week for people asking for a YouTube data API or complaining about scraping rate limits, and return a warm-lead list with the proving post and a one-line outreach angle for each.
 ```
 
+## Install
+
+Ships in the **UnifAPI Agents** plugin — one install adds the skills and the public-data MCP server (OAuth, read-only). In Claude Code or OpenClaw:
+
+```text
+/plugin marketplace add unifapi-agent/agents
+/plugin install unifapi@unifapi
+```
+
+Web connector (Claude · ChatGPT · Perplexity), Codex, Cursor, and the `npx skills` path: https://unifapi.com/mcp
+
 ## Related
 
 - Part of the **[Social Selling Agent](../)**
@@ -40,7 +51,7 @@ Watch X and LinkedIn this week for people asking for a YouTube data API or compl
 
 - Skill page: https://unifapi.com/skills/buying-signal-monitor
 - The skill itself: [SKILL.md](./SKILL.md)
-- Install — one plugin, skills + live data: https://unifapi.com/mcp
+- Install & all clients: https://unifapi.com/mcp
 - Docs: https://docs.unifapi.com
 
 <sub>Topics: buying signals · buyer intent · social selling tool · warm lead finder · LinkedIn buying signals · trigger event monitoring</sub>

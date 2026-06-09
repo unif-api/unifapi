@@ -2,7 +2,7 @@
 
 # Law Firm Marketing Agent
 
-> Vertical Agent · run inside Claude, Claude Code, ChatGPT (custom MCP), Codex, Cursor, OpenClaw, Hermes, or any MCP client. Read-only public-data research — **eyes, not hands**.
+> Vertical Agent · run inside Claude, ChatGPT, Claude Code, Cursor, Codex, OpenClaw, Hermes, or any MCP client. Read-only public-data research — **eyes, not hands**.
 
 The Law Firm Marketing Agent recombines local SEO, social listening, content strategy, and AI visibility for legal marketing. It audits local and organic search presence by practice area, mines the questions clients ask, and checks AI-answer visibility for attorney-search prompts.
 
@@ -26,9 +26,26 @@ The Law Firm Marketing Agent recombines local SEO, social listening, content str
 - AI-answer visibility for 'lawyer near me'-style prompts
 - Reputation and listing gaps vs competing firms
 
-## Run it
+## Install & run
 
-Install once — one plugin gives your assistant the skills **and** the UnifAPI public-data MCP server (OAuth, read-only). Then ask:
+One install, three paths — all read-only with OAuth sign-in (new workspaces get free trial credits):
+
+**Plugin — skills + live data in one install** (Claude Code, OpenClaw):
+
+```text
+/plugin marketplace add unifapi-agent/agents
+/plugin install unifapi@unifapi
+```
+
+Hermes: `hermes plugins install unifapi-agent/agents`. Codex ships a plugin manifest too.
+
+**Web connector — no terminal** (Claude, ChatGPT, Perplexity): add a custom connector pointed at `https://mcp.unifapi.com`, then authorize over OAuth.
+
+**Any other MCP client**: point it at `https://mcp.unifapi.com` (OAuth) and add the skills with `npx skills add unifapi-agent/agents`.
+
+Step-by-step for every client → https://unifapi.com/mcp
+
+Then ask your assistant:
 
 ```text
 Audit law firm marketing visibility for my practice in Chicago, IL. Check rankings for "personal injury lawyer" and "family law attorney", find content topics from common client questions, and check whether we're cited in AI answers for attorney-search prompts.
@@ -57,7 +74,7 @@ Local SEO, Content Strategy, Social Listening, and AI Visibility Role Agents tun
 ## Links
 
 - Agent page: https://unifapi.com/agents/law-firm-marketing
-- Install — one plugin, skills + live data: https://unifapi.com/mcp
+- Install & all clients: https://unifapi.com/mcp
 - MCP server: `https://mcp.unifapi.com`
 - All agents: https://unifapi.com/agents · Docs: https://docs.unifapi.com
 

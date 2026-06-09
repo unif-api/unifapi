@@ -6,7 +6,7 @@
 
 National portals dominate broad searches but are thin at the neighborhood level — exactly where an independent agent or local brokerage can win with hyperlocal content. This skill finds the neighborhood-level queries and content gaps worth owning, ranked by demand and winnability, each with evidence. Marketing research, not real-estate advice.
 
-An atomic marketing skill you run inside Claude, Claude Code, ChatGPT (custom MCP), Codex, Cursor, OpenClaw, Hermes, or any MCP client — read-only public-data research, **eyes not hands**. It diagnoses, prices, and drafts evidence; your own assistant and accounts take any action.
+An atomic marketing skill you run inside Claude, ChatGPT, Claude Code, Cursor, Codex, OpenClaw, Hermes, or any MCP client — read-only public-data research, **eyes not hands**. It diagnoses, prices, and drafts evidence; your own assistant and accounts take any action.
 
 ## What it's good for
 
@@ -31,6 +31,17 @@ Live public data through the shared [`unifapi`](../../unifapi/) data skill — U
 Find neighborhood-level content opportunities my brokerage can own in Austin, TX — guides and market reports where Zillow is weak and local intent is high — ranked by demand and winnability.
 ```
 
+## Install
+
+Ships in the **UnifAPI Agents** plugin — one install adds the skills and the public-data MCP server (OAuth, read-only). In Claude Code or OpenClaw:
+
+```text
+/plugin marketplace add unifapi-agent/agents
+/plugin install unifapi@unifapi
+```
+
+Web connector (Claude · ChatGPT · Perplexity), Codex, Cursor, and the `npx skills` path: https://unifapi.com/mcp
+
 ## Related
 
 - Part of the **[Real Estate Marketing Agent](../)**
@@ -40,7 +51,7 @@ Find neighborhood-level content opportunities my brokerage can own in Austin, TX
 
 - Skill page: https://unifapi.com/skills/neighborhood-guide-opportunity
 - The skill itself: [SKILL.md](./SKILL.md)
-- Install — one plugin, skills + live data: https://unifapi.com/mcp
+- Install & all clients: https://unifapi.com/mcp
 - Docs: https://docs.unifapi.com
 
 <sub>Topics: hyperlocal SEO for realtors · neighborhood guide ideas · real estate content opportunities · rank for neighborhood searches · where can I beat Zillow · real estate local content</sub>
