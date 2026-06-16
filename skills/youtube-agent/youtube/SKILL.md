@@ -1,6 +1,6 @@
 ---
 name: youtube
-description: When a workflow needs public YouTube data through UnifAPI — channel and video metadata, subscriber and view counts, related videos, search, or trending. Also use on "who owns this topic on YouTube," "pull this channel's videos," "YouTube view counts," "related videos for," or when another skill (creator vetting, competitor reception, content demand) needs the deterministic YouTube read path. No comment listing — demand signal is view counts. Connect via the `unifapi` skill first. Read-only research, never uploads.
+description: When a workflow needs public YouTube data through UnifAPI — channel, video, and playlist metadata, subscriber/view/like counts, video comments, caption tracks, channel community posts, related and trending videos, hashtag videos, and search across videos, channels, and playlists. Also use on "who owns this topic on YouTube," "pull this channel's videos," "YouTube view counts," "what are commenters saying," "get this video's captions/transcript," "this channel's playlists," or when another skill (creator vetting, competitor reception, content demand) needs the deterministic YouTube read path. Connect via the `unifapi` skill first. Read-only research, never uploads.
 license: MIT
 metadata:
   author: UnifAPI
@@ -57,15 +57,23 @@ request's `cursor`. Always preserve `billing` when reporting cost.
 
 ## Core operations
 
-| Need                    | Operation                                             |
-| ----------------------- | ----------------------------------------------------- |
-| Search videos/channels  | `youtube/search` (`?q=...`)                           |
-| Trending                | `youtube/trending`                                    |
-| Resolve handle/URL → id | `youtube/resolve/channel-id` (`?url=...`)             |
-| Channel page            | `youtube/channels/{channel_id}`                       |
-| Channel videos / shorts | `youtube/channels/{channel_id}/videos` · `.../shorts` |
-| Video metadata          | `youtube/videos/{video_id}`                           |
-| Related videos          | `youtube/videos/{video_id}/related`                   |
+| Need                        | Operation                                                                                    |
+| --------------------------- | -------------------------------------------------------------------------------------------- |
+| Search videos               | `youtube/search` (`?q=...`, optional `sort_by`/`upload_date`/`duration`/`region`/`language`) |
+| Search channels / playlists | `youtube/search/channels` · `youtube/search/playlists` (`?q=...`)                            |
+| Trending                    | `youtube/trending` (optional `type` = now/music/gaming/movies)                               |
+| Hashtag videos              | `youtube/hashtags/{tag}/videos`                                                              |
+| Resolve handle/URL → id     | `youtube/resolve/channel-id` (`?url=...`)                                                    |
+| Channel page                | `youtube/channels/{channel_id}`                                                              |
+| Channel videos / shorts     | `youtube/channels/{channel_id}/videos` · `.../shorts`                                        |
+| Channel playlists           | `youtube/channels/{channel_id}/playlists`                                                    |
+| Channel community posts     | `youtube/channels/{channel_id}/community`                                                    |
+| Search within a channel     | `youtube/channels/{channel_id}/search` (`?q=...`)                                            |
+| Video metadata              | `youtube/videos/{video_id}`                                                                  |
+| Related videos              | `youtube/videos/{video_id}/related`                                                          |
+| Video comments              | `youtube/videos/{video_id}/comments` (optional `sort_by` = top/newest)                       |
+| Video captions / transcript | `youtube/videos/{video_id}/captions`                                                         |
+| Playlist page / videos      | `youtube/playlists/{playlist_id}` · `.../videos`                                             |
 
 Need a field not listed here? Use the `unifapi` skill's `get_operation` to read
 the exact schema before calling — but pick the operation from this table, don't
@@ -83,36 +91,74 @@ what to call.
    `video_count`, and `view_count`.
 3. **Read a channel's output.** Call `youtube/channels/{channel_id}/videos` (and
    `.../shorts`); each video's `view_count` is the demand signal. Page via
-   `next_cursor`.
+   `next_cursor`. `youtube/channels/{channel_id}/playlists` maps how the catalog
+   is organized; `youtube/channels/{channel_id}/community` reads announcements and
+   engagement outside videos; `youtube/channels/{channel_id}/search?q=...` finds a
+   creator's coverage of one topic without scanning the whole catalog.
 4. **Read a video and its neighborhood.** Call `youtube/videos/{video_id}` for
-   metadata, then `youtube/videos/{video_id}/related` to map adjacent demand and
-   competing content.
-5. **Size topic demand.** Aggregate `view_count` across the search and related
+   metadata (now including `like_count`, `category`, `published_at`,
+   `has_captions`), then `youtube/videos/{video_id}/related` to map adjacent
+   demand and competing content.
+5. **Read audience and transcript.** Call `youtube/videos/{video_id}/comments`
+   (`sort_by` top/newest) for what the audience says — raw comment text, like and
+   reply counts; any sentiment or FAQ grouping is yours to compute, the API
+   returns text only. Call `youtube/videos/{video_id}/captions` for caption tracks
+   (timed-text url per language) to read or analyze the transcript.
+6. **Walk a playlist or hashtag.** Call `youtube/playlists/{playlist_id}` then
+   `.../videos` to ingest a curated series in order; `youtube/hashtags/{tag}/videos`
+   tracks a campaign or trend across creators.
+7. **Size topic demand.** Aggregate `view_count` across the search and related
    results for a topic; `title`, `description`, and `keywords` show how the topic
    is framed.
-6. **Cite everything.** Every figure ties back to the video or channel it came
+8. **Cite everything.** Every figure ties back to the video or channel it came
    from; report `billing.records_charged` (or estimate when billing metadata is
    absent).
 
 ## Shape notes
 
 - **`YouTubeChannel`** — keyed by `{channel_id}`. `subscriber_count`,
-  `video_count`, `view_count`, `is_verified`, `country`, `created_at`.
-- **`YouTubeVideo`** — keyed by `{video_id}`. `view_count`, `channel_id`,
-  `author`, `duration_seconds`, `keywords`, `is_live`, `is_private`. **No
-  per-video `like_count`** is exposed — use `view_count`.
-- **`YouTubeVideoPreview`** — search/related rows: adds `published_time` and
-  `category`.
+  `video_count`, `view_count`, `handle`, `keywords`, `links`, `country`,
+  `created_at`. `is_verified` is **not populated by the upstream and is always
+  `false`** — don't report verification you can't read.
+- **`YouTubeVideo`** — keyed by `{video_id}`. `view_count`, `like_count`
+  (best-effort; `0` when the creator hides it), `category`, `channel_id`,
+  `author`, `duration_seconds`, `keywords`, `published_at`, `has_captions`,
+  `is_live`, `is_private`.
+- **`YouTubeVideoPreview`** — search/related/list rows: adds `published_time`.
+  `category` is part of the shape but empty on list rows (only `YouTubeVideo`
+  detail carries it).
+- **`YouTubeComment`** — `text`, `author`, `author_channel_id`, `like_count`,
+  `reply_count`, `published_time`, `is_verified`, `is_creator`. Text only — no
+  sentiment field.
+- **`YouTubeCaptions`** — `video_id`, `tracks[]` (`language_code`, timed-text
+  `url`, `is_translatable`), `translation_languages[]`. Single object, billed as
+  one record. Track urls are time-limited.
+- **`YouTubePlaylist`** / **`YouTubePlaylistPreview`** — playlist `title`,
+  `channel_id`, `author`, `video_count` (detail adds `view_count`,
+  `last_updated`; preview adds `first_video_id`).
+- **`YouTubeChannelPreview`** — search-channels rows: `title`, `handle`,
+  `description`, `subscriber_count`, `video_count`.
+- **`YouTubeCommunityPost`** — `text`, `author`, `vote_count`, `reply_count`,
+  `attachment_type`, `image_url`.
 
 ## Gotchas
 
-- **No comment listing.** YouTube exposes channel and video metadata, view
-  counts, related videos, search, and trending — but no comments. The demand
-  signal is `view_count` plus titles, descriptions, and keywords.
-- Videos expose `view_count`, not a per-video `like_count` — don't report likes
-  you can't read.
-- Resolve a handle or URL with `youtube/resolve/channel-id?url=...` **before**
-  any `youtube/channels/{channel_id}/...` call.
+- **Resolve only goes to channel ids.** `youtube/resolve/channel-id?url=...`
+  resolves a handle or URL to a `{channel_id}` — call it **before** any
+  `youtube/channels/{channel_id}/...` call. There is no video- or playlist-id
+  resolver; pass a known `{video_id}` / `{playlist_id}` (parse it from the URL
+  yourself).
+- **Comments are raw text.** `youtube/videos/{video_id}/comments` returns comment
+  text plus like/reply counts — no sentiment, no FAQ grouping. Compute those
+  yourself from the text; don't claim a sentiment field the API doesn't return.
+- **`like_count` is best-effort.** `YouTubeVideo.like_count` is `0` when the
+  creator hides likes — treat `0` as "hidden or none," not authoritative.
+- **`is_verified` is always `false`** for channels (upstream doesn't expose it) —
+  don't report channel verification.
+- **Captions can be empty.** A video with captions disabled returns
+  `tracks: []`; check before promising a transcript. Track urls are time-limited.
+- **Hashtags** take the tag with or without a leading `#`
+  (`youtube/hashtags/lofi/videos`).
 - A low balance can silently truncate list pages: check
   `billing.truncated_due_to_balance` — when true the page is partial.
 
