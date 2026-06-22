@@ -1,5 +1,3 @@
-[![MseeP.ai Security Assessment Badge](https://mseep.net/pr/unifapi-agent-agents-badge.png)](https://mseep.ai/app/unifapi-agent-agents)
-
 # UnifAPI Agents
 
 Open-source **marketing agents** for Claude, ChatGPT, Codex, OpenClaw, Hermes, and any MCP client. Install one plugin and your assistant runs **SEO audits, generative engine optimization (GEO) / AI-visibility checks, local SEO, KOL pricing, social listening, competitive intelligence, and industry marketing** from **live public data**. Each agent is a folder of `SKILL.md` skills over UnifAPI's public-data APIs. Read-only — **eyes, not hands** — they research and price; they never post.
