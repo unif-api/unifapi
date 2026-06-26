@@ -1,10 +1,10 @@
 # UnifAPI Agents
 
-Open-source **marketing agents** for Claude, ChatGPT, Codex, OpenClaw, Hermes, and any MCP client. Install one plugin and your assistant runs **SEO audits, generative engine optimization (GEO) / AI-visibility checks, local SEO, KOL pricing, social listening, competitive intelligence, and industry marketing** from **live public data**. Each agent is a folder of `SKILL.md` skills over UnifAPI's public-data APIs. Read-only — **eyes, not hands** — they research and price; they never post.
+Open-source **marketing agents** for Claude, ChatGPT, Codex, OpenClaw, Hermes, and any MCP client. Connect once and your assistant runs **SEO audits, generative engine optimization (GEO) / AI-visibility checks, local SEO, KOL pricing, social listening, competitive intelligence, and industry marketing** from **live public data**. Each agent is a folder of `SKILL.md` skills over UnifAPI's public-data APIs. Read-only — **eyes, not hands** — they research and price; they never post.
 
 [![Website](https://img.shields.io/badge/web-unifapi.com%2Fagents-1f6feb)](https://unifapi.com/agents)
 [![Docs](https://img.shields.io/badge/docs-docs.unifapi.com-1f6feb)](https://docs.unifapi.com)
-[![Plugin](https://img.shields.io/badge/plugin-Claude%20%C2%B7%20OpenClaw%20%C2%B7%20Hermes-8957e5)](#install--one-plugin-skills--live-data)
+[![Connect](https://img.shields.io/badge/connect-prompt%20%C2%B7%20OAuth-8957e5)](#install)
 [![skills.sh](https://skills.sh/b/unifapi-agent/agents)](https://skills.sh/unifapi-agent/agents)
 [![License: MIT](https://img.shields.io/badge/license-MIT-green)](./LICENSE)
 
@@ -12,43 +12,41 @@ Open-source **marketing agents** for Claude, ChatGPT, Codex, OpenClaw, Hermes, a
 
 These skills are generated and versioned — to suggest a change, open an issue or PR (see [CONTRIBUTING.md](./CONTRIBUTING.md)).
 
-## Install — one plugin: skills + live data
+## Install
 
-One install gives your agent **both** the marketing-agent skills **and** the public-data MCP server — no manual server config, no API key to paste. Sign in once with OAuth (new workspaces get free trial credits); everything is read-only.
+Connect the public-data MCP server to your agent and add the marketing skills — read-only, OAuth, no API key to paste. New workspaces get free trial credits. Pick the path your client supports:
 
-**Claude Code · Claude Desktop · OpenClaw** — recommended (Claude-compatible plugin):
+**Paste one prompt** (Claude Code, Codex, Cursor, OpenClaw, Goose — any agent that manages its own MCP servers). Drop this in and it adds the server and runs the OAuth sign-in:
 
-```bash
-/plugin marketplace add unifapi-agent/agents
-/plugin install unifapi@unifapi      # that's plugin@marketplace
+```text
+Install the UnifAPI MCP server for me, then confirm it connected. It's a remote
+(streamable HTTP) MCP server at https://mcp.unifapi.com. UnifAPI uses OAuth — open the browser
+sign-in when prompted. It's read-only public data, so there's no API key to paste.
 ```
 
-**Hermes:**
+Then add the marketing skills with `npx skills add unifapi-agent/agents`.
 
-```bash
-hermes plugins install unifapi-agent/agents
-```
+**Web connector — no terminal** (Claude, ChatGPT, Perplexity, Grok): add a custom connector pointed at `https://mcp.unifapi.com` and authorize over OAuth. ChatGPT needs Developer Mode (Plus/Pro/Team/Enterprise): Settings → Connectors → Advanced → enable Developer Mode → **Create**, MCP server URL `https://mcp.unifapi.com`, OAuth.
 
-**Codex** — this repo ships a `.codex-plugin/plugin.json` (the same skills **and** the OAuth MCP server) for Codex's plugin system, so one install gives you both. To wire it up manually instead, add the server to `~/.codex/config.toml` and run `codex mcp login unifapi`:
+**Codex** ships a `.codex-plugin/plugin.json` (the same skills **and** the OAuth MCP server). To wire it up by hand instead, add the server to `~/.codex/config.toml` and run `codex mcp login unifapi`:
 
 ```toml
 [mcp_servers.unifapi]
 url = "https://mcp.unifapi.com"
 ```
 
-**ChatGPT** (Developer Mode — Plus/Pro/Team/Enterprise): Settings → Connectors → Advanced → enable Developer Mode → **Create**, set the MCP server URL to `https://mcp.unifapi.com` with OAuth.
-
-**Any other agent-skills client (`npx skills`)** — the universal fallback when you're not on a plugin host above. The [skills.sh](https://skills.sh/unifapi-agent/agents) CLI installs the skills into any supported agent:
+**Claude-compatible plugin hosts** (Claude Code · Claude Desktop · OpenClaw) can install the skills **and** the MCP server together in one shot:
 
 ```bash
-npx skills add unifapi-agent/agents
+/plugin marketplace add unifapi-agent/agents
+/plugin install unifapi@unifapi      # that's plugin@marketplace
 ```
 
-This installs the skills only; add `https://mcp.unifapi.com` as an MCP server in your client (OAuth) for live data.
+**Any other MCP client**: point it at `https://mcp.unifapi.com` (OAuth) and add the skills with `npx skills add unifapi-agent/agents`.
 
 Setting up a specific client? Step-by-step pages for every supported client live in [`connect/`](./connect/).
 
-After installing, sign in when prompted and ask your assistant:
+After connecting, sign in when prompted and ask your assistant:
 
 ```text
 Audit example.com for "unified api" and "public data api": pull our live organic and

@@ -2,15 +2,17 @@
 
 # Connect UnifAPI to Trae
 
-> Add via config file · read-only public-data MCP over OAuth — **eyes, not hands**.
+> Add via config · read-only public-data MCP over OAuth — **eyes, not hands**.
 
-Connect Trae to the UnifAPI public-data MCP server and run marketing research — SEO, AI-visibility (GEO), social, local, and competitive intelligence — from live public data without leaving Trae. A custom MCP server — add the hosted endpoint and sign in with OAuth. One OAuth sign-in, no API key to paste; everything is read-only.
+Connect Trae to the UnifAPI public-data MCP server and run marketing research — SEO, AI-visibility (GEO), social, local, and competitive intelligence — from live public data without leaving Trae. Paste one prompt and the agent installs the MCP server over OAuth, or add the hosted endpoint by hand. One OAuth sign-in, no API key to paste; everything is read-only.
 
 ## Steps
 
-### 1. Add the MCP server
+### 1. Add the MCP server in Trae
 
-Add UnifAPI to Trae's MCP config:
+Open Settings → MCP. On the Local tab, click + Add → Create Manually.
+
+Paste this config and save:
 
 ```text
 {
@@ -24,19 +26,9 @@ Add UnifAPI to Trae's MCP config:
 
 ### 2. Sign in with OAuth
 
-Your client opens a browser sign-in. No OAuth UI? Send an API key as a bearer token instead.
+Trae opens a browser sign-in for your UnifAPI workspace. Read-only — no API key to paste.
 
-[MCP docs](https://docs.unifapi.com/mcp)
-
-### 3. Add the skills (optional)
-
-```text
-npx skills add unifapi-agent/agents
-```
-
-Adds the marketing-agent SKILL.md run-prompts for clients that support skills.
-
-### 4. Try it with Trae
+### 3. Try it with Trae
 
 ```text
 Use UnifAPI to pull the current top Hacker News story and summarize it.

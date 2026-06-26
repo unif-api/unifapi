@@ -33,14 +33,16 @@ Pull recent public news for this target account — funding, leadership changes,
 
 ## Install
 
-Ships in the **UnifAPI Agents** plugin — one install adds the skills and the public-data MCP server (OAuth, read-only). In Claude Code or OpenClaw:
+Run it in any MCP client. **Paste one prompt** (Claude Code, Codex, Cursor, OpenClaw, …) to add the UnifAPI public-data MCP server at `https://mcp.unifapi.com` over OAuth — read-only, no API key — then add the marketing skills with `npx skills add unifapi-agent/agents`.
+
+Prefer a **web connector** (Claude · ChatGPT · Perplexity · Grok), or the one-shot **plugin** for Claude-compatible hosts:
 
 ```text
 /plugin marketplace add unifapi-agent/agents
 /plugin install unifapi@unifapi
 ```
 
-Web connector (Claude · ChatGPT · Perplexity), Codex, Cursor, and the `npx skills` path: https://unifapi.com/mcp
+Every client, step by step: https://unifapi.com/mcp
 
 ## Related
 

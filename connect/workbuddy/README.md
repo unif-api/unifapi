@@ -2,25 +2,26 @@
 
 # Connect UnifAPI to WorkBuddy
 
-> Add a custom MCP server · read-only public-data MCP over OAuth — **eyes, not hands**.
+> Paste one prompt · read-only public-data MCP over OAuth — **eyes, not hands**.
 
-Connect WorkBuddy to the UnifAPI public-data MCP server and run marketing research — SEO, AI-visibility (GEO), social, local, and competitive intelligence — from live public data without leaving WorkBuddy. A custom MCP server — add the hosted endpoint and sign in with OAuth. One OAuth sign-in, no API key to paste; everything is read-only.
+Connect WorkBuddy to the UnifAPI public-data MCP server and run marketing research — SEO, AI-visibility (GEO), social, local, and competitive intelligence — from live public data without leaving WorkBuddy. Paste one prompt and the agent installs the MCP server over OAuth, or add the hosted endpoint by hand. One OAuth sign-in, no API key to paste; everything is read-only.
 
 ## Steps
 
-### 1. Add the MCP server
+### 1. Paste one prompt into WorkBuddy
 
-In WorkBuddy, open Settings → MCP and add a new server with this URL:
+Drop this into WorkBuddy and let it run — it adds the server and starts the OAuth sign-in for you:
 
 ```text
-https://mcp.unifapi.com
+Please install the UnifAPI MCP server for me, then confirm it connected.
+
+It's a remote (streamable HTTP) MCP server.
+MCP Server URL: https://mcp.unifapi.com
+
+UnifAPI uses OAuth — open the browser sign-in when prompted. It's read-only public data, so there's no API key to paste.
 ```
 
-### 2. Sign in with OAuth
-
-WorkBuddy opens a browser sign-in for your UnifAPI workspace. Read-only — no API key to paste.
-
-### 3. Try it with WorkBuddy
+### 2. Try it with WorkBuddy
 
 ```text
 Use UnifAPI to pull the current top Hacker News story and summarize it.

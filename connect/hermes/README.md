@@ -2,25 +2,30 @@
 
 # Connect UnifAPI to Hermes
 
-> One-command plugin — skills + MCP · read-only public-data MCP over OAuth — **eyes, not hands**.
+> Paste one prompt · read-only public-data MCP over OAuth — **eyes, not hands**.
 
-Connect Hermes to the UnifAPI public-data MCP server and run marketing research — SEO, AI-visibility (GEO), social, local, and competitive intelligence — from live public data without leaving Hermes. A one-command plugin — it installs the marketing-agent skills and the public-data MCP server together. One OAuth sign-in, no API key to paste; everything is read-only.
+Connect Hermes to the UnifAPI public-data MCP server and run marketing research — SEO, AI-visibility (GEO), social, local, and competitive intelligence — from live public data without leaving Hermes. Paste one prompt and the agent installs the MCP server over OAuth, or add the hosted endpoint by hand. One OAuth sign-in, no API key to paste; everything is read-only.
 
 ## Steps
 
-### 1. Install the plugin
+### 1. Paste one prompt into Hermes
+
+Requires Hermes v0.13.0 (2026.5.7) or newer. Paste this into a new Hermes conversation and follow its instructions:
 
 ```text
-hermes plugins install unifapi-agent/agents
+Add UnifAPI as an MCP server using OAuth.
+
+Open ~/.hermes/config.yaml and add this entry under `mcp_servers:` (create the section if it doesn't exist). DO NOT change any other existing entries:
+  unifapi:
+    url: https://mcp.unifapi.com
+    auth: oauth
+    headers:
+      Accept: application/json, text/event-stream
+
+After saving, print the exact commands I need to run on the machine where Hermes is installed — one to reload the gateway, one to trigger the OAuth browser sign-in. Don't run them for me by default; I'll execute them myself.
 ```
 
-Hermes installs the same Claude-compatible plugin from the Skills Hub — skills and public-data MCP together.
-
-### 2. Sign in with OAuth
-
-Hermes opens a browser sign-in for your UnifAPI workspace. Read-only — no API key to paste.
-
-### 3. Try it with Hermes
+### 2. Try it with Hermes
 
 ```text
 Use UnifAPI to pull the current top Hacker News story and summarize it.

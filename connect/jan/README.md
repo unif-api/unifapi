@@ -4,13 +4,15 @@
 
 > Add a custom MCP server · read-only public-data MCP over OAuth — **eyes, not hands**.
 
-Connect Jan to the UnifAPI public-data MCP server and run marketing research — SEO, AI-visibility (GEO), social, local, and competitive intelligence — from live public data without leaving Jan. A custom MCP server — add the hosted endpoint and sign in with OAuth. One OAuth sign-in, no API key to paste; everything is read-only.
+Connect Jan to the UnifAPI public-data MCP server and run marketing research — SEO, AI-visibility (GEO), social, local, and competitive intelligence — from live public data without leaving Jan. Paste one prompt and the agent installs the MCP server over OAuth, or add the hosted endpoint by hand. One OAuth sign-in, no API key to paste; everything is read-only.
 
 ## Steps
 
-### 1. Add the MCP server
+### 1. Add the MCP server in Jan
 
-In Jan, open Settings → MCP and add a new server with this URL:
+Open Settings → MCP Servers, then click + Add MCP Server.
+
+Set Transport to HTTP (Streamable HTTP), paste the URL below, then save and toggle the server on:
 
 ```text
 https://mcp.unifapi.com

@@ -16,13 +16,13 @@ On a Plus, Pro, Team, or Enterprise plan: Settings → Connectors → Advanced �
 
 ### 2. Create the connector
 
-Connectors → Create. Name it "UnifAPI" and paste the MCP server URL:
+Click "Create app" in the top bar. Name it "UnifAPI" and paste the server URL into the "MCP Server URL" field:
 
 ```text
 https://mcp.unifapi.com
 ```
 
-Leave Authentication as OAuth, tick the confirmation, then Create.
+Leave Authentication as OAuth, tick "I understand and want to continue", then Create.
 
 ### 3. Try it with ChatGPT
 

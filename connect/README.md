@@ -9,33 +9,31 @@ One OAuth sign-in connects the UnifAPI public-data MCP server to your assistant 
 - [Claude](claude/) — Web connector — the smoothest path
 - [ChatGPT](chatgpt/) — Web connector — no terminal
 - [Perplexity](perplexity/) — Web connector — no terminal
+- [Grok](grok/) — Web connector — no terminal
 
-## Plugin — skills + MCP
+## Paste a prompt or custom MCP server
 
-- [Hermes](hermes/) — One-command plugin — skills + MCP
-- [OpenClaw](openclaw/) — One-command plugin — skills + MCP
-- [Claude Code](claude-code/) — One-command plugin — skills + MCP
-- [AutoClaw](autoclaw/) — One-command plugin — skills + MCP
-
-## Custom MCP server
-
+- [Hermes](hermes/) — Paste one prompt
+- [OpenClaw](openclaw/) — Paste one prompt
+- [Claude Code](claude-code/) — Paste one prompt
 - [Manus](manus/) — Custom connector — skills too
 - [Genspark](genspark/) — Add a custom MCP server
-- [Codex](codex/) — Add via config file
+- [Codex](codex/) — Paste one prompt
 - [Cursor](cursor/) — One-click install
-- [Windsurf](windsurf/) — Add via config file
-- [Antigravity](antigravity/) — Add via config file
-- [WorkBuddy](workbuddy/) — Add a custom MCP server
-- [CodeBuddy](codebuddy/) — Add via config file
-- [Goose](goose/) — Add via config file
-- [Cherry Studio](cherry-studio/) — Add a custom MCP server
+- [Windsurf](windsurf/) — Paste one prompt
+- [Antigravity](antigravity/) — Paste one prompt
+- [AutoClaw](autoclaw/) — Paste one prompt
+- [WorkBuddy](workbuddy/) — Paste one prompt
+- [CodeBuddy](codebuddy/) — Paste one prompt
+- [Goose](goose/) — Paste one prompt
+- [Cherry Studio](cherry-studio/) — Import from JSON
 - [Jan](jan/) — Add a custom MCP server
-- [Chatbox](chatbox/) — Add a custom MCP server
+- [Chatbox](chatbox/) — Import from JSON
 - [5ire](5ire/) — Add a custom MCP server
-- [Trae](trae/) — Add via config file
+- [Trae](trae/) — Add via config
 - [VS Code](vscode/) — One-click install
-- [Cline](cline/) — Add via config file
-- [Zed](zed/) — Add via config file
-- [Continue](continue/) — Add via config file
-- [Gemini CLI](gemini-cli/) — Add via config file
+- [Cline](cline/) — Paste one prompt
+- [Zed](zed/) — Paste one prompt
+- [Continue](continue/) — Paste one prompt
+- [Gemini CLI](gemini-cli/) — Paste one prompt
 - [Any other client](other/) — Works with any MCP client

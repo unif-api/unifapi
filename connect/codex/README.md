@@ -2,13 +2,26 @@
 
 # Connect UnifAPI to Codex
 
-> Add via config file · read-only public-data MCP over OAuth — **eyes, not hands**.
+> Paste one prompt · read-only public-data MCP over OAuth — **eyes, not hands**.
 
-Connect Codex to the UnifAPI public-data MCP server and run marketing research — SEO, AI-visibility (GEO), social, local, and competitive intelligence — from live public data without leaving Codex. A custom MCP server — add the hosted endpoint and sign in with OAuth. One OAuth sign-in, no API key to paste; everything is read-only.
+Connect Codex to the UnifAPI public-data MCP server and run marketing research — SEO, AI-visibility (GEO), social, local, and competitive intelligence — from live public data without leaving Codex. Paste one prompt and the agent installs the MCP server over OAuth, or add the hosted endpoint by hand. One OAuth sign-in, no API key to paste; everything is read-only.
 
 ## Steps
 
-### 1. Add the MCP server
+### 1. Paste one prompt into Codex
+
+Drop this into Codex and let it run — it adds the server and starts the OAuth sign-in for you:
+
+```text
+Please install the UnifAPI MCP server for me, then confirm it connected.
+
+It's a remote (streamable HTTP) MCP server.
+MCP Server URL: https://mcp.unifapi.com
+
+UnifAPI uses OAuth — open the browser sign-in when prompted. It's read-only public data, so there's no API key to paste.
+```
+
+### 2. Prefer to set it up by hand?
 
 Add UnifAPI to ~/.codex/config.toml:
 
@@ -17,23 +30,13 @@ Add UnifAPI to ~/.codex/config.toml:
 url = "https://mcp.unifapi.com"
 ```
 
-### 2. Sign in with OAuth
+Then sign in over OAuth:
 
 ```text
 codex mcp login unifapi
 ```
 
-Read-only — no API key to paste.
-
-### 3. Add the skills (optional)
-
-```text
-npx skills add unifapi-agent/agents
-```
-
-Adds the marketing-agent SKILL.md run-prompts alongside the MCP server.
-
-### 4. Try it with Codex
+### 3. Try it with Codex
 
 ```text
 Use UnifAPI to pull the current top Hacker News story and summarize it.

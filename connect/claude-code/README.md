@@ -2,33 +2,34 @@
 
 # Connect UnifAPI to Claude Code
 
-> One-command plugin — skills + MCP · read-only public-data MCP over OAuth — **eyes, not hands**.
+> Paste one prompt · read-only public-data MCP over OAuth — **eyes, not hands**.
 
-Connect Claude Code to the UnifAPI public-data MCP server and run marketing research — SEO, AI-visibility (GEO), social, local, and competitive intelligence — from live public data without leaving Claude Code. A one-command plugin — it installs the marketing-agent skills and the public-data MCP server together. One OAuth sign-in, no API key to paste; everything is read-only.
+Connect Claude Code to the UnifAPI public-data MCP server and run marketing research — SEO, AI-visibility (GEO), social, local, and competitive intelligence — from live public data without leaving Claude Code. Paste one prompt and the agent installs the MCP server over OAuth, or add the hosted endpoint by hand. One OAuth sign-in, no API key to paste; everything is read-only.
 
 ## Steps
 
-### 1. Add the marketplace
+### 1. Paste one prompt into Claude Code
 
-In your agent, run:
-
-```text
-/plugin marketplace add unifapi-agent/agents
-```
-
-### 2. Install the plugin
+Drop this into Claude Code and let it run — it adds the server and starts the OAuth sign-in for you:
 
 ```text
-/plugin install unifapi@unifapi
+Please install the UnifAPI MCP server for me, then confirm it connected.
+
+It's a remote (streamable HTTP) MCP server.
+MCP Server URL: https://mcp.unifapi.com
+
+UnifAPI uses OAuth — open the browser sign-in when prompted. It's read-only public data, so there's no API key to paste.
 ```
 
-One install brings the marketing-agent skills and the public-data MCP server together.
+### 2. Add the skills (optional)
 
-### 3. Sign in with OAuth
+```text
+npx skills add unifapi-agent/agents
+```
 
-Claude Code opens a browser sign-in for your UnifAPI workspace. Read-only — no API key to paste.
+Adds the marketing-agent SKILL.md run-prompts for clients that support skills.
 
-### 4. Try it with Claude Code
+### 3. Try it with Claude Code
 
 ```text
 Use UnifAPI to pull the current top Hacker News story and summarize it.

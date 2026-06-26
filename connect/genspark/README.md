@@ -4,13 +4,19 @@
 
 > Add a custom MCP server · read-only public-data MCP over OAuth — **eyes, not hands**.
 
-Connect Genspark to the UnifAPI public-data MCP server and run marketing research — SEO, AI-visibility (GEO), social, local, and competitive intelligence — from live public data without leaving Genspark. A custom MCP server — add the hosted endpoint and sign in with OAuth. One OAuth sign-in, no API key to paste; everything is read-only.
+Connect Genspark to the UnifAPI public-data MCP server and run marketing research — SEO, AI-visibility (GEO), social, local, and competitive intelligence — from live public data without leaving Genspark. Paste one prompt and the agent installs the MCP server over OAuth, or add the hosted endpoint by hand. One OAuth sign-in, no API key to paste; everything is read-only.
 
 ## Steps
 
-### 1. Add the MCP server
+### 1. Add the MCP server in Genspark
 
-In the Genspark AI browser, click the wrench icon → Add → Add new MCP server (type: Streamable HTTP) with this URL:
+Open Genspark and click Connectors in the chat box.
+
+In the Connectors dialog, scroll to MCP Connectors (or search "mcp") and click Add new MCP server.
+
+Set Server Name "UnifAPI" and Server Type "StreamableHttp", paste the Server URL below, then Add Server:
+
+[Open Genspark](https://www.genspark.ai/)
 
 ```text
 https://mcp.unifapi.com

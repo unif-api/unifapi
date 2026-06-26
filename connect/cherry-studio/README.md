@@ -2,25 +2,30 @@
 
 # Connect UnifAPI to Cherry Studio
 
-> Add a custom MCP server · read-only public-data MCP over OAuth — **eyes, not hands**.
+> Import from JSON · read-only public-data MCP over OAuth — **eyes, not hands**.
 
-Connect Cherry Studio to the UnifAPI public-data MCP server and run marketing research — SEO, AI-visibility (GEO), social, local, and competitive intelligence — from live public data without leaving Cherry Studio. A custom MCP server — add the hosted endpoint and sign in with OAuth. One OAuth sign-in, no API key to paste; everything is read-only.
+Connect Cherry Studio to the UnifAPI public-data MCP server and run marketing research — SEO, AI-visibility (GEO), social, local, and competitive intelligence — from live public data without leaving Cherry Studio. Paste one prompt and the agent installs the MCP server over OAuth, or add the hosted endpoint by hand. One OAuth sign-in, no API key to paste; everything is read-only.
 
 ## Steps
 
-### 1. Add the MCP server
+### 1. Add the MCP server in Cherry Studio
 
-In Cherry Studio, open Settings → MCP and add a new server with this URL:
+Open Settings → MCP Servers, then click + Add → Import from JSON.
+
+Paste this config and Save, then toggle the server on — Cherry Studio opens your browser to approve UnifAPI:
 
 ```text
-https://mcp.unifapi.com
+{
+  "mcpServers": {
+    "unifapi": {
+      "type": "streamableHttp",
+      "url": "https://mcp.unifapi.com"
+    }
+  }
+}
 ```
 
-### 2. Sign in with OAuth
-
-Cherry Studio opens a browser sign-in for your UnifAPI workspace. Read-only — no API key to paste.
-
-### 3. Try it with Cherry Studio
+### 2. Try it with Cherry Studio
 
 ```text
 Use UnifAPI to pull the current top Hacker News story and summarize it.

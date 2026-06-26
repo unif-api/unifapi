@@ -28,20 +28,13 @@ The Home Services Marketing Agent recombines local SEO, social listening, conten
 
 ## Install & run
 
-One install, three paths — all read-only with OAuth sign-in (new workspaces get free trial credits):
+Connect in a couple of steps — prompt, web connector, or plugin, all read-only with OAuth sign-in (new workspaces get free trial credits):
 
-**Plugin — skills + live data in one install** (Claude Code, OpenClaw):
+**Paste one prompt** (Claude Code, Codex, Cursor, OpenClaw, Goose — any agent that manages its own MCP servers): ask it to add the UnifAPI MCP server at `https://mcp.unifapi.com` — a remote streamable-HTTP, read-only server — and run the OAuth sign-in. No API key to paste.
 
-```text
-/plugin marketplace add unifapi-agent/agents
-/plugin install unifapi@unifapi
-```
+**Web connector — no terminal** (Claude, ChatGPT, Perplexity, Grok): add a custom connector pointed at `https://mcp.unifapi.com`, then authorize over OAuth.
 
-Hermes: `hermes plugins install unifapi-agent/agents`. Codex ships a plugin manifest too.
-
-**Web connector — no terminal** (Claude, ChatGPT, Perplexity): add a custom connector pointed at `https://mcp.unifapi.com`, then authorize over OAuth.
-
-**Any other MCP client**: point it at `https://mcp.unifapi.com` (OAuth) and add the skills with `npx skills add unifapi-agent/agents`.
+**Add the skills** in any client with `npx skills add unifapi-agent/agents`. Claude-compatible hosts (Claude Code, Claude Desktop, OpenClaw) can instead install skills + MCP together as a plugin: `/plugin marketplace add unifapi-agent/agents` then `/plugin install unifapi@unifapi`.
 
 Step-by-step for every client → https://unifapi.com/mcp
 

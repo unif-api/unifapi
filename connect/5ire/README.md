@@ -4,13 +4,15 @@
 
 > Add a custom MCP server · read-only public-data MCP over OAuth — **eyes, not hands**.
 
-Connect 5ire to the UnifAPI public-data MCP server and run marketing research — SEO, AI-visibility (GEO), social, local, and competitive intelligence — from live public data without leaving 5ire. A custom MCP server — add the hosted endpoint and sign in with OAuth. One OAuth sign-in, no API key to paste; everything is read-only.
+Connect 5ire to the UnifAPI public-data MCP server and run marketing research — SEO, AI-visibility (GEO), social, local, and competitive intelligence — from live public data without leaving 5ire. Paste one prompt and the agent installs the MCP server over OAuth, or add the hosted endpoint by hand. One OAuth sign-in, no API key to paste; everything is read-only.
 
 ## Steps
 
-### 1. Add the MCP server
+### 1. Add the MCP server in 5ire
 
-In 5ire, open Settings → MCP and add a new server with this URL:
+Open the Tools tab. Next to + Local, open the dropdown and choose Remote.
+
+In the Add-tool dialog, set Name "UnifAPI", paste the URL below, then save:
 
 ```text
 https://mcp.unifapi.com
