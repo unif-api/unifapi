@@ -1,69 +1,44 @@
-# GEO Audit Methodology Reference
+# GEO measurement reference
 
-The deterministic method behind the citation-coverage matrix and the Share-of-Citations headline in `SKILL.md`. Every count comes from a real UnifAPI response — no slot is inferred.
+A measurement belongs to a specific surface, prompt, locale, search mode, sample and observation time. Store that context with its answer and request id.
 
-## Per-prompt evidence record
+| Data source                      | Meaning                                             | Boundary                                                                                  |
+| -------------------------------- | --------------------------------------------------- | ----------------------------------------------------------------------------------------- |
+| `/geo/answers`, chatgpt          | Live ChatGPT web answer                             | Natural and forced-search samples differ; model can be unknown                            |
+| `/geo/answers`, gemini           | Live Gemini web answer                              | No force_web_search option                                                                |
+| `/geo/serp`                      | Live Google AI Mode                                 | Result position is not brand rank; target links are broader than answer references        |
+| `/seo/serp`, include_ai_overview | Google Search with AI Overview data                 | A valid search may have no AI Overview                                                    |
+| `/geo/mentions/*`                | Indexed-corpus search and aggregate/history metrics | Does not execute or replay a fixed custom prompt panel; ChatGPT corpus is US/English only |
 
-For each prompt, run `POST /geo/serp` with `query` = the prompt and `target` = the brand domain (`view: "full"`). Record one row per platform you audit (`google`, `chatgpt`):
+## Evidence and counting
 
-| Field                    | From `geo/serp`                                         | Meaning                                            |
-| ------------------------ | ------------------------------------------------------- | -------------------------------------------------- |
-| `answer_present`         | answer section non-empty                                | Did an AI answer render at all?                    |
-| `brand_cited`            | a reference where `is_target` is true                   | Brand domain is a **cited source** (a link).       |
-| `brand_in_text`          | brand named in answer body but no `is_target` reference | **Name-drop only** — weaker signal.                |
-| `competitor_citations[]` | cited reference domains that match a tracked competitor | Who won the slot instead.                          |
-| `other_citations[]`      | remaining cited domains                                 | Third-party owners (Reddit, Wikipedia, listicles). |
+- A citation comes from answer sources/references. Retrieved but unused search results are not citations.
+- Match citation domains exactly, with explicit subdomain handling. Deduplicate tracking variants of URLs. Count each tracked brand at most once per sampled answer for panel metrics.
+- A mention comes from visible answer text and explicit aliases. Do not infer it from a link destination, an unrelated substring, or a domain match. Text matching can still be ambiguous; retain the answer for review.
+- A valid no-answer response is an observed absence of an answer and stays in coverage denominators. Collection failures and unknown outcomes have no observation; report them separately.
+- Do not fabricate sentiment, recommendation order, causal explanations or traffic from these signals.
 
-Cross-confirm brand and competitor presence in bulk with `POST /geo/mentions/search` (`target` = array of the brand + each competitor). Use `POST /geo/mentions/top-pages` to get the exact winning URL for a miss without re-running the SERP.
+## Metrics
 
-## Counting cited slots
-
-A **cited slot** = one (prompt × platform × entity) cell where the entity appears as a source/reference in the AI answer. Rules:
-
-1. Count an entity **once per platform per prompt**, even if it is cited by multiple references in the same answer (avoids over-weighting verbose answers).
-2. A **name-drop** (`brand_in_text` true, `brand_cited` false) is **not** a cited slot. Tally it in a separate "named-in-text" column — it is a quick-win extractability signal (the model knows you but didn't link you).
-3. If `answer_present` is false for a prompt+platform, that cell counts toward no one's denominator — drop it from both numerator and denominator.
-4. Only count entities you are tracking (brand + named competitors). `other_citations` (third parties) are reported for diagnosis but excluded from the SoC denominator unless the user explicitly wants total-market share.
-
-## Share-of-Citations (SoC)
-
-Unweighted, per platform and overall:
+For successful sampled cells i, tracked brands b, fixed weights w_i, and indicator functions M (mentioned) and C (cited):
 
 ```text
-SoC(entity) = cited-slots(entity) / Σ cited-slots(all tracked entities)
+mention coverage(b) = sum_i M(b,i) / number of successful cells
+citation coverage(b) = sum_i C(b,i) / number of successful cells
+mention share(b) = sum_i M(b,i) / sum_b sum_i M(b,i)
+citation share(b) = sum_i C(b,i) / sum_b sum_i C(b,i)
+weighted citation coverage(b) = sum_i w_i C(b,i) / sum_i w_i
+weighted citation share(b) = sum_i w_i C(b,i) / sum_b sum_i w_i C(b,i)
 ```
 
-Weighted by AI search volume (preferred for the headline) — pull `volume_p` per prompt from `POST /geo/keywords/search-volume`:
+Coverage can sum above 100% across brands because multiple brands may appear in one answer. Shares sum to 100% when their denominator is nonzero. Empty denominators are N/A. A denominator counting “any tracked brand” measures conditional coverage, not share.
 
-```text
-weighted SoC(entity) = Σ_p [ entity cited on prompt p ? volume_p : 0 ]
-                       ─────────────────────────────────────────────
-                       Σ_p [ any tracked entity cited on prompt p ? volume_p : 0 ]
-```
+Example: two answers cite A; one also cites B. A's citation coverage is 100%; B's is 50%. Their citation shares are 2/3 and 1/3. With prompt weights 2 and 1, and B only in the first answer, weighted shares are 3/5 and 2/5.
 
-Compute SoC three ways and report all: **Google AI only**, **ChatGPT only**, **overall**. Divergence between platforms is a finding — a brand can own Google AI Overviews and be invisible in ChatGPT.
+Use per-engine unweighted coverage as the primary descriptive measure. Demand-weighted figures are optional estimates, not observed traffic. Do not silently pool engine coverage, weights, search modes or different panels.
 
-### Worked SoC
+## Comparison and interpretation
 
-12 prompts, 2 platforms = up to 24 cells. After dropping 0 empty cells:
+Freeze panel text, brand definitions, engines, locale, sampling rules and weights. Compare only cells successfully observed in both runs, and report that paired denominator along with full-run completion rates. More failures must not appear as lost visibility. Engine/model changes, answer variability and corpus changes can explain movements; one before/after run does not establish causality.
 
-- Acme cited slots: 5 · g2.com: 11 · rivalapp: 6 · (third parties excluded).
-- Total tracked cited slots: 22.
-- Unweighted SoC: Acme 5/22 = **23%**, g2 50%, rivalapp 27%.
-- Weighting by AI volume (Acme's 5 slots are lower-volume prompts) pulls Acme to **18%**, g2 to 41%, rivalapp 22% — the weighted view is the honest headline.
-
-## Miss-cause decision tree (the three pillars)
-
-For each prompt a competitor wins and the brand loses, open the winning source (URL from `geo/serp` references or `geo/mentions/top-pages`) with `browser/markdown` and classify it against the three pillars in `SKILL.md`:
-
-1. **Structure (extractability)** — the winning page has clear definition blocks, a comparison table, an FAQ, scannable H2/H3 headers, or machine-readable signals (`/llms.txt`, JSON-LD) that the model lifted; the brand's equivalent is prose-heavy or buried. _Fix: restructure existing content._ If the brand already ranks organically (`seo/serp`) but isn't cited, this is the default cause and a fast win.
-2. **Authority (presence signals)** — the winner is dense with the levers Princeton's GEO study measured as visibility drivers: statistics (≈ +37%), direct quotations (≈ +30%), and cited sources (≈ +40%); it is dated, attributed, or a recognized reference. The brand's content is thinner, undated, or unattributed (and must avoid keyword stuffing, ≈ −10%). _Fix: name the specific missing lever — add original data, add quotes, add citations._
-3. **Third-party presence** — the winner is a listicle / review site / Reddit thread / directory the brand simply isn't on; `geo/mentions/top-domains` shows the same third-party domains owning slot after slot. No on-site editing wins it. _Fix: earn an honest place on that surface — never buy or spin mentions._
-
-Pick the single dominant pillar per miss; note a secondary if close. Tag each miss `quick` (Structure, brand already ranks) or `net-new` (Authority / Third-party, no presence) so `ai-answer-gap` can sequence the backlog.
-
-## Snapshot discipline
-
-- Stamp every matrix and SoC figure with the run date and engine(s).
-- AI answers vary by session/region/time — never present SoC as a fixed ranking. A trend needs ≥3 runs (`llm-mention-tracking`).
-- ChatGPT engine is US/English only; for other markets report Google-AI SoC and mark ChatGPT N/A rather than zero.
+A missing citation may justify investigating content, evidence or third-party sources. It does not prove an extractability defect. JSON-LD, llms.txt, adding quotations, and other changes cannot guarantee a citation or a transferable percentage lift.

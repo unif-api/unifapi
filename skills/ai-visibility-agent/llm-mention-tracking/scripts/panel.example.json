@@ -1,0 +1,28 @@
+{
+  "location": "us",
+  "language": "en",
+  "samples": 2,
+  "max_credits": 240,
+  "engines": [{ "engine": "chatgpt", "force_web_search": false }, { "engine": "gemini" }],
+  "brands": [
+    {
+      "id": "your-brand",
+      "names": ["Your Brand"],
+      "domains": ["example.com"],
+      "include_subdomains": true
+    },
+    { "id": "competitor", "names": ["Competitor Name"], "domains": ["example.org"] }
+  ],
+  "prompts": [
+    {
+      "id": "category",
+      "prompt": "Which tools help monitor brand visibility in AI search?",
+      "weight": 1
+    },
+    {
+      "id": "api",
+      "prompt": "Which API can I use to collect AI search answers for my own dashboard?",
+      "weight": 1
+    }
+  ]
+}
